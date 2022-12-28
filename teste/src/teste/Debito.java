@@ -1,6 +1,6 @@
 package teste;
 
-public class Debito {
+public class Debito extends Cartao{
     
     public void efetuarCompra(){
         
