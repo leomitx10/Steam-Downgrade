@@ -1,6 +1,6 @@
 package teste;
 
-public class Credito extends Cartao{
+public class Credito {
     
     private int parcelamento;
     
