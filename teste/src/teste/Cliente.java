@@ -1,5 +1,5 @@
 package teste;
-public class Cliente {
+public class Cliente extends Usuario {
     private float saldo;
 
     public Cliente(float saldo) {

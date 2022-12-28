@@ -1,6 +1,6 @@
 package teste;
 
-public class Administrador {
+public class Administrador extends Usuario {
     private String nomeAdm;
 
     public String getNomeAdm() {

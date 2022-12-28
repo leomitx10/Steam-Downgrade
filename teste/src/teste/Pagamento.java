@@ -3,16 +3,24 @@ package teste;
 import java.util.ArrayList;
 
 public class Pagamento {
-    
-    // Atributos
-    private ArrayList<Formadepagamento>Formadepagamento;
+	
+	private ArrayList<formaDePagamento> formadepagamento;
+	private Cliente cliente;
 
-    public ArrayList<Formadepagamento> getFormadepagamento() {
-    	return Formadepagamento;
-    }
+	public Cliente getCliente() {
+		return cliente;
+	}
 
-    public void setFormadepagamento(ArrayList<Formadepagamento> formadepagamento) {
-	this.Formadepagamento = formadepagamento;
-    }
-    
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public ArrayList<formaDePagamento> getFormadepagamento() {
+		return formadepagamento;
+	}
+
+	public void setFormadepagamento(ArrayList<formaDePagamento> formadepagamento) {
+		this.formadepagamento = formadepagamento;
+	}
+
 }
