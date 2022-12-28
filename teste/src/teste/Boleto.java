@@ -1,6 +1,6 @@
 package teste;
 import java.util.Date;
-public class Boleto extends Formadepagamento{
+public class Boleto {
     private String codigo;
     private Date dataVencimento;
 
