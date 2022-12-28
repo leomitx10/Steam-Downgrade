@@ -1,6 +1,6 @@
 package teste;
 
-public class Cartao {
+public class Cartao extends Formadepagamento{
     
     private String nome;
     private String bandeira;
