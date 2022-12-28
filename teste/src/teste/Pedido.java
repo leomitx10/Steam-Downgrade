@@ -7,11 +7,16 @@ public class Pedido {
     private String numCliente;
     private String estado;
     private String numEnvio;
-    
-    public void finalizarPedido(){
-        
+    private DetalhesdoPedido detalhesdopedido;
+
+    public DetalhesdoPedido getDetalhesdopedido() {
+        return detalhesdopedido;
     }
 
+    public void setDetalhesdopedido(DetalhesdoPedido detalhesdopedido) {
+        this.detalhesdopedido = detalhesdopedido;
+    }
+    
     public int getNumPedido() {
         return numPedido;
     }
@@ -58,6 +63,10 @@ public class Pedido {
 
     public void setNumEnvio(String numEnvio) {
         this.numEnvio = numEnvio;
+    }
+    
+    public void finalizarPedido(){
+        
     }
     
 }
