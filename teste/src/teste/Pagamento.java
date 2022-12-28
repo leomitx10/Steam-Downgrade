@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Pagamento {
 	
-	private ArrayList<formaDePagamento> formadepagamento;
+	private ArrayList<Formadepagamento> formadepagamento;
 	private Cliente cliente;
 
 	public Cliente getCliente() {
@@ -15,11 +15,11 @@ public class Pagamento {
 		this.cliente = cliente;
 	}
 
-	public ArrayList<formaDePagamento> getFormadepagamento() {
+	public ArrayList<Formadepagamento> getFormadepagamento() {
 		return formadepagamento;
 	}
 
-	public void setFormadepagamento(ArrayList<formaDePagamento> formadepagamento) {
+	public void setFormadepagamento(ArrayList<Formadepagamento> formadepagamento) {
 		this.formadepagamento = formadepagamento;
 	}
 
