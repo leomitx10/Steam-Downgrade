@@ -1,7 +1,7 @@
 package teste;
 public class Cliente {
     private float saldo;
-
+    //construtor
     public Cliente(float saldo) {
         this.saldo = saldo;
     }
@@ -14,7 +14,7 @@ public class Cliente {
         this.saldo = saldo;
     }
     
-    
+    //metodo
     public void adicionarCarrinho(){
     }
     
