@@ -1,8 +1,12 @@
 package teste;
 public class Cliente extends Usuario {
     private float saldo;
+<<<<<<< HEAD
     private Pedido pedido;
     
+=======
+    //construtor
+>>>>>>> oscar_teste
     public Cliente(float saldo) {
         this.saldo = saldo;
     }
@@ -23,7 +27,7 @@ public class Cliente extends Usuario {
         this.saldo = saldo;
     }
     
-    
+    //metodo
     public void adicionarCarrinho(){
     }
     
