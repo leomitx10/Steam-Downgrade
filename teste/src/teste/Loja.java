@@ -9,14 +9,16 @@ public class Loja {
     private ListadeDesejo listadeDesejo;
     private Carrinho carrinho;
     private Ajuda ajuda;
+    private Forum forum
 
-    public Loja(String ofertas, ArrayList<Jogo> Jogo, Jogo game, ListadeDesejo listadeDesejo, Carrinho carrinho, Ajuda ajuda) {
+    public Loja(String ofertas, ArrayList<Jogo> Jogo, Jogo game, ListadeDesejo listadeDesejo, Carrinho carrinho, Ajuda ajuda, Forum forum) {
         this.ofertas = ofertas;
         this.Jogo = Jogo;
         this.game = game;
         this.listadeDesejo = listadeDesejo;
         this.carrinho = carrinho;
         this.ajuda = ajuda;
+        this.forum = forum;
     }
 
     public String getOfertas() {
@@ -66,8 +68,13 @@ public class Loja {
     public void setAjuda(Ajuda ajuda) {
         this.ajuda = ajuda;
     }
+    
+    public Forum getForum() {
+        return forum;
+    }
 
-    
-    
-    
+    public void setForum(Forum forum) {
+        this.forum = forum;
+    }
+
 }    
