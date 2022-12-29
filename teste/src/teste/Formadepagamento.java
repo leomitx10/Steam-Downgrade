@@ -11,6 +11,7 @@ package teste;
  */
 public class Formadepagamento {
     
+    private Pagamento pagamento;
     
     public void efetuarCompra(){
         
