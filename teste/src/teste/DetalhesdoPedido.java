@@ -56,10 +56,8 @@ public class DetalhesdoPedido {
         this.subtotal = subtotal;
     }
     
-    
-    
-    
-    
-    public void calcularPreco(){
+    public float calcularPreco(){
+        this.subtotal = this.quantidadeProduto * this.custoUnidade;
+        return this.subtotal;
     }
 }

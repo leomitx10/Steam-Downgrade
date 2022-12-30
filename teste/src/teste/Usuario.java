@@ -94,14 +94,6 @@ public class Usuario {
         this.endereco = endereco;
     }
     
-    public void logar(){
-    
-    }
-    
-    public void deslogar(){
-    
-    }
-    
     public void adcionarAmigo(){
      
     }
