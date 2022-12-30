@@ -3,10 +3,7 @@ import java.util.ArrayList;
 public class Carrinho extends ContaJogos {
     private ArrayList<Jogo> Jogo;
     private Jogo game;
-    private Pedido pedido
     
-    
-
     //construtor
 
     public Carrinho(ArrayList<Jogo> Jogo, Jogo game, int quantidadeJogos) {
@@ -31,17 +28,7 @@ public class Carrinho extends ContaJogos {
     public void setGame(Jogo game) {
         this.game = game;
     }
-    
-    public Pedido getPedido() {
-        return pedido;
-    }
 
-    public void setPedido(Pedido pedido) {
-        this.pedido = pedido;
-    }
-
-    
-  
     //metodos
     public void removerCarrinho(){
     }
