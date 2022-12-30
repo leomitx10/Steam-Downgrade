@@ -8,6 +8,7 @@ public class Pedido {
     private String estado;
     private String numEnvio;
     private DetalhesdoPedido detalhesdopedido;
+    private Carrinho carrinho;
 
     public DetalhesdoPedido getDetalhesdopedido() {
         return detalhesdopedido;
@@ -63,6 +64,14 @@ public class Pedido {
 
     public void setNumEnvio(String numEnvio) {
         this.numEnvio = numEnvio;
+    }
+    
+    public String getCarrinho() {
+        return carrinho;
+    }
+
+    public void setCarrinho(String carrinho) {
+        this.carrinho = carrinho;
     }
     
     public void finalizarPedido(){
