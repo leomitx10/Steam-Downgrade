@@ -9,7 +9,7 @@ public class Loja {
     private ListadeDesejo listadeDesejo;
     private Carrinho carrinho;
     private Ajuda ajuda;
-    private Forum forum
+    private Forum forum;
 
     public Loja(String ofertas, ArrayList<Jogo> Jogo, Jogo game, ListadeDesejo listadeDesejo, Carrinho carrinho, Ajuda ajuda, Forum forum) {
         this.ofertas = ofertas;

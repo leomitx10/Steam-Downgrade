@@ -7,6 +7,10 @@ public class Cartao extends Formadepagamento{
     private String numero;
     private String validade;
 
+    public Cartao(Pagamento pagamento) {
+        super(pagamento);
+    }
+    
     public String getNome() {
         return nome;
     }

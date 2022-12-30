@@ -5,7 +5,12 @@ import java.util.ArrayList;
 public class Forum {
     private Noticia not;
     private ArrayList<Jogo>Jogo;
-     
+
+    public Forum(Noticia not, ArrayList<Jogo> Jogo) {
+        this.not = not;
+        this.Jogo = Jogo;
+    }
+    
     public void adicionarComentario(){
          
     }

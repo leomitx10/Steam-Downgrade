@@ -7,6 +7,11 @@ public class Pagamento {
 	private ArrayList<Formadepagamento> formadepagamento;
 	private Cliente cliente;
 
+        public Pagamento(ArrayList<Formadepagamento> formadepagamento, Cliente cliente) {
+            this.formadepagamento = formadepagamento;
+            this.cliente = cliente;
+        }
+
 	public Cliente getCliente() {
 		return cliente;
 	}

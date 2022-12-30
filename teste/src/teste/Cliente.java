@@ -1,15 +1,17 @@
 package teste;
 public class Cliente extends Usuario {
     private float saldo;
-<<<<<<< HEAD
     private Pedido pedido;
+    private Carrinho carrinho;
     
-=======
     //construtor
->>>>>>> oscar_teste
-    public Cliente(float saldo) {
-        this.saldo = saldo;
+
+    public Cliente(String nome, int idade, int qtdJogos, String apelido, String cpf, String email, String senha, String endereco) {
+        super(nome, idade, qtdJogos, apelido, cpf, email, senha, endereco);
     }
+
+    
+    
 
     public Pedido getPedido() {
         return pedido;

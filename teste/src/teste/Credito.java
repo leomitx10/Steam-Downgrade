@@ -1,8 +1,13 @@
 package teste;
 
 public class Credito extends Cartao{
-    
     private int parcelamento;
+
+    public Credito(Pagamento pagamento) {
+        super(pagamento);
+    }
+
+   
     
     public void calcularParcela(){
         

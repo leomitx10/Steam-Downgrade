@@ -6,6 +6,13 @@ public class Social {
 	private String amigos;
 	private String convites;
 	private Usuario usuario;
+
+        public Social(int qtdAmigos, String amigos, String convites, Usuario usuario) {
+            this.qtdAmigos = qtdAmigos;
+            this.amigos = amigos;
+            this.convites = convites;
+            this.usuario = usuario;
+        }
 	
 	public Usuario getUsuario() {
 		return usuario;

@@ -10,8 +10,13 @@ package teste;
  * @author Leandro
  */
 public class Formadepagamento {
-    
     private Pagamento pagamento;
+    
+    public Formadepagamento(Pagamento pagamento) {
+        this.pagamento = pagamento;
+    }
+    
+   
     
     public void efetuarCompra(){
         

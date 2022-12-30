@@ -19,6 +19,17 @@ public class Usuario {
     private String senha;
     private String endereco;
 
+    public Usuario(String nome, int idade, int qtdJogos, String apelido, String cpf, String email, String senha, String endereco) {
+        this.nome = nome;
+        this.idade = idade;
+        this.qtdJogos = qtdJogos;
+        this.apelido = apelido;
+        this.cpf = cpf;
+        this.email = email;
+        this.senha = senha;
+        this.endereco = endereco;
+    }
+
     public String getNome() {
         return nome;
     }

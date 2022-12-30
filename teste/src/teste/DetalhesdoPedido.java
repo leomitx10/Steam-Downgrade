@@ -14,6 +14,8 @@ public class DetalhesdoPedido {
         this.subtotal = subtotal;
     }
 
+    
+
     public int getNumeroPedido() {
         return numeroPedido;
     }

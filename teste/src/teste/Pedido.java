@@ -65,15 +65,15 @@ public class Pedido {
     public void setNumEnvio(String numEnvio) {
         this.numEnvio = numEnvio;
     }
-    
-    public String getCarrinho() {
+
+    public Carrinho getCarrinho() {
         return carrinho;
     }
 
-    public void setCarrinho(String carrinho) {
+    public void setCarrinho(Carrinho carrinho) {
         this.carrinho = carrinho;
     }
-    
+
     public void finalizarPedido(){
         
     }
