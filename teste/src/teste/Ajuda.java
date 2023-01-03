@@ -5,6 +5,12 @@ public class Ajuda {
     private String acordoDeAssinatura;
     private String perguntasFrequentes;
 
+    public Ajuda(String informacoesLegais, String acordoDeAssinatura, String perguntasFrequentes) {
+        this.informacoesLegais = informacoesLegais;
+        this.acordoDeAssinatura = acordoDeAssinatura;
+        this.perguntasFrequentes = perguntasFrequentes;
+    }
+    
     public String getInformacoesLegais() {
         return informacoesLegais;
     }

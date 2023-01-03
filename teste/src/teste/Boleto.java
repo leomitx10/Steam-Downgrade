@@ -1,12 +1,11 @@
 package teste;
 import java.util.Date;
-public class Boleto {
+public class Boleto extends Formadepagamento{
     private String codigo;
     private Date dataVencimento;
 
-    public Boleto(String codigo, Date dataVencimento) {
-        this.codigo = codigo;
-        this.dataVencimento = dataVencimento;
+    public Boleto(Pagamento pagamento) {
+        super(pagamento);
     }
 
     public String getCodigo() {

@@ -7,6 +7,13 @@ public class Noticia {
     private String destaques;
     private String topico;
 
+    public Noticia(String lancamentos, String eventos, String destaques, String topico) {
+        this.lancamentos = lancamentos;
+        this.eventos = eventos;
+        this.destaques = destaques;
+        this.topico = topico;
+    }
+    
     public String getLancamentos() {
         return lancamentos;
     }

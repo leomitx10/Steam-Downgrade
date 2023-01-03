@@ -1,12 +1,16 @@
 package teste;
 
-public class Cartao {
+public class Cartao extends Formadepagamento{
     
     private String nome;
     private String bandeira;
     private String numero;
     private String validade;
 
+    public Cartao(Pagamento pagamento) {
+        super(pagamento);
+    }
+    
     public String getNome() {
         return nome;
     }
