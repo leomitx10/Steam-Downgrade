@@ -32,6 +32,10 @@ public class Tela_Usuario extends javax.swing.JFrame {
             ,"1111111122","leomitx10@gmail.com","123456jkl",
             "Luziânia - GO");
     
+    Usuario us2 = new Usuario("gustavo",20,4,"Asolaris"
+            ,"1211212122","Asolaris@gmail.com","123456jjj",
+            "Sobradinho - DF");
+    
 
     public void addPlaceholderStyle(JTextField textField){
         Font font = textField.getFont();
@@ -178,12 +182,13 @@ public class Tela_Usuario extends javax.swing.JFrame {
             Tela_Loja2 x = new Tela_Loja2();
             this.dispose();
             x.setVisible(true);
+        }else if(txtUser.getText().equals(us2.getEmail()) && txtPassword.getText().equals(us2.getSenha())){
+            Tela_Loja2 x = new Tela_Loja2();
+            this.dispose();
+            x.setVisible(true);
         }else{
             JOptionPane.showMessageDialog(this,"Email ou senha incorreto");
         }
-       
-        
-        
         
         
     }//GEN-LAST:event_jButton2ActionPerformed
