@@ -85,35 +85,23 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(800, 600));
         setMinimumSize(new java.awt.Dimension(800, 600));
-        setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
-        getContentPane().setLayout(null);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/avatardefault_92824.png"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(27, 17, 0, 0);
 
         jLabel1.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         jLabel1.setText("Nome do usuário");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(100, 50, 151, 22);
 
         jLabel3.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         jLabel3.setText("Biblioteca");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(30, 120, 86, 22);
 
         jLabel4.setText("Procurando um item específico?");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(30, 170, 205, 17);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(240, 170, 215, 23);
 
         jButton1.setText("OK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -121,64 +109,34 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(460, 170, 72, 23);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(27, 624, 0, 0);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(33, 624, 0, 0);
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(39, 624, 0, 0);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel9);
-        jLabel9.setBounds(27, 630, 0, 0);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(453, 636, 0, 0);
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel11);
-        jLabel11.setBounds(33, 630, 0, 0);
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel12);
-        jLabel12.setBounds(39, 630, 0, 0);
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel13);
-        jLabel13.setBounds(45, 630, 0, 0);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel14);
-        jLabel14.setBounds(27, 636, 0, 0);
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel15);
-        jLabel15.setBounds(561, 636, 0, 0);
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel16);
-        jLabel16.setBounds(681, 636, 0, 0);
 
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel17);
-        jLabel17.setBounds(45, 624, 0, 0);
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/turbo (1).png"))); // NOI18N
-        getContentPane().add(jLabel18);
-        jLabel18.setBounds(693, 17, 0, 0);
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 15.46.12.jpeg"))); // NOI18N
-        getContentPane().add(jLabel19);
-        jLabel19.setBounds(586, 624, 0, 0);
 
         jButton2.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         jButton2.setText("Ver na loja");
@@ -187,125 +145,246 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2);
-        jButton2.setBounds(470, 430, 101, 23);
 
         jButton3.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         jButton3.setText("Remover da biblioteca");
-        getContentPane().add(jButton3);
-        jButton3.setBounds(470, 470, 183, 23);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(330, 220, 0, 0);
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel20);
-        jLabel20.setBounds(30, 220, 0, 0);
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel21);
-        jLabel21.setBounds(130, 220, 0, 0);
 
         jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel22);
-        jLabel22.setBounds(230, 220, 0, 0);
 
         jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel23);
-        jLabel23.setBounds(330, 320, 0, 0);
 
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel24);
-        jLabel24.setBounds(230, 320, 0, 0);
 
         jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel25);
-        jLabel25.setBounds(130, 320, 0, 0);
 
         jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel26);
-        jLabel26.setBounds(30, 320, 0, 0);
 
         jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel27);
-        jLabel27.setBounds(30, 420, 0, 0);
 
         jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel28);
-        jLabel28.setBounds(130, 420, 0, 0);
 
         jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel29);
-        jLabel29.setBounds(230, 420, 0, 0);
 
         jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel30);
-        jLabel30.setBounds(330, 420, 0, 0);
 
         jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 15.46.12.jpeg"))); // NOI18N
-        getContentPane().add(jLabel31);
-        jLabel31.setBounds(470, 220, 0, 0);
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/avatardefault_92824.png"))); // NOI18N
-        getContentPane().add(jLabel32);
-        jLabel32.setBounds(30, 30, 0, 0);
 
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel33);
-        jLabel33.setBounds(130, 220, 96, 96);
 
         jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel34);
-        jLabel34.setBounds(230, 220, 96, 96);
 
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel35);
-        jLabel35.setBounds(330, 220, 96, 96);
 
         jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel36);
-        jLabel36.setBounds(30, 320, 96, 96);
 
         jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel37);
-        jLabel37.setBounds(130, 320, 96, 96);
 
         jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel38);
-        jLabel38.setBounds(230, 320, 96, 96);
 
         jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel39);
-        jLabel39.setBounds(330, 320, 96, 96);
 
         jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel40);
-        jLabel40.setBounds(30, 420, 96, 96);
 
         jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel41);
-        jLabel41.setBounds(130, 420, 96, 96);
 
         jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel42);
-        jLabel42.setBounds(230, 420, 96, 96);
 
         jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel43);
-        jLabel43.setBounds(330, 420, 96, 96);
 
         jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel44);
-        jLabel44.setBounds(30, 220, 96, 96);
 
         jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_retang.jpeg"))); // NOI18N
-        getContentPane().add(jLabel45);
-        jLabel45.setBounds(470, 220, 291, 195);
 
         jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/avatar.png"))); // NOI18N
-        getContentPane().add(jLabel46);
-        jLabel46.setBounds(29, 23, 64, 64);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel46)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(jLabel32)))
+                        .addGap(7, 7, 7)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel4)
+                        .addGap(5, 5, 5)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(5, 5, 5)
+                        .addComponent(jButton1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel20)
+                            .addComponent(jLabel44)
+                            .addComponent(jLabel36)
+                            .addComponent(jLabel26))
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel33)
+                            .addComponent(jLabel21)
+                            .addComponent(jLabel25)
+                            .addComponent(jLabel37))
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel22)
+                            .addComponent(jLabel34)
+                            .addComponent(jLabel38)
+                            .addComponent(jLabel24))
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel35)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel23)
+                            .addComponent(jLabel39))
+                        .addGap(44, 44, 44)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel31)
+                            .addComponent(jLabel45)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel27)
+                            .addComponent(jLabel40))
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel28)
+                            .addComponent(jLabel41))
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel42)
+                            .addComponent(jLabel29))
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel43)
+                            .addComponent(jLabel30))
+                        .addGap(44, 44, 44)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton2)
+                            .addComponent(jButton3)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(jLabel5)
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel7)
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel8)
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel17))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(jLabel9)
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel11)
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel12)))
+                .addContainerGap(39, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel2)
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel46)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(7, 7, 7)
+                        .addComponent(jLabel32))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(jLabel1)))
+                .addGap(33, 33, 33)
+                .addComponent(jLabel3)
+                .addGap(28, 28, 28)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1))
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel20)
+                            .addComponent(jLabel44))
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel36)
+                            .addComponent(jLabel26)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel33)
+                            .addComponent(jLabel21))
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel25)
+                            .addComponent(jLabel37)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel22)
+                            .addComponent(jLabel34))
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel38)
+                            .addComponent(jLabel24)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel35)
+                            .addComponent(jLabel6))
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel23)
+                            .addComponent(jLabel39)))
+                    .addComponent(jLabel31)
+                    .addComponent(jLabel45))
+                .addGap(4, 4, 4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel27)
+                    .addComponent(jLabel40)
+                    .addComponent(jLabel28)
+                    .addComponent(jLabel41)
+                    .addComponent(jLabel42)
+                    .addComponent(jLabel29)
+                    .addComponent(jLabel43)
+                    .addComponent(jLabel30)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jButton2)
+                        .addGap(17, 17, 17)
+                        .addComponent(jButton3)))
+                .addGap(78, 78, 78)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel17))
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12)))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
