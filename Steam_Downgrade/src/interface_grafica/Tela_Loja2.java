@@ -4,6 +4,9 @@
  */
 package interface_grafica;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 /**
  *
  * @author leandro
@@ -15,6 +18,9 @@ public class Tela_Loja2 extends javax.swing.JFrame {
      */
     public Tela_Loja2() {
         initComponents();
+        Toolkit toolkit = getToolkit();
+        Dimension size = toolkit.getScreenSize();
+        setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
     }
 
     /**
@@ -54,10 +60,8 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/eldenRingSmall.png"))); // NOI18N
         jLabel3.setMinimumSize(new java.awt.Dimension(500, 300));
 
-        jLabel2.setBackground(new java.awt.Color(0, 153, 255));
         jLabel2.setFont(new java.awt.Font("Liberation Sans", 1, 30)); // NOI18N
         jLabel2.setText(" ENGINE");
-        jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.gray));
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jButton1.setBackground(new java.awt.Color(0, 153, 0));
@@ -102,6 +106,11 @@ public class Tela_Loja2 extends javax.swing.JFrame {
 
         jButton4.setText("Biblioteca");
         jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 255)));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setText("Lista de Desejo");
         jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 255)));
@@ -257,8 +266,18 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
+        Tela_Ajuda x = new Tela_Ajuda();
+            this.dispose();
+            x.setVisible(true);
+        
+        
     }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+         Tela_Biblioteca a = new Tela_Biblioteca();
+            this.dispose();
+            a.setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -4,6 +4,9 @@
  */
 package interface_grafica;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 /**
  *
  * @author gustavofbs
@@ -15,6 +18,10 @@ public class Tela_Pagamento extends javax.swing.JFrame {
      */
     public Tela_Pagamento() {
         initComponents();
+        
+        Toolkit toolkit = getToolkit();
+        Dimension size = toolkit.getScreenSize();
+        setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
     }
 
     /**

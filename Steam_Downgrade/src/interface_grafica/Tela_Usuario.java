@@ -5,7 +5,9 @@
 package interface_grafica;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import teste.Usuario;
@@ -22,6 +24,11 @@ public class Tela_Usuario extends javax.swing.JFrame {
      */
     public Tela_Usuario() {
         initComponents();
+        
+        Toolkit toolkit = getToolkit();
+        Dimension size = toolkit.getScreenSize();
+        setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
+        
         addPlaceholderStyle(txtUser);
         addPlaceholderStyle(txtPassword);
         
@@ -32,9 +39,13 @@ public class Tela_Usuario extends javax.swing.JFrame {
             ,"1111111122","leomitx10@gmail.com","123456jkl",
             "Luziânia - GO");
     
-    Usuario us2 = new Usuario("gustavo",20,4,"Asolaris"
+    Usuario us2 = new Usuario("gustavo",20,4,"ASolaris"
             ,"1211212122","Asolaris@gmail.com","123456jjj",
             "Sobradinho - DF");
+    
+    Usuario us3 =  new Usuario("artur",20,6,"titanstel"
+            ,"1281212522","arturjack@gmail.com","40028922",
+            "Taguatinga - DF");
     
 
     public void addPlaceholderStyle(JTextField textField){
@@ -70,7 +81,7 @@ public class Tela_Usuario extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tela login");
-        setMaximumSize(new java.awt.Dimension(640, 480));
+        setLocation(new java.awt.Point(500, 500));
         setMinimumSize(new java.awt.Dimension(640, 480));
         setResizable(false);
 
@@ -140,7 +151,7 @@ public class Tela_Usuario extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(15, 15, 15)
                 .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         jButton2.setText("Entrar");
@@ -183,6 +194,10 @@ public class Tela_Usuario extends javax.swing.JFrame {
             this.dispose();
             x.setVisible(true);
         }else if(txtUser.getText().equals(us2.getEmail()) && txtPassword.getText().equals(us2.getSenha())){
+            Tela_Loja2 x = new Tela_Loja2();
+            this.dispose();
+            x.setVisible(true);
+        }else if(txtUser.getText().equals(us3.getEmail()) && txtPassword.getText().equals(us3.getSenha())){
             Tela_Loja2 x = new Tela_Loja2();
             this.dispose();
             x.setVisible(true);
