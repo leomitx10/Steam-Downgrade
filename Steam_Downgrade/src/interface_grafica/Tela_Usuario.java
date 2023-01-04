@@ -128,7 +128,7 @@ public class Tela_Usuario extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(15, 15, 15)
                 .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         jButton2.setText("Entrar");
