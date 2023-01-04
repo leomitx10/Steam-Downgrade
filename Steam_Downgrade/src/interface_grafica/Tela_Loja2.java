@@ -28,6 +28,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -40,18 +41,28 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Forza Horizon 5");
 
         jLabel3.setFont(new java.awt.Font("Liberation Sans", 0, 20)); // NOI18N
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/eldenRingSmall.png"))); // NOI18N
         jLabel3.setMinimumSize(new java.awt.Dimension(500, 300));
 
-        jButton1.setFont(new java.awt.Font("Liberation Sans", 0, 14)); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(0, 153, 255));
+        jLabel2.setFont(new java.awt.Font("Liberation Sans", 1, 30)); // NOI18N
+        jLabel2.setText(" ENGINE");
+        jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.gray));
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jButton1.setBackground(new java.awt.Color(0, 153, 0));
+        jButton1.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("+ Carrinho");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,19 +71,18 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Liberation Sans", 1, 20)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Jogos:");
 
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("R$ 250,00");
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/forzaSmall.png"))); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Elden Ring");
 
-        jButton2.setFont(new java.awt.Font("Liberation Sans", 0, 14)); // NOI18N
+        jButton2.setBackground(new java.awt.Color(0, 153, 0));
+        jButton2.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("+ Carrinho");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,25 +90,21 @@ public class Tela_Loja2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("R$ 250,00");
 
-        jButton3.setBackground(new java.awt.Color(102, 102, 102));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Perfil");
+        jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 255)));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(102, 102, 102));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Biblioteca");
+        jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 255)));
 
-        jButton5.setBackground(new java.awt.Color(102, 102, 102));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("Lista de Desejo");
+        jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 255)));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -123,22 +129,43 @@ public class Tela_Loja2 extends javax.swing.JFrame {
             }
         });
 
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/turbo (1).png"))); // NOI18N
+
+        jButton8.setText("Carrinho");
+        jButton8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 255)));
+
+        jButton9.setText("Ajuda");
+        jButton9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 255)));
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 34, Short.MAX_VALUE)
+                    .addGap(0, 52, Short.MAX_VALUE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(180, 180, 180)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(20, 20, 20)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(220, 220, 220)
-                            .addComponent(jButton3))
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createSequentialGroup()
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -156,19 +183,25 @@ public class Tela_Loja2 extends javax.swing.JFrame {
                                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jButton7))))
-                    .addGap(0, 34, Short.MAX_VALUE)))
+                    .addGap(0, 358, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton3)
+                        .addComponent(jButton5)
+                        .addComponent(jButton4)
+                        .addComponent(jLabel2)
+                        .addComponent(jButton8)
+                        .addComponent(jButton9)))
+                .addContainerGap(539, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(10, 40, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton4)
-                        .addComponent(jButton5)
-                        .addComponent(jButton3))
-                    .addGap(36, 36, 36)
+                    .addGap(0, 100, Short.MAX_VALUE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(40, 40, 40)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -223,6 +256,10 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -266,12 +303,16 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
