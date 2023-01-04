@@ -28,26 +28,11 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     private void initComponents() {
 
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
-        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
@@ -59,8 +44,6 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(800, 600));
         setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/avatardefault_92824.png"))); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         jLabel1.setText("Nome do usuário");
@@ -83,34 +66,6 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/turbo (1).png"))); // NOI18N
-
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 15.46.12.jpeg"))); // NOI18N
-
         jButton2.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         jButton2.setText("Ver na loja");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -132,14 +87,6 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel16))
-                            .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -149,52 +96,23 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                                 .addGap(2, 2, 2)
                                 .addComponent(jLabel3)))
                         .addGap(269, 269, 269))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel18)
-                                .addGap(76, 76, 76))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel5)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel7)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel17))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel9)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel11)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel12)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel13)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton2)
-                                    .addComponent(jLabel19)
-                                    .addComponent(jButton3))))
-                        .addGap(31, 31, 31))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addGap(6, 6, 6)
+                            .addComponent(jLabel1)
+                            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addGap(0, 0, Short.MAX_VALUE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jButton2)
+                                .addComponent(jButton3))
+                            .addGap(31, 31, 31)))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel18)
-                            .addComponent(jLabel2))))
+                .addGap(39, 39, 39)
+                .addComponent(jLabel1)
                 .addGap(47, 47, 47)
                 .addComponent(jLabel3)
                 .addGap(25, 25, 25)
@@ -205,32 +123,10 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton1)))
-                .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel17))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel9))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel16)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel19)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton3)))
+                .addGap(66, 66, 66)
+                .addComponent(jButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton3)
                 .addContainerGap(57, Short.MAX_VALUE))
         );
 
@@ -290,23 +186,8 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

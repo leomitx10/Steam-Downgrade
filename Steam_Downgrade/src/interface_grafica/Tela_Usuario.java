@@ -6,7 +6,9 @@ package interface_grafica;
 
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import teste.Usuario;
 
 
 /**
@@ -24,6 +26,12 @@ public class Tela_Usuario extends javax.swing.JFrame {
         addPlaceholderStyle(txtPassword);
         
     }
+    
+    /*CRIANDO O PRIMEIRO USUARIO*/
+    Usuario us1 = new Usuario("leandro",20,5,"leomitx10"
+            ,"1111111122","leomitx10@gmail.com","123456jkl",
+            "Luziânia - GO");
+    
 
     public void addPlaceholderStyle(JTextField textField){
         Font font = textField.getFont();
@@ -166,7 +174,18 @@ public class Tela_Usuario extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        if(txtUser.getText().equals(us1.getEmail()) && txtPassword.getText().equals(us1.getSenha())){
+            Tela_Loja2 x = new Tela_Loja2();
+            this.dispose();
+            x.setVisible(true);
+        }else{
+            JOptionPane.showMessageDialog(this,"Email ou senha incorreto");
+        }
+       
+        
+        
+        
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void txtUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserActionPerformed
