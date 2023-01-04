@@ -188,8 +188,7 @@ public class Tela_Usuario extends javax.swing.JFrame {
             x.setVisible(true);
         }else{
             JOptionPane.showMessageDialog(this,"Email ou senha incorreto");
-        }
-        
+        }      
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
