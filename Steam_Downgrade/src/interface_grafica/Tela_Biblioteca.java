@@ -50,6 +50,34 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -59,22 +87,33 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(800, 600));
         setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
+        getContentPane().setLayout(null);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/avatardefault_92824.png"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(27, 17, 0, 0);
 
         jLabel1.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         jLabel1.setText("Nome do usuário");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(100, 50, 151, 22);
 
         jLabel3.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         jLabel3.setText("Biblioteca");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(30, 120, 86, 22);
 
         jLabel4.setText("Procurando um item específico?");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(30, 170, 205, 17);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(240, 170, 215, 23);
 
         jButton1.setText("OK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -82,34 +121,64 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(460, 170, 72, 23);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(27, 624, 0, 0);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(33, 624, 0, 0);
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(39, 624, 0, 0);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(27, 630, 0, 0);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(453, 636, 0, 0);
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(33, 630, 0, 0);
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel12);
+        jLabel12.setBounds(39, 630, 0, 0);
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel13);
+        jLabel13.setBounds(45, 630, 0, 0);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel14);
+        jLabel14.setBounds(27, 636, 0, 0);
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel15);
+        jLabel15.setBounds(561, 636, 0, 0);
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel16);
+        jLabel16.setBounds(681, 636, 0, 0);
 
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel17);
+        jLabel17.setBounds(45, 624, 0, 0);
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/turbo (1).png"))); // NOI18N
+        getContentPane().add(jLabel18);
+        jLabel18.setBounds(693, 17, 0, 0);
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 15.46.12.jpeg"))); // NOI18N
+        getContentPane().add(jLabel19);
+        jLabel19.setBounds(586, 624, 0, 0);
 
         jButton2.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         jButton2.setText("Ver na loja");
@@ -118,121 +187,125 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton2);
+        jButton2.setBounds(470, 430, 101, 23);
 
         jButton3.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         jButton3.setText("Remover da biblioteca");
+        getContentPane().add(jButton3);
+        jButton3.setBounds(470, 470, 183, 23);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel16))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(2, 2, 2)
-                                .addComponent(jLabel3)))
-                        .addGap(269, 269, 269))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel18)
-                                .addGap(76, 76, 76))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel5)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel7)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel17))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel9)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel11)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel12)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel13)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton2)
-                                    .addComponent(jLabel19)
-                                    .addComponent(jButton3))))
-                        .addGap(31, 31, 31))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel18)
-                            .addComponent(jLabel2))))
-                .addGap(47, 47, 47)
-                .addComponent(jLabel3)
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(jLabel4))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton1)))
-                .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel17))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel9))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel16)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel19)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton3)))
-                .addContainerGap(57, Short.MAX_VALUE))
-        );
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(330, 220, 0, 0);
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel20);
+        jLabel20.setBounds(30, 220, 0, 0);
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel21);
+        jLabel21.setBounds(130, 220, 0, 0);
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel22);
+        jLabel22.setBounds(230, 220, 0, 0);
+
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel23);
+        jLabel23.setBounds(330, 320, 0, 0);
+
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel24);
+        jLabel24.setBounds(230, 320, 0, 0);
+
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel25);
+        jLabel25.setBounds(130, 320, 0, 0);
+
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel26);
+        jLabel26.setBounds(30, 320, 0, 0);
+
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel27);
+        jLabel27.setBounds(30, 420, 0, 0);
+
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel28);
+        jLabel28.setBounds(130, 420, 0, 0);
+
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel29);
+        jLabel29.setBounds(230, 420, 0, 0);
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel30);
+        jLabel30.setBounds(330, 420, 0, 0);
+
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 15.46.12.jpeg"))); // NOI18N
+        getContentPane().add(jLabel31);
+        jLabel31.setBounds(470, 220, 0, 0);
+
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/avatardefault_92824.png"))); // NOI18N
+        getContentPane().add(jLabel32);
+        jLabel32.setBounds(30, 30, 0, 0);
+
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel33);
+        jLabel33.setBounds(130, 220, 96, 96);
+
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel34);
+        jLabel34.setBounds(230, 220, 96, 96);
+
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel35);
+        jLabel35.setBounds(330, 220, 96, 96);
+
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel36);
+        jLabel36.setBounds(30, 320, 96, 96);
+
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel37);
+        jLabel37.setBounds(130, 320, 96, 96);
+
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel38);
+        jLabel38.setBounds(230, 320, 96, 96);
+
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel39);
+        jLabel39.setBounds(330, 320, 96, 96);
+
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel40);
+        jLabel40.setBounds(30, 420, 96, 96);
+
+        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel41);
+        jLabel41.setBounds(130, 420, 96, 96);
+
+        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel42);
+        jLabel42.setBounds(230, 420, 96, 96);
+
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel43);
+        jLabel43.setBounds(330, 420, 96, 96);
+
+        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel44);
+        jLabel44.setBounds(30, 220, 96, 96);
+
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_retang.jpeg"))); // NOI18N
+        getContentPane().add(jLabel45);
+        jLabel45.setBounds(470, 220, 291, 195);
+
+        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/avatar.png"))); // NOI18N
+        getContentPane().add(jLabel46);
+        jLabel46.setBounds(29, 23, 64, 64);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -301,9 +374,37 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
