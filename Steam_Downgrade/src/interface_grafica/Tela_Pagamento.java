@@ -44,7 +44,6 @@ public class Tela_Pagamento extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(800, 600));
         setMinimumSize(new java.awt.Dimension(800, 600));
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
