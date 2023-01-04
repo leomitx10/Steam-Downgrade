@@ -34,7 +34,7 @@ public class Tela_Usuario extends javax.swing.JFrame {
         
     }
     
-    /*CRIANDO O PRIMEIRO USUARIO*/
+    /*CRIANDO O PRIMEIRO USUARIO*---------------------------------------------*/
     Usuario us1 = new Usuario("leandro",20,5,"leomitx10"
             ,"1111111122","leomitx10@gmail.com","123456jkl",
             "Luziânia - GO");
@@ -47,7 +47,8 @@ public class Tela_Usuario extends javax.swing.JFrame {
             ,"1281212522","arturjack@gmail.com","40028922",
             "Taguatinga - DF");
     
-
+    /*------------------------------------------------------------------------*/
+    
     public void addPlaceholderStyle(JTextField textField){
         Font font = textField.getFont();
         font = font.deriveFont(Font.ITALIC);
