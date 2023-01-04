@@ -35,6 +35,34 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -42,7 +70,6 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(800, 600));
         setMinimumSize(new java.awt.Dimension(800, 600));
-        setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
@@ -77,57 +104,86 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         jButton3.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         jButton3.setText("Remover da biblioteca");
 
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 15.46.12.jpeg"))); // NOI18N
+
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/avatardefault_92824.png"))); // NOI18N
+
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+
+        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+
+        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+
+        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_retang.jpeg"))); // NOI18N
+
+        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/avatar.png"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel46)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(2, 2, 2)
-                                .addComponent(jLabel3)))
-                        .addGap(269, 269, 269))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addGap(6, 6, 6)
-                            .addComponent(jLabel1)
-                            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addGap(0, 0, Short.MAX_VALUE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jButton2)
-                                .addComponent(jButton3))
-                            .addGap(31, 31, 31)))))
+
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(jLabel1)
-                .addGap(47, 47, 47)
+
                 .addComponent(jLabel3)
-                .addGap(25, 25, 25)
+                .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(jLabel4))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton1)))
-                .addGap(66, 66, 66)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3)
-                .addContainerGap(57, Short.MAX_VALUE))
+
         );
 
         pack();
@@ -186,8 +242,20 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel1;
+
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
