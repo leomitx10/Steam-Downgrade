@@ -5,6 +5,12 @@
  */
 package teste;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Leandro
@@ -12,23 +18,27 @@ package teste;
 public class Usuario {
     private String nome;
     private int idade;
-    private int qtdJogos;
     private String apelido;
     private String cpf;
     private String email;
     private String senha;
     private String endereco;
+    
+    
+    
+    
 
-    public Usuario(String nome, int idade, int qtdJogos, String apelido, String cpf, String email, String senha, String endereco) {
+    public Usuario(String nome, int idade, String apelido, String cpf, String email, String senha, String endereco) {
         this.nome = nome;
         this.idade = idade;
-        this.qtdJogos = qtdJogos;
         this.apelido = apelido;
         this.cpf = cpf;
         this.email = email;
         this.senha = senha;
         this.endereco = endereco;
     }
+    
+    
 
     public String getNome() {
         return nome;
@@ -44,14 +54,6 @@ public class Usuario {
 
     public void setIdade(int idade) {
         this.idade = idade;
-    }
-
-    public int getQtdJogos() {
-        return qtdJogos;
-    }
-
-    public void setQtdJogos(int qtdJogos) {
-        this.qtdJogos = qtdJogos;
     }
 
     public String getApelido() {
@@ -92,6 +94,34 @@ public class Usuario {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+    
+    @Override
+    public String toString() {
+        return "Nome do usuário: " + this.nome + "\nIdade do usuário: " + this.idade + "\nJogos adquiridos: " + "\nApelido: " + this.apelido + "\nCPF: " + this.cpf + "\nEmail: " + this.email + "\nSenha do usuário: " + this.senha + "\nEndereco: " + this.endereco;
+    }
+    
+    public String save() {
+       
+        try {
+            FileWriter fw = new FileWriter("usuarios.conf", true);
+            PrintWriter pw = new PrintWriter(fw);
+            pw.print(this.nome + ";");
+            pw.print(this.idade + ";");
+          
+            pw.print(this.apelido + ";");
+            pw.print(this.cpf + ";");
+            pw.print(this.email + ";");
+            pw.print(this.senha + ";");
+            pw.print(this.endereco + "\n");
+            pw.flush();
+            pw.close();
+            fw.close();
+        } catch (IOException ex) {
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return "Cadastrado com sucesso!";
     }
     
     public void adcionarAmigo(){

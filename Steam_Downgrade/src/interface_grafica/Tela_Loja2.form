@@ -167,18 +167,18 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jButton2" min="-2" pref="110" max="-2" attributes="0"/>
                                   <Component id="jButton6" min="-2" pref="150" max="-2" attributes="0"/>
-                                  <Component id="jLabel7" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
-                                  <Component id="jLabel18" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Component id="lblTitulo3" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
+                                  <Component id="lblValor3" min="-2" pref="70" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel17" min="-2" pref="110" max="-2" attributes="0"/>
+                                  <Component id="lblTitulo1" min="-2" pref="110" max="-2" attributes="0"/>
                                   <Component id="jButton14" min="-2" pref="110" max="-2" attributes="0"/>
                                   <Component id="jButton15" min="-2" pref="150" max="-2" attributes="0"/>
-                                  <Component id="jLabel8" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Component id="lblValor1" min="-2" pref="70" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -189,16 +189,16 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                      <Component id="jLabel20" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <Component id="lblTitulo2" min="-2" pref="110" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jButton17" min="-2" pref="150" max="-2" attributes="0"/>
                                           <Component id="jButton16" min="-2" pref="110" max="-2" attributes="0"/>
-                                          <Component id="jLabel21" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
-                                          <Component id="jLabel11" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
-                                          <Component id="jLabel10" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
+                                          <Component id="lblValor2" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
+                                          <Component id="lblTitulo4" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
+                                          <Component id="lblValor4" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
                                           <Component id="jButton11" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -230,9 +230,9 @@
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jLabel20" min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="lblTitulo2" min="-2" pref="20" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel21" min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="lblValor2" min="-2" pref="20" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jButton16" min="-2" pref="30" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -244,11 +244,11 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                                      <Component id="jLabel8" min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="lblValor1" min="-2" pref="20" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jButton14" min="-2" pref="30" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel17" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                                  <Component id="lblTitulo1" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jButton15" min="-2" max="-2" attributes="0"/>
@@ -258,13 +258,13 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel11" min="-2" pref="20" max="-2" attributes="0"/>
-                                  <Component id="jLabel7" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                                  <Component id="lblTitulo4" min="-2" pref="20" max="-2" attributes="0"/>
+                                  <Component id="lblTitulo3" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel10" min="-2" pref="20" max="-2" attributes="0"/>
-                                  <Component id="jLabel18" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                                  <Component id="lblValor4" min="-2" pref="20" max="-2" attributes="0"/>
+                                  <Component id="lblValor3" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -436,7 +436,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel8">
+            <Component class="javax.swing.JLabel" name="lblValor1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="R$ 250,00"/>
               </Properties>
@@ -468,7 +468,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel7">
+            <Component class="javax.swing.JLabel" name="lblTitulo3">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Liberation Sans" size="18" style="1"/>
@@ -476,7 +476,7 @@
                 <Property name="text" type="java.lang.String" value="Spider-Man"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel10">
+            <Component class="javax.swing.JLabel" name="lblValor4">
               <Properties>
                 <Property name="text" type="java.lang.String" value="gratuito"/>
               </Properties>
@@ -495,7 +495,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel11">
+            <Component class="javax.swing.JLabel" name="lblTitulo4">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Liberation Sans" size="18" style="1"/>
@@ -540,15 +540,18 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel17">
+            <Component class="javax.swing.JLabel" name="lblTitulo1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Liberation Sans" size="18" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Elden Ring"/>
               </Properties>
+              <Events>
+                <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="lblTitulo1AncestorAdded"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel18">
+            <Component class="javax.swing.JLabel" name="lblValor3">
               <Properties>
                 <Property name="text" type="java.lang.String" value="R$ 150,00"/>
               </Properties>
@@ -591,7 +594,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel20">
+            <Component class="javax.swing.JLabel" name="lblTitulo2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Liberation Sans" size="18" style="1"/>
@@ -599,7 +602,7 @@
                 <Property name="text" type="java.lang.String" value="God of War"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel21">
+            <Component class="javax.swing.JLabel" name="lblValor2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="R$ 100,00"/>
               </Properties>

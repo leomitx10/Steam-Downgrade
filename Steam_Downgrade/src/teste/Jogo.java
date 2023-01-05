@@ -1,6 +1,6 @@
 package teste;
 
-class Jogo {
+public class Jogo {
     private String nome;
     private float valor;
     private int id;
