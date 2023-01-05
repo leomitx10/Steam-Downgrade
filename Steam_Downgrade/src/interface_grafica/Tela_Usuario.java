@@ -35,15 +35,15 @@ public class Tela_Usuario extends javax.swing.JFrame {
     }
     
     /*CRIANDO O PRIMEIRO USUARIO*/
-    Usuario us1 = new Usuario("leandro",20, 0, "leomitx10"
+    Usuario us1 = new Usuario("leandro",20,  "leomitx10"
             ,"1111111122","leomitx10@gmail.com","123456jkl",
             "Luziânia - GO");
     
-    Usuario us2 = new Usuario("gustavo",20, 0, "ASolaris"
+    Usuario us2 = new Usuario("gustavo",20, "ASolaris"
             ,"1211212122","Asolaris@gmail.com","123456jjj",
             "Sobradinho - DF");
     
-    Usuario us3 =  new Usuario("artur",20, 0, "titanstel"
+    Usuario us3 =  new Usuario("artur",20, "titanstel"
             ,"1281212522","arturjack@gmail.com","40028922",
             "Taguatinga - DF");
     

@@ -6,8 +6,8 @@ public class Cliente extends Usuario {
     
     //construtor
 
-    public Cliente(String nome, int idade, int qtdJogos, String apelido, String cpf, String email, String senha, String endereco) {
-        super(nome, idade, qtdJogos, apelido, cpf, email, senha, endereco);
+    public Cliente(String nome, int idade, String apelido, String cpf, String email, String senha, String endereco) {
+        super(nome, idade, apelido, cpf, email, senha, endereco);
     }
 
     

@@ -57,8 +57,6 @@ public class Tela_Cadastro extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         tfdCPF = new javax.swing.JTextField();
         tfdApelido = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
-        tfdQtdJogos = new javax.swing.JTextField();
         lblTotal = new javax.swing.JLabel();
 
         jLabel7.setText("apelido:");
@@ -67,7 +65,6 @@ public class Tela_Cadastro extends javax.swing.JFrame {
         jLabel9.setPreferredSize(new java.awt.Dimension(311, 312));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(640, 480));
         setMinimumSize(new java.awt.Dimension(640, 480));
 
         btnCadastrar.setText("Cadastrar");
@@ -206,8 +203,6 @@ public class Tela_Cadastro extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel11.setText("QtdJogos:");
-
         lblTotal.setText("Usuarios: 0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -224,13 +219,7 @@ public class Tela_Cadastro extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblTotal)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel11)
-                                .addGap(18, 18, 18)
-                                .addComponent(tfdQtdJogos, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(134, 134, 134))
         );
         layout.setVerticalGroup(
@@ -240,11 +229,7 @@ public class Tela_Cadastro extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTotal))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(tfdQtdJogos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(6, 6, 6)
+                .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnCadastrar)
                     .addComponent(jButton2))
@@ -281,7 +266,7 @@ public class Tela_Cadastro extends javax.swing.JFrame {
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
         String nome = tfdNome.getText();
         int idade = Integer.parseInt(tfdIdade.getText());
-        int qtdJogos = Integer.parseInt(tfdQtdJogos.getText());
+   
         String apelido = tfdApelido.getText();
         String cpf = tfdCPF.getText();
         String email = tfdEmail.getText();
@@ -291,7 +276,7 @@ public class Tela_Cadastro extends javax.swing.JFrame {
         
         
         
-        Usuario user = new Usuario(nome, idade, qtdJogos, apelido, cpf, email, senha, endereco);
+        Usuario user = new Usuario(nome, idade, apelido, cpf, email, senha, endereco);
         
         
         dados.cadastroUsuario(user);
@@ -305,7 +290,7 @@ public class Tela_Cadastro extends javax.swing.JFrame {
         
         tfdNome.setText("");
         tfdIdade.setText("");
-        tfdQtdJogos.setText("");
+       
         tfdApelido.setText("");
         tfdCPF.setText("");
         tfdEmail.setText("");
@@ -365,7 +350,6 @@ public class Tela_Cadastro extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -382,7 +366,6 @@ public class Tela_Cadastro extends javax.swing.JFrame {
     private javax.swing.JTextField tfdEndereco;
     private javax.swing.JTextField tfdIdade;
     private javax.swing.JTextField tfdNome;
-    private javax.swing.JTextField tfdQtdJogos;
     private javax.swing.JPasswordField tfdSenha;
     // End of variables declaration//GEN-END:variables
 }

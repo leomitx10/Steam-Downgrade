@@ -18,7 +18,6 @@ import java.util.logging.Logger;
 public class Usuario {
     private String nome;
     private int idade;
-    private int qtdJogos;
     private String apelido;
     private String cpf;
     private String email;
@@ -29,10 +28,9 @@ public class Usuario {
     
     
 
-    public Usuario(String nome, int idade, int qtdJogos, String apelido, String cpf, String email, String senha, String endereco) {
+    public Usuario(String nome, int idade, String apelido, String cpf, String email, String senha, String endereco) {
         this.nome = nome;
         this.idade = idade;
-        this.qtdJogos = qtdJogos;
         this.apelido = apelido;
         this.cpf = cpf;
         this.email = email;
@@ -56,14 +54,6 @@ public class Usuario {
 
     public void setIdade(int idade) {
         this.idade = idade;
-    }
-
-    public int getQtdJogos() {
-        return qtdJogos;
-    }
-
-    public void setQtdJogos(int qtdJogos) {
-        this.qtdJogos = qtdJogos;
     }
 
     public String getApelido() {
@@ -108,7 +98,7 @@ public class Usuario {
     
     @Override
     public String toString() {
-        return "Nome do usuário: " + this.nome + "\nIdade do usuário: " + this.idade + "\nJogos adquiridos: " + this.qtdJogos + "\nApelido: " + this.apelido + "\nCPF: " + this.cpf + "\nEmail: " + this.email + "\nSenha do usuário: " + this.senha + "\nEndereco: " + this.endereco;
+        return "Nome do usuário: " + this.nome + "\nIdade do usuário: " + this.idade + "\nJogos adquiridos: " + "\nApelido: " + this.apelido + "\nCPF: " + this.cpf + "\nEmail: " + this.email + "\nSenha do usuário: " + this.senha + "\nEndereco: " + this.endereco;
     }
     
     public String save() {
@@ -118,12 +108,12 @@ public class Usuario {
             PrintWriter pw = new PrintWriter(fw);
             pw.print(this.nome + ";");
             pw.print(this.idade + ";");
-            pw.print(this.qtdJogos + ";");
+          
             pw.print(this.apelido + ";");
             pw.print(this.cpf + ";");
             pw.print(this.email + ";");
             pw.print(this.senha + ";");
-            pw.print(this.endereco + ";\n");
+            pw.print(this.endereco + "\n");
             pw.flush();
             pw.close();
             fw.close();
