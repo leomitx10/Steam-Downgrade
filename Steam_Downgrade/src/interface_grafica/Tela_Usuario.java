@@ -35,15 +35,15 @@ public class Tela_Usuario extends javax.swing.JFrame {
     }
     
     /*CRIANDO O PRIMEIRO USUARIO*/
-    Usuario us1 = new Usuario("leandro",20,5,"leomitx10"
+    Usuario us1 = new Usuario("leandro",20, 0, "leomitx10"
             ,"1111111122","leomitx10@gmail.com","123456jkl",
             "Luziânia - GO");
     
-    Usuario us2 = new Usuario("gustavo",20,4,"ASolaris"
+    Usuario us2 = new Usuario("gustavo",20, 0, "ASolaris"
             ,"1211212122","Asolaris@gmail.com","123456jjj",
             "Sobradinho - DF");
     
-    Usuario us3 =  new Usuario("artur",20,6,"titanstel"
+    Usuario us3 =  new Usuario("artur",20, 0, "titanstel"
             ,"1281212522","arturjack@gmail.com","40028922",
             "Taguatinga - DF");
     
@@ -152,7 +152,7 @@ public class Tela_Usuario extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(15, 15, 15)
                 .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         jButton2.setText("Entrar");
@@ -174,7 +174,7 @@ public class Tela_Usuario extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(210, 210, 210)
+                .addGap(225, 225, 225)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
@@ -182,7 +182,7 @@ public class Tela_Usuario extends javax.swing.JFrame {
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnCadastrar)))
-                .addContainerGap(210, Short.MAX_VALUE))
+                .addContainerGap(195, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
