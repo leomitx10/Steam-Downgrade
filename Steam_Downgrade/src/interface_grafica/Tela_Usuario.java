@@ -8,6 +8,11 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Toolkit;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import teste.Usuario;
@@ -17,7 +22,7 @@ import teste.Usuario;
  *
  * @author leandro
  */
-public class Tela_Usuario extends javax.swing.JFrame {
+    public class Tela_Usuario extends javax.swing.JFrame {
 
     /**
      * Creates new form Tela_Usuario
@@ -34,20 +39,25 @@ public class Tela_Usuario extends javax.swing.JFrame {
         
     }
     
-    /*CRIANDO O PRIMEIRO USUARIO*/
-    Usuario us1 = new Usuario("leandro",20,  "leomitx10"
-            ,"1111111122","leomitx10@gmail.com","123456jkl",
-            "Luziânia - GO");
+    public static String verifica(String palavra,String local)throws FileNotFoundException{ 
+        boolean flag = false;
+        int count = 0;
+        //Reading the contents of the file
+        Scanner sc2 = new Scanner(new FileInputStream(local));
+        while(sc2.hasNextLine()) {
+            String line = sc2.nextLine();
+            if(line.indexOf(palavra) != -1) {
+                flag = true;    
+                count = count+1;
+            }
+        }
+        if(flag) {
+            return palavra;
+        }else {
+            return null;
+        }
+    }
     
-    Usuario us2 = new Usuario("gustavo",20, "ASolaris"
-            ,"1211212122","Asolaris@gmail.com","123456jjj",
-            "Sobradinho - DF");
-    
-    Usuario us3 =  new Usuario("artur",20, "titanstel"
-            ,"1281212522","arturjack@gmail.com","40028922",
-            "Taguatinga - DF");
-    
-
     public void addPlaceholderStyle(JTextField textField){
         Font font = textField.getFont();
         font = font.deriveFont(Font.ITALIC);
@@ -202,21 +212,37 @@ public class Tela_Usuario extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        if(txtUser.getText().equals(us1.getEmail()) && txtPassword.getText().equals(us1.getSenha())){
+        
+        try {
+            /*if(txtUser.getText().equals(us1.getEmail()) && txtPassword.getText().equals(us1.getSenha())){
             Tela_Loja2 x = new Tela_Loja2();
             this.dispose();
             x.setVisible(true);
-        }else if(txtUser.getText().equals(us2.getEmail()) && txtPassword.getText().equals(us2.getSenha())){
+            }else if(txtUser.getText().equals(us2.getEmail()) && txtPassword.getText().equals(us2.getSenha())){
             Tela_Loja2 x = new Tela_Loja2();
             this.dispose();
             x.setVisible(true);
-        }else if(txtUser.getText().equals(us3.getEmail()) && txtPassword.getText().equals(us3.getSenha())){
+            }else if(txtUser.getText().equals(us3.getEmail()) && txtPassword.getText().equals(us3.getSenha())){
             Tela_Loja2 x = new Tela_Loja2();
             this.dispose();
             x.setVisible(true);
-        }else{
+            }else{
             JOptionPane.showMessageDialog(this,"Email ou senha incorreto");
-        }      
+            } */
+            
+            if((txtUser.getText().equals(verifica(txtUser.getText(),"/home/leandro/Área de Trabalho/Steam-Downgrade/Steam_Downgrade/usuarios.con")))
+            && txtPassword.getText().equals(verifica(txtPassword.getText(),"/home/leandro/Área de Trabalho/Steam-Downgrade/Steam_Downgrade/usuarios.con"))){
+                Tela_Loja2 x = new Tela_Loja2();
+                this.dispose();
+                x.setVisible(true);
+            }else{
+                JOptionPane.showMessageDialog(this,"Email ou senha incorreto");
+            }
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Tela_Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+              
+          
         
     }//GEN-LAST:event_jButton2ActionPerformed
 

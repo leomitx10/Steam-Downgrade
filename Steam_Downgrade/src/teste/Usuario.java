@@ -13,11 +13,13 @@ import java.util.logging.Logger;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Scanner;
 
 
 /**
@@ -115,6 +117,25 @@ public class Usuario {
     }
     
   
+    public static String verifica(String palavra,String local)throws FileNotFoundException{ 
+        boolean flag = false;
+        int count = 0;
+        //Reading the contents of the file
+        Scanner sc2 = new Scanner(new FileInputStream(local));
+        while(sc2.hasNextLine()) {
+            String line = sc2.nextLine();
+            if(line.indexOf(palavra) != -1) {
+                flag = true;    
+                count = count+1;
+            }
+        }
+        if(flag) {
+            return palavra;
+        }else {
+            return null;
+        }
+    }
+    
     public static String Read(String Caminho){
         String conteudo = "";
         try {
@@ -151,6 +172,7 @@ public class Usuario {
             return false;
         }
     }
+    
 }
     
     
