@@ -230,8 +230,8 @@ import teste.Usuario;
             JOptionPane.showMessageDialog(this,"Email ou senha incorreto");
             } */
             
-            if((txtUser.getText().equals(verifica(txtUser.getText(),"/home/leandro/Área de Trabalho/Steam-Downgrade/Steam_Downgrade/usuarios.con")))
-            && txtPassword.getText().equals(verifica(txtPassword.getText(),"/home/leandro/Área de Trabalho/Steam-Downgrade/Steam_Downgrade/usuarios.con"))){
+            if((txtUser.getText().equals(verifica(txtUser.getText(),"usuarios.con")))
+            && txtPassword.getText().equals(verifica(txtPassword.getText(),"usuarios.con"))){
                 Tela_Loja2 x = new Tela_Loja2();
                 this.dispose();
                 x.setVisible(true);
