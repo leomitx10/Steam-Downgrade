@@ -10,6 +10,15 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 
 /**
  *
@@ -23,10 +32,6 @@ public class Usuario {
     private String email;
     private String senha;
     private String endereco;
-    
-    
-    
-    
 
     public Usuario(String nome, int idade, String apelido, String cpf, String email, String senha, String endereco) {
         this.nome = nome;
@@ -101,29 +106,6 @@ public class Usuario {
         return "Nome do usuário: " + this.nome + "\nIdade do usuário: " + this.idade + "\nJogos adquiridos: " + "\nApelido: " + this.apelido + "\nCPF: " + this.cpf + "\nEmail: " + this.email + "\nSenha do usuário: " + this.senha + "\nEndereco: " + this.endereco;
     }
     
-    public String save() {
-       
-        try {
-            FileWriter fw = new FileWriter("usuarios.conf", true);
-            PrintWriter pw = new PrintWriter(fw);
-            pw.print(this.nome + ";");
-            pw.print(this.idade + ";");
-          
-            pw.print(this.apelido + ";");
-            pw.print(this.cpf + ";");
-            pw.print(this.email + ";");
-            pw.print(this.senha + ";");
-            pw.print(this.endereco + "\n");
-            pw.flush();
-            pw.close();
-            fw.close();
-        } catch (IOException ex) {
-            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        return "Cadastrado com sucesso!";
-    }
-    
     public void adcionarAmigo(){
      
     }
@@ -132,4 +114,45 @@ public class Usuario {
       
     }
     
+  
+    public static String Read(String Caminho){
+        String conteudo = "";
+        try {
+            FileReader arq = new FileReader(Caminho);
+            BufferedReader lerArq = new BufferedReader(arq);
+            String linha="";
+            try {
+                linha = lerArq.readLine();
+                while(linha!=null){
+                    conteudo += linha+"\n";
+                    linha = lerArq.readLine();
+                }
+                arq.close();
+                return conteudo;
+            } catch (IOException ex) {
+                System.out.println("Erro: Não foi possível ler o arquivo!");
+                return "";
+            }
+        } catch (FileNotFoundException ex) {
+            System.out.println("Erro: Arquivo não encontrado!");
+            return "";
+        }
+    }
+    
+    public static boolean Write(String Caminho,String Texto){
+        try {
+            FileWriter arq = new FileWriter(Caminho,true);
+            PrintWriter gravarArq = new PrintWriter(arq);
+            gravarArq.println(Texto);
+            gravarArq.close();
+            return true;
+        }catch(IOException e){
+            System.out.println(e.getMessage());
+            return false;
+        }
+    }
 }
+    
+    
+    
+
