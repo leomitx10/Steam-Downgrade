@@ -4,6 +4,7 @@
  */
 package interface_grafica;
 
+import Controle.UsuarioDAO;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JOptionPane;
@@ -255,36 +256,22 @@ public class Tela_Cadastro extends javax.swing.JFrame {
     }//GEN-LAST:event_txtEnderecoActionPerformed
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
-        String arq = "teste.txt";
+    String nome, apelido, cpf, endereco, email, senha;
+        int idade;
+        nome = txtNome.getText();
+        idade = Integer.parseInt(txtIdade.getText());
+        apelido = txtApelido.getText();
+        endereco = txtEndereco.getText();
+        cpf = txtCPF.getText();
+        email = txtEmail.getText();
+        senha = txtSenha.getText();
         
-        String ArqConfig = "usuarios.con";
-        
-        
-        String nome = txtNome.getText();
-        String idade = txtIdade.getText();
-        String apelido = txtApelido.getText();
-        String endereco = txtEndereco.getText();
-        String CPF = txtCPF.getText();
-        String Email = txtEmail.getText();
-        String Senha = txtSenha.getText();
-        
+        Usuario objusuariodto = new Usuario(nome,idade,apelido,endereco,cpf,email,senha);
         
         
-        String print = nome + ";"+idade+";"+apelido+";"+endereco+";"+CPF+";"+Email+";"+Senha+";";
-        Usuario.Write(ArqConfig,print);
         
-        String conteudo = Usuario.Read(ArqConfig);
-       
-        /*PRIMIERO USUSARIO INFOS*/
-        String c1 = conteudo.split(";")[0];
-        String c2 = conteudo.split(";")[1];
-        String c3 = conteudo.split(";")[2];
-        String c4 = conteudo.split(";")[3];
-        String c5 = conteudo.split(";")[4];
-        String c6 = conteudo.split(";")[5];
-        String c7 = conteudo.split(";")[6];
-        
-        
+        UsuarioDAO objusuariodao = new UsuarioDAO();
+        objusuariodao.cadastrarUsuario(objusuariodto);
            
     }//GEN-LAST:event_btnCadastrarActionPerformed
 

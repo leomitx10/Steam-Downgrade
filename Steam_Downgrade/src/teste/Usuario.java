@@ -5,6 +5,7 @@
  */
 package teste;
 
+import java.awt.List;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,6 +20,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -35,7 +37,7 @@ public class Usuario {
     private String senha;
     private String endereco;
 
-    public Usuario(String nome, int idade, String apelido, String cpf, String email, String senha, String endereco) {
+    public Usuario(String nome, int idade, String apelido, String endereco, String cpf, String email,String senha) {
         this.nome = nome;
         this.idade = idade;
         this.apelido = apelido;
@@ -43,6 +45,10 @@ public class Usuario {
         this.email = email;
         this.senha = senha;
         this.endereco = endereco;
+    }
+
+    public Usuario(String email, String senha) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     
@@ -171,6 +177,14 @@ public class Usuario {
             System.out.println(e.getMessage());
             return false;
         }
+    }
+    
+    public void lerarquivo() throws FileNotFoundException{
+        FileInputStream entradaArquivo = new FileInputStream("usuarios.con");
+        Scanner lerArquivo =new Scanner (entradaArquivo,"UTF-8");   
+        ArrayList<Usuario> usuarios=new ArrayList<Usuario>();
+        
+        
     }
     
 }

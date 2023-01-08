@@ -4,12 +4,17 @@
  */
 package interface_grafica;
 
+import Controle.ConexaoDAO;
+import Controle.UsuarioDAO;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Toolkit;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -23,10 +28,9 @@ import teste.Usuario;
  * @author leandro
  */
     public class Tela_Usuario extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Tela_Usuario
-     */
+       
+        
+     
     public Tela_Usuario() {
         initComponents();
         
@@ -39,24 +43,7 @@ import teste.Usuario;
         
     }
     
-    public static String verifica(String palavra,String local)throws FileNotFoundException{ 
-        boolean flag = false;
-        int count = 0;
-        //Reading the contents of the file
-        Scanner sc2 = new Scanner(new FileInputStream(local));
-        while(sc2.hasNextLine()) {
-            String line = sc2.nextLine();
-            if(line.indexOf(palavra) != -1) {
-                flag = true;    
-                count = count+1;
-            }
-        }
-        if(flag) {
-            return palavra;
-        }else {
-            return null;
-        }
-    }
+    
     
     public void addPlaceholderStyle(JTextField textField){
         Font font = textField.getFont();
@@ -212,36 +199,46 @@ import teste.Usuario;
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+      
+        PreparedStatement ps;
+        ResultSet rs;
+        String email = txtUser.getText();
+        String senha = String.valueOf(txtPassword.getPassword());
+        
+        
+        
+        String sql = "SELECT * FROM usuarios WHERE `email` = ? AND senha =?";
+        
         
         try {
-            /*if(txtUser.getText().equals(us1.getEmail()) && txtPassword.getText().equals(us1.getSenha())){
-            Tela_Loja2 x = new Tela_Loja2();
-            this.dispose();
-            x.setVisible(true);
-            }else if(txtUser.getText().equals(us2.getEmail()) && txtPassword.getText().equals(us2.getSenha())){
-            Tela_Loja2 x = new Tela_Loja2();
-            this.dispose();
-            x.setVisible(true);
-            }else if(txtUser.getText().equals(us3.getEmail()) && txtPassword.getText().equals(us3.getSenha())){
-            Tela_Loja2 x = new Tela_Loja2();
-            this.dispose();
-            x.setVisible(true);
-            }else{
-            JOptionPane.showMessageDialog(this,"Email ou senha incorreto");
-            } */
+            ps = ConexaoDAO.conectaBD().prepareStatement(sql);
             
-            if((txtUser.getText().equals(verifica(txtUser.getText(),"usuarios.con")))
-            && txtPassword.getText().equals(verifica(txtPassword.getText(),"usuarios.con"))){
-                Tela_Loja2 x = new Tela_Loja2();
-                this.dispose();
-                x.setVisible(true);
-            }else{
-                JOptionPane.showMessageDialog(this,"Email ou senha incorreto");
+            ps.setString(1, email);
+            ps.setString(2, senha);
+        
+            rs = ps.executeQuery();
+            
+            if(rs.next()){
+                    Tela_Loja2 x = new Tela_Loja2();
+                    x.setVisible(true);
+                    x.pack();
+                    x.setLocationRelativeTo(null);
+                    
+                    //x.jLabel1.setText("Welcome < "+getNome()+" >");
+                    
+                    this.dispose();
+                
             }
-        } catch (FileNotFoundException ex) {
+            else{
+                    JOptionPane.showMessageDialog(null, "Incorrect Email or Password", "Login Failed", 2);
+                    
+                }
+            
+            
+        } catch (SQLException ex) {
             Logger.getLogger(Tela_Usuario.class.getName()).log(Level.SEVERE, null, ex);
         }
-              
+            
           
         
     }//GEN-LAST:event_jButton2ActionPerformed
