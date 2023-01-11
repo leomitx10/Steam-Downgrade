@@ -23,22 +23,22 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
         
-         Jogo j1 = new Jogo("Elden Ring",119.9f,1,
+         Jogo j1 = new Jogo("Elden Ring",119.9f,
                 18,"FROM SOFTWARE",
                 "xxxx","intel hd 520","ACTION RPG",
                 "muito brabo");
         
-        Jogo j2 = new Jogo("God of War",89.9f,2,
+        Jogo j2 = new Jogo("God of War",89.9f,
                 18,"Santa Monica",
                 "xxxx","intel hd 520","ACTION RPG",
                 "muito brabo");
         
-        Jogo j3 = new Jogo("Spider-Man",69.9f,3,
+        Jogo j3 = new Jogo("Spider-Man",69.9f,
                 18,"FROM SOFTWARE",
                 "xxxx","intel hd 520","ACTION RPG",
                 "muito brabo");
          
-        Jogo j4 = new Jogo("The Sims",69.9f,3,
+        Jogo j4 = new Jogo("The Sims",69.9f,
                 18,"FROM SOFTWARE",
                 "xxxx","intel hd 520","ACTION RPG",
                 "muito brabo");

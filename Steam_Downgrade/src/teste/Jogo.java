@@ -11,10 +11,10 @@ public class Jogo {
     private String genero;
     private String descricao;
 
-    public Jogo(String nome, float valor, int id, int classificacao_Indicativa, String desenvolvedor, String distribuidora, String requisitos, String genero, String descricao) {
+    public Jogo(String nome, float valor, int classificacao_Indicativa, String desenvolvedor, String distribuidora, String requisitos, String genero, String descricao) {
         this.nome = nome;
         this.valor = valor;
-        this.id = id;
+       
         this.classificacao_Indicativa = classificacao_Indicativa;
         this.desenvolvedor = desenvolvedor;
         this.distribuidora = distribuidora;

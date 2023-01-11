@@ -268,8 +268,7 @@ public class Tela_Cadastro extends javax.swing.JFrame {
         
         Usuario objusuariodto = new Usuario(nome,idade,apelido,endereco,cpf,email,senha);
         
-        
-        
+
         UsuarioDAO objusuariodao = new UsuarioDAO();
         objusuariodao.cadastrarUsuario(objusuariodto);
            

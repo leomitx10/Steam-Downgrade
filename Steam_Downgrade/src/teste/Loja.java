@@ -77,4 +77,8 @@ public class Loja {
         this.forum = forum;
     }
 
+    public void addCarrinho(){
+        
+    }
+    
 }    
