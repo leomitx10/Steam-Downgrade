@@ -4,8 +4,10 @@
  */
 package interface_grafica;
 
+import Controle.JogoDAO;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.util.ArrayList;
 import teste.Jogo;
 
 /**
@@ -22,39 +24,9 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
+        mostrarjogo();
         
-         Jogo j1 = new Jogo("Elden Ring",119.9f,
-                18,"FROM SOFTWARE",
-                "xxxx","intel hd 520","ACTION RPG",
-                "muito brabo");
-        
-        Jogo j2 = new Jogo("God of War",89.9f,
-                18,"Santa Monica",
-                "xxxx","intel hd 520","ACTION RPG",
-                "muito brabo");
-        
-        Jogo j3 = new Jogo("Spider-Man",69.9f,
-                18,"FROM SOFTWARE",
-                "xxxx","intel hd 520","ACTION RPG",
-                "muito brabo");
          
-        Jogo j4 = new Jogo("The Sims",69.9f,
-                18,"FROM SOFTWARE",
-                "xxxx","intel hd 520","ACTION RPG",
-                "muito brabo");
-        
-        
-        lblTitulo1.setText(j1.getNome());
-        lblValor1.setText("R$ " + Float.toString(j1.getValor()));
-        
-        lblTitulo2.setText(j2.getNome());
-        lblValor2.setText("R$ " +Float.toString(j2.getValor()));
-        
-        lblTitulo3.setText(j3.getNome());
-        lblValor3.setText("R$ " + Float.toString(j3.getValor()));
-        
-        lblTitulo4.setText(j4.getNome());
-        lblValor4.setText("R$ " +Float.toString(j4.getValor()));
         
        
         
@@ -118,6 +90,8 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         btnDeslogar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(800, 600));
+        setResizable(false);
 
         jLabel2.setFont(new java.awt.Font("Liberation Sans", 1, 30)); // NOI18N
         jLabel2.setText(" ENGINE");
@@ -490,7 +464,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -499,7 +473,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         btnDeslogar.setText("Deslogar");
@@ -528,9 +502,9 @@ public class Tela_Loja2 extends javax.swing.JFrame {
                 .addComponent(jButton9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnDeslogar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jDesktopPane1)
         );
         layout.setVerticalGroup(
@@ -548,20 +522,11 @@ public class Tela_Loja2 extends javax.swing.JFrame {
                         .addComponent(jButton9)
                         .addComponent(btnDeslogar)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jDesktopPane1))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         
@@ -577,14 +542,6 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
-
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         Tela_Ajuda x = new Tela_Ajuda();
             this.dispose();
@@ -599,51 +556,67 @@ public class Tela_Loja2 extends javax.swing.JFrame {
             a.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
-
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
-
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-      
-    }//GEN-LAST:event_jButton14ActionPerformed
-
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
-
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
-
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
-
-    private void lblTitulo1AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_lblTitulo1AncestorAdded
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lblTitulo1AncestorAdded
-
-    private void jDesktopPane1AncestorRemoved(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jDesktopPane1AncestorRemoved
-        
-    }//GEN-LAST:event_jDesktopPane1AncestorRemoved
-
     private void btnDeslogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeslogarActionPerformed
         Tela_Usuario b = new Tela_Usuario();
         this.dispose();
         b.setVisible(true);
     }//GEN-LAST:event_btnDeslogarActionPerformed
+
+    private void jDesktopPane1AncestorRemoved(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jDesktopPane1AncestorRemoved
+
+    }//GEN-LAST:event_jDesktopPane1AncestorRemoved
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void lblTitulo1AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_lblTitulo1AncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblTitulo1AncestorAdded
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -691,8 +664,6 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -726,4 +697,28 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     private javax.swing.JLabel lblValor3;
     private javax.swing.JLabel lblValor4;
     // End of variables declaration//GEN-END:variables
+private void mostrarjogo() {
+        try {
+            JogoDAO objjogo = new JogoDAO();
+            
+            ArrayList<Jogo> lista = objjogo.listJogos();
+            
+            /*for (int i =0;i<lista.size();i++)*/
+            lblTitulo1.setText(lista.get(0).getNome());
+            lblValor1.setText("R$ "+Float.toString(lista.get(0).getValor()));
+            
+            lblTitulo2.setText(lista.get(1).getNome());
+            lblValor2.setText("R$ "+Float.toString(lista.get(1).getValor()));
+            
+            lblTitulo3.setText(lista.get(2).getNome());
+            lblValor3.setText("R$ "+Float.toString(lista.get(2).getValor()));
+            
+            lblTitulo4.setText(lista.get(3).getNome());
+            lblValor4.setText("R$ "+Float.toString(lista.get(3).getValor()));
+        
+        } catch(Exception error) {
+            System.out.println("Error: " + error);
+        }
+    }
+
 }
