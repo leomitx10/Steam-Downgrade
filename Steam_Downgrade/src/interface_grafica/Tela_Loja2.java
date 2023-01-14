@@ -15,7 +15,7 @@ import teste.Jogo;
  * @author leandro
  */
 public class Tela_Loja2 extends javax.swing.JFrame {
-    public static Carrinho c = new Carrinho();
+    public static Carrinho carrinho = new Carrinho();
 
     /**
      * Creates new form Tela_Loja2
@@ -572,7 +572,12 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
+       JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj = jogodao.listJogos();
+        carrinho.listadejogos.add(lj.get(1));
+        for(Jogo j: carrinho.listadejogos){
+            System.out.println(j.getNome());
+        }
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
@@ -582,8 +587,8 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        c.listadejogos.add(lj.get(0));
-        for(Jogo j: c.listadejogos){
+        carrinho.listadejogos.add(lj.get(0));
+        for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
         }
     }//GEN-LAST:event_jButton14ActionPerformed
@@ -593,9 +598,13 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_lblTitulo1AncestorAdded
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
+       JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj = jogodao.listJogos();
+        carrinho.listadejogos.add(lj.get(3));
+        for(Jogo j: carrinho.listadejogos){
+            System.out.println(j.getNome());
     }//GEN-LAST:event_jButton11ActionPerformed
-
+    }
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton10ActionPerformed
@@ -605,7 +614,12 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj = jogodao.listJogos();
+        carrinho.listadejogos.add(lj.get(2));
+        for(Jogo j: carrinho.listadejogos){
+            System.out.println(j.getNome());
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
