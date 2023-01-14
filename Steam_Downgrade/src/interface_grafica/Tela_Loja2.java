@@ -15,6 +15,7 @@ import teste.Jogo;
  * @author leandro
  */
 public class Tela_Loja2 extends javax.swing.JFrame {
+    public static Carrinho c = new Carrinho();
 
     /**
      * Creates new form Tela_Loja2
@@ -579,7 +580,12 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-
+        JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj = jogodao.listJogos();
+        c.listadejogos.add(lj.get(0));
+        for(Jogo j: c.listadejogos){
+            System.out.println(j.getNome());
+        }
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void lblTitulo1AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_lblTitulo1AncestorAdded
@@ -688,7 +694,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblTitulo1;
+    public javax.swing.JLabel lblTitulo1;
     private javax.swing.JLabel lblTitulo2;
     private javax.swing.JLabel lblTitulo3;
     private javax.swing.JLabel lblTitulo4;
