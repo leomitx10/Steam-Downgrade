@@ -30,14 +30,16 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtNome1" min="-2" max="-2" attributes="0"/>
                           <Component id="txtValor4" min="-2" max="-2" attributes="0"/>
                           <Component id="txtNome4" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtValor1" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtNome2" min="-2" max="-2" attributes="0"/>
                           <Component id="txtNome3" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="txtValor3" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="txtValor2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                              <Component id="txtNome1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtValor1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtNome2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">

@@ -8,6 +8,7 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
 import teste.Jogo;
+import teste.ListaUsuarios;
 
 /**
  *
@@ -93,14 +94,15 @@ public class Carrinho extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(76, 76, 76)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtNome1)
                             .addComponent(txtValor4)
                             .addComponent(txtNome4)
-                            .addComponent(txtValor1)
-                            .addComponent(txtNome2)
                             .addComponent(txtNome3)
                             .addComponent(txtValor3)
-                            .addComponent(txtValor2)))
+                            .addComponent(txtValor2)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtNome1)
+                                .addComponent(txtValor1)
+                                .addComponent(txtNome2))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(360, 360, 360)
                         .addComponent(jButton1)))
@@ -142,17 +144,36 @@ public class Carrinho extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        txtNome1.setText(listadejogos.get(0).getNome());
-        txtValor1.setText(Float.toString(listadejogos.get(0).getValor()));
         
-        txtNome2.setText(listadejogos.get(1).getNome());
-        txtValor2.setText(Float.toString(listadejogos.get(1).getValor()));
         
-        txtNome3.setText(listadejogos.get(2).getNome());
-        txtValor3.setText(Float.toString(listadejogos.get(2).getValor()));
+        if(listadejogos.isEmpty()){
         
-        txtNome4.setText(listadejogos.get(3).getNome());
-        txtValor4.setText(Float.toString(listadejogos.get(3).getValor()));
+        }else{txtNome1.setText(listadejogos.get(0).getNome());
+        txtValor1.setText(Float.toString(listadejogos.get(0).getValor()));}
+        
+        
+        if(verifica(1)){
+            txtNome2.setText(listadejogos.get(1).getNome());
+            txtValor2.setText(Float.toString(listadejogos.get(1).getValor()));
+        }
+        
+        if(verifica(2)){
+            txtNome3.setText(listadejogos.get(2).getNome());
+            txtValor3.setText(Float.toString(listadejogos.get(2).getValor()));
+        }
+        
+        if(verifica(3)){
+            txtNome4.setText(listadejogos.get(3).getNome());
+            txtValor4.setText(Float.toString(listadejogos.get(3).getValor()));
+        }
+        
+       /*
+        
+        */
+        
+        /*
+        
+        */
         
         
         
@@ -212,4 +233,13 @@ public class Carrinho extends javax.swing.JFrame {
     private javax.swing.JLabel txtValor3;
     private javax.swing.JLabel txtValor4;
     // End of variables declaration//GEN-END:variables
+
+private boolean verifica(int x){
+    if(listadejogos.size()>x){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 }
