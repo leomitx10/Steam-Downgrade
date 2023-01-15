@@ -4,7 +4,8 @@
  */
 package interface_grafica;
 
-import Controle.JogoDAO;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.util.ArrayList;
 import teste.Jogo;
 
@@ -13,12 +14,14 @@ import teste.Jogo;
  * @author leandro
  */
 public class Carrinho extends javax.swing.JFrame {
-       public ArrayList<Jogo> listadejogos = new ArrayList<Jogo>();
+     public static ArrayList<Jogo> listadejogos = new ArrayList<Jogo>();
     /**
      * Creates new form Carrinho
      */
     public Carrinho() {
-        initComponents();
+        initComponents(); Toolkit toolkit = getToolkit();
+        Dimension size = toolkit.getScreenSize();
+        setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
     }
 
     /**
@@ -30,13 +33,41 @@ public class Carrinho extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblTeste = new javax.swing.JLabel();
+        txtNome1 = new javax.swing.JLabel();
+        txtValor1 = new javax.swing.JLabel();
+        txtNome2 = new javax.swing.JLabel();
+        txtValor2 = new javax.swing.JLabel();
+        txtNome3 = new javax.swing.JLabel();
+        txtValor3 = new javax.swing.JLabel();
+        txtNome4 = new javax.swing.JLabel();
+        txtValor4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        lblTeste.setText("MEU OVO");
+        txtNome1.setText("nome1");
+
+        txtValor1.setText("valor1");
+
+        txtNome2.setText("nome2");
+
+        txtValor2.setText("valor2");
+
+        txtNome3.setText("nome3");
+
+        txtValor3.setText("valor3");
+
+        txtNome4.setText("nome4");
+
+        txtValor4.setText("valor4");
+
+        jLabel1.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/carrinho.png"))); // NOI18N
+        jLabel1.setText("Carrinho");
 
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -45,41 +76,140 @@ public class Carrinho extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setText("voltar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(368, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addComponent(lblTeste))
-                .addGap(349, 349, 349))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(76, 76, 76)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNome1)
+                            .addComponent(txtValor4)
+                            .addComponent(txtNome4)
+                            .addComponent(txtValor1)
+                            .addComponent(txtNome2)
+                            .addComponent(txtNome3)
+                            .addComponent(txtValor3)
+                            .addComponent(txtValor2)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(360, 360, 360)
+                        .addComponent(jButton1)))
+                .addContainerGap(359, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(73, 73, 73))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(227, 227, 227)
-                .addComponent(lblTeste)
-                .addGap(39, 39, 39)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel1)
+                .addGap(35, 35, 35)
+                .addComponent(jButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtNome1)
+                .addGap(18, 18, 18)
+                .addComponent(txtValor1)
+                .addGap(18, 18, 18)
+                .addComponent(txtNome2)
+                .addGap(18, 18, 18)
+                .addComponent(txtValor2)
+                .addGap(18, 18, 18)
+                .addComponent(txtNome3)
+                .addGap(18, 18, 18)
+                .addComponent(txtValor3)
+                .addGap(18, 18, 18)
+                .addComponent(txtNome4)
+                .addGap(18, 18, 18)
+                .addComponent(txtValor4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 124, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addContainerGap(292, Short.MAX_VALUE))
+                .addGap(33, 33, 33))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        txtNome1.setText(listadejogos.get(0).getNome());
+        txtValor1.setText(Float.toString(listadejogos.get(0).getValor()));
+        
+        txtNome2.setText(listadejogos.get(1).getNome());
+        txtValor2.setText(Float.toString(listadejogos.get(1).getValor()));
+        
+        txtNome3.setText(listadejogos.get(2).getNome());
+        txtValor3.setText(Float.toString(listadejogos.get(2).getValor()));
+        
+        txtNome4.setText(listadejogos.get(3).getNome());
+        txtValor4.setText(Float.toString(listadejogos.get(3).getValor()));
+        
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Tela_Loja2 b = new Tela_Loja2();
+        this.dispose();
+        b.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Carrinho.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Carrinho.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Carrinho.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Carrinho.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Carrinho().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel lblTeste;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel txtNome1;
+    private javax.swing.JLabel txtNome2;
+    private javax.swing.JLabel txtNome3;
+    private javax.swing.JLabel txtNome4;
+    private javax.swing.JLabel txtValor1;
+    private javax.swing.JLabel txtValor2;
+    private javax.swing.JLabel txtValor3;
+    private javax.swing.JLabel txtValor4;
     // End of variables declaration//GEN-END:variables
-        
-     
-
 }
