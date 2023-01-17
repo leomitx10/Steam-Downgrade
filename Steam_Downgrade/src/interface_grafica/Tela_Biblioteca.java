@@ -218,14 +218,18 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         }else{
             txtJogo1.setText(listabiblioteca.get(0).getNome());
         }
-         
         
+        if(listabiblioteca.size()==1){}else{txtJogo2.setText(listabiblioteca.get(1).getNome());}
+        
+        if(listabiblioteca.size()==2){}else{txtJogo3.setText(listabiblioteca.get(2).getNome());}
+         
+        if(listabiblioteca.size()==3){}else{txtJogo4.setText(listabiblioteca.get(3).getNome());}
         
         
         /*      
-        txtJogo2.setText(listabiblioteca.get(1).getNome()); 
-        txtJogo3.setText(listabiblioteca.get(2).getNome()); 
-        txtJogo4.setText(listabiblioteca.get(3).getNome()); 
+         
+        
+        
         */
   
         
