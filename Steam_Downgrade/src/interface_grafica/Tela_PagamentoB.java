@@ -192,6 +192,10 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
         
         System.out.println("jogos comprados: "+biblioteca.listabiblioteca.size());
         
+        Tela_Biblioteca x = new Tela_Biblioteca();
+        this.dispose();
+        x.setVisible(true);
+        
         /*
         for(Jogo j: biblioteca.listabiblioteca){
             System.out.println(j.getNome());
