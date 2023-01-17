@@ -4,14 +4,19 @@
  */
 package interface_grafica;
 
+import Controle.JogoDAO;
+import static interface_grafica.Carrinho.listadejogos;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.util.ArrayList;
+import teste.Jogo;
 
 /**
  *
  * @author leandro
  */
 public class Tela_PagamentoB extends javax.swing.JFrame {
+     public static Tela_Biblioteca biblioteca= new Tela_Biblioteca();
 
     /**
      * Creates new form Tela_PagamentoB
@@ -44,6 +49,7 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -61,7 +67,7 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Boleto", "Cartão (crédito)", "Cartão (débito)", "PIX" }));
 
-        jButton1.setText("OK");
+        jButton1.setText("Comprar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -82,6 +88,13 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jTextArea1.setText("Os dados de pagamento enviados são protegidos pela\ntecnologia de Secure Socket Layer (SSL), certificada por\num certificado digital.");
         jScrollPane2.setViewportView(jTextArea1);
+
+        jButton2.setText("Voltar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -109,6 +122,8 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
                                 .addComponent(jLabel12))))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(30, 30, 30))
@@ -144,7 +159,9 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 211, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton1)
+                        .addComponent(jButton2)))
                 .addGap(115, 115, 115))
         );
 
@@ -152,8 +169,40 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj1 = jogodao.listJogos();
+        
+        if(listadejogos.isEmpty()){
+            
+        }else{
+            biblioteca.listabiblioteca.add(lj1.get(0));
+        }
+        
+        if(verifica(1)){
+            biblioteca.listabiblioteca.add(lj1.get(1));
+        }
+        
+        if(verifica(2)){
+           biblioteca.listabiblioteca.add(lj1.get(2));
+        }
+        
+        if(verifica(3)){
+             biblioteca.listabiblioteca.add(lj1.get(3));
+        }
+        
+        System.out.println("jogos comprados: "+biblioteca.listabiblioteca.size());
+        
+        /*
+        for(Jogo j: biblioteca.listabiblioteca){
+            System.out.println(j.getNome());
+        }*/
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Carrinho z = new Carrinho();
+        this.dispose();
+        z.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -192,6 +241,7 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
@@ -204,4 +254,13 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
+
+private boolean verifica(int x){
+    if(listadejogos.size()>x){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 }

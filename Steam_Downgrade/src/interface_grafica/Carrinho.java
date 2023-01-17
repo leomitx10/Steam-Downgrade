@@ -23,6 +23,38 @@ public class Carrinho extends javax.swing.JFrame {
         initComponents(); Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
+        
+        float subt = 0;
+        txtSubtotal.setText( Float.toString(subt));
+
+        if(listadejogos.isEmpty()){
+
+        }else{txtNome1.setText(listadejogos.get(0).getNome());
+            txtValor1.setText(Float.toString(listadejogos.get(0).getValor()));
+            subt = listadejogos.get(0).getValor();
+            txtSubtotal.setText(Float.toString(subt));
+        }
+
+        if(verifica(1)){
+            txtNome2.setText(listadejogos.get(1).getNome());
+            txtValor2.setText(Float.toString(listadejogos.get(1).getValor()));
+            subt = subt + listadejogos.get(1).getValor();
+            txtSubtotal.setText(Float.toString(subt));
+        }
+
+        if(verifica(2)){
+            txtNome3.setText(listadejogos.get(2).getNome());
+            txtValor3.setText(Float.toString(listadejogos.get(2).getValor()));
+            subt = subt + listadejogos.get(2).getValor();
+            txtSubtotal.setText(Float.toString(subt));
+        }
+
+        if(verifica(3)){
+            txtNome4.setText(listadejogos.get(3).getNome());
+            txtValor4.setText(Float.toString(listadejogos.get(3).getValor()));
+            subt = subt + listadejogos.get(3).getValor();
+            txtSubtotal.setText(Float.toString(subt));
+        }
     }
 
     /**
@@ -35,7 +67,6 @@ public class Carrinho extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         txtNome1 = new javax.swing.JLabel();
@@ -61,13 +92,6 @@ public class Carrinho extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/carrinho.png"))); // NOI18N
         jLabel1.setText("Carrinho");
-
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
 
         jButton2.setText("voltar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -224,13 +248,11 @@ public class Carrinho extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(263, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
+                .addContainerGap(282, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addGap(18, 18, 18)
                 .addComponent(jButton5)
-                .addGap(258, 258, 258))
+                .addGap(340, 340, 340))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
@@ -260,12 +282,11 @@ public class Carrinho extends javax.swing.JFrame {
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
                     .addComponent(jButton2)
                     .addComponent(jButton5))
-                .addGap(29, 29, 29))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
 
         pack();
@@ -282,49 +303,6 @@ public class Carrinho extends javax.swing.JFrame {
         this.dispose();
         a.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        float subt = 0;
-        txtSubtotal.setText( Float.toString(subt));
-
-        if(listadejogos.isEmpty()){
-
-        }else{txtNome1.setText(listadejogos.get(0).getNome());
-            txtValor1.setText(Float.toString(listadejogos.get(0).getValor()));
-            subt = listadejogos.get(0).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-
-        if(verifica(1)){
-            txtNome2.setText(listadejogos.get(1).getNome());
-            txtValor2.setText(Float.toString(listadejogos.get(1).getValor()));
-            subt = subt + listadejogos.get(1).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-
-        if(verifica(2)){
-            txtNome3.setText(listadejogos.get(2).getNome());
-            txtValor3.setText(Float.toString(listadejogos.get(2).getValor()));
-            subt = subt + listadejogos.get(2).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-
-        if(verifica(3)){
-            txtNome4.setText(listadejogos.get(3).getNome());
-            txtValor4.setText(Float.toString(listadejogos.get(3).getValor()));
-            subt = subt + listadejogos.get(3).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-
-        /*
-
-        */
-
-        /*
-
-        */
-
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -362,7 +340,6 @@ public class Carrinho extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
