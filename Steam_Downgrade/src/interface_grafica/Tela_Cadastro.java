@@ -271,7 +271,8 @@ public class Tela_Cadastro extends javax.swing.JFrame {
 
         UsuarioDAO objusuariodao = new UsuarioDAO();
         objusuariodao.cadastrarUsuario(objusuariodto);
-           
+        
+        JOptionPane.showMessageDialog(null, "Usuario cadastrado", "Sucesso", 1);
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
