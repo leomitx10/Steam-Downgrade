@@ -315,7 +315,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/The_Sims_4_150.png"))); // NOI18N
 
-        lblValor8.setText("gratuito");
+        lblValor8.setText("--------");
 
         jButton22.setBackground(new java.awt.Color(102, 102, 102));
         jButton22.setForeground(new java.awt.Color(255, 255, 255));
@@ -327,7 +327,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         });
 
         lblTitulo8.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
-        lblTitulo8.setText("teste");
+        lblTitulo8.setText("-------");
 
         jButton23.setBackground(new java.awt.Color(0, 153, 0));
         jButton23.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
@@ -339,7 +339,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
             }
         });
 
-        lblValor7.setText("R$ 150,00");
+        lblValor7.setText("-------");
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/God_of_War_2018_capa_150.png"))); // NOI18N
 
@@ -367,7 +367,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         jLabel8.setMinimumSize(new java.awt.Dimension(500, 300));
 
         lblTitulo7.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
-        lblTitulo7.setText("teste");
+        lblTitulo7.setText("-------");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -870,10 +870,15 @@ private void mostrarjogo() {
             
             lblTitulo6.setText(lista.get(5).getNome());
             lblValor6.setText("R$ "+Float.toString(lista.get(5).getValor()));
+            
+            if(lista.size()==7){}
         
         } catch(Exception error) {
             System.out.println("Error: " + error);
         }
     }
+
+
+
 
 }
