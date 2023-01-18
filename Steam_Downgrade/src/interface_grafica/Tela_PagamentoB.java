@@ -175,19 +175,27 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
         if(listadejogos.isEmpty()){
             
         }else{
-            biblioteca.listabiblioteca.add(lj1.get(0));
+            biblioteca.listabiblioteca.add(listadejogos.get(0));
         }
         
         if(verifica(1)){
-            biblioteca.listabiblioteca.add(lj1.get(1));
+            biblioteca.listabiblioteca.add(listadejogos.get(1));
         }
         
         if(verifica(2)){
-           biblioteca.listabiblioteca.add(lj1.get(2));
+           biblioteca.listabiblioteca.add(listadejogos.get(2));
         }
         
         if(verifica(3)){
-             biblioteca.listabiblioteca.add(lj1.get(3));
+             biblioteca.listabiblioteca.add(listadejogos.get(3));
+        }
+        
+        if(verifica(4)){
+             biblioteca.listabiblioteca.add(listadejogos.get(4));
+        }
+        
+        if(verifica(5)){
+             biblioteca.listabiblioteca.add(listadejogos.get(5));
         }
         
         System.out.println("jogos comprados: "+biblioteca.listabiblioteca.size());
