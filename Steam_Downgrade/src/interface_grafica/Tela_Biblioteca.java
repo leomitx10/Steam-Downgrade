@@ -26,6 +26,22 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
+        
+        if(listabiblioteca.isEmpty()){
+        
+        }else{
+            txtJogo1.setText(listabiblioteca.get(0).getNome());
+        }
+        
+        if(verifica(1)){txtJogo2.setText(listabiblioteca.get(1).getNome());}
+        
+        if(verifica(2)){txtJogo3.setText(listabiblioteca.get(2).getNome());}
+        
+        if(verifica(3)){txtJogo4.setText(listabiblioteca.get(3).getNome());}
+        
+        if(verifica(4)){txtJogo5.setText(listabiblioteca.get(4).getNome());}
+        
+        if(verifica(5)){txtJogo6.setText(listabiblioteca.get(5).getNome());}
     }
 
     /**
@@ -45,18 +61,7 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
@@ -70,7 +75,15 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         txtJogo2 = new javax.swing.JLabel();
         txtJogo3 = new javax.swing.JLabel();
         txtJogo4 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        txtJogo5 = new javax.swing.JLabel();
+        txtJogo6 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -113,68 +126,35 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 438, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 450, -1, -1));
 
         jButton3.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         jButton3.setText("Remover da biblioteca");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 478, -1, -1));
-
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 328, -1, -1));
-
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 328, -1, -1));
-
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 328, -1, -1));
-
-        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 328, -1, -1));
-
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 428, -1, -1));
-
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 428, -1, -1));
-
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 428, -1, -1));
-
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 428, -1, -1));
-
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 15.46.12.jpeg"))); // NOI18N
-        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 228, -1, -1));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 490, -1, -1));
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/avatardefault_92824.png"))); // NOI18N
         getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 328, -1, -1));
-
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 328, -1, -1));
-
         jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 328, -1, -1));
+        getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, -1, -1));
 
         jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 328, -1, -1));
+        getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 340, -1, -1));
 
         jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 428, -1, -1));
+        getContentPane().add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, -1, -1));
 
         jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 428, -1, -1));
+        getContentPane().add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 440, -1, -1));
 
         jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 428, -1, -1));
+        getContentPane().add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 440, -1, -1));
 
         jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 428, -1, -1));
+        getContentPane().add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 440, -1, -1));
 
         jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_retang.jpeg"))); // NOI18N
-        getContentPane().add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 228, -1, -1));
+        getContentPane().add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 240, -1, -1));
 
         jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/avatar.png"))); // NOI18N
         getContentPane().add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 23, -1, -1));
@@ -187,20 +167,61 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         });
         getContentPane().add(btnVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(689, 50, -1, -1));
 
+        txtJogo1.setForeground(new java.awt.Color(255, 255, 255));
+        txtJogo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtJogo1.setText("jLabel2");
-        getContentPane().add(txtJogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 261, -1, -1));
+        txtJogo1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtJogo1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(txtJogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 80, 80));
 
+        txtJogo2.setForeground(new java.awt.Color(255, 255, 255));
+        txtJogo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtJogo2.setText("jLabel5");
-        getContentPane().add(txtJogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 261, -1, -1));
+        getContentPane().add(txtJogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 248, 80, 80));
 
+        txtJogo3.setForeground(new java.awt.Color(255, 255, 255));
+        txtJogo3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtJogo3.setText("jLabel7");
-        getContentPane().add(txtJogo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 261, -1, -1));
+        getContentPane().add(txtJogo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 248, 80, 80));
 
+        txtJogo4.setForeground(new java.awt.Color(255, 255, 255));
+        txtJogo4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtJogo4.setText("jLabel8");
-        getContentPane().add(txtJogo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 261, -1, -1));
+        getContentPane().add(txtJogo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 248, 80, 80));
 
-        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 328, -1, -1));
+        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, -1, -1));
+
+        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, -1, -1));
+
+        jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, -1, -1));
+
+        txtJogo5.setForeground(new java.awt.Color(255, 255, 255));
+        txtJogo5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtJogo5.setText("jLabel2");
+        getContentPane().add(txtJogo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 80, 80));
+
+        txtJogo6.setForeground(new java.awt.Color(255, 255, 255));
+        txtJogo6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtJogo6.setText("jLabel2");
+        getContentPane().add(txtJogo6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 348, 80, 80));
+
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, -1, -1));
+
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
+
+        jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        getContentPane().add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, -1, -1));
+
+        jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -213,21 +234,8 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         
         
         
-        if(listabiblioteca.isEmpty()){
-        
-        }else{
-            txtJogo1.setText(listabiblioteca.get(0).getNome());
-        }
-         
         
         
-        
-        /*      
-        txtJogo2.setText(listabiblioteca.get(1).getNome()); 
-        txtJogo3.setText(listabiblioteca.get(2).getNome()); 
-        txtJogo4.setText(listabiblioteca.get(3).getNome()); 
-        */
-  
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -241,6 +249,10 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
             this.dispose();
             x.setVisible(true);
     }//GEN-LAST:event_btnVoltarActionPerformed
+
+    private void txtJogo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtJogo1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtJogo1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -284,20 +296,10 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
@@ -305,17 +307,30 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel50;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel txtJogo1;
     private javax.swing.JLabel txtJogo2;
     private javax.swing.JLabel txtJogo3;
     private javax.swing.JLabel txtJogo4;
+    private javax.swing.JLabel txtJogo5;
+    private javax.swing.JLabel txtJogo6;
     // End of variables declaration//GEN-END:variables
     
   
-
+private boolean verifica(int x){
+    if(listabiblioteca.size()>x){
+        return true;
+    }else{
+        return false;
+    }
+}
 
 
 }

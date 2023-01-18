@@ -517,7 +517,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(lj.get(0));
+        carrinho.listadejogos.add(listadejogos.get(0));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
         }
@@ -527,7 +527,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(lj.get(1));
+        carrinho.listadejogos.add(listadejogos.get(1));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
         }
@@ -537,7 +537,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(lj.get(2));
+        carrinho.listadejogos.add(listadejogos.get(2));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
         }
@@ -547,7 +547,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(lj.get(3));
+        carrinho.listadejogos.add(listadejogos.get(3));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
         }
@@ -563,7 +563,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(lj.get(4));
+        carrinho.listadejogos.add(listadejogos.get(4));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
         }
@@ -573,7 +573,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(lj.get(5));
+        carrinho.listadejogos.add(listadejogos.get(5));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
         }
@@ -583,7 +583,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(lj.get(6));
+        carrinho.listadejogos.add(listadejogos.get(6));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
         }
@@ -593,11 +593,11 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(lj.get(7));
+        carrinho.listadejogos.add(listadejogos.get(7));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
         }
-        JOptionPane.showMessageDialog(null, "Adicionado a lista de desejo", "Adicionado", 1);
+        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
     }//GEN-LAST:event_jButton21ActionPerformed
 
     /**
