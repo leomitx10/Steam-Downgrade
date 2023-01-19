@@ -122,6 +122,7 @@ public class Carrinho extends javax.swing.JFrame {
         jLabel1.setText("Carrinho");
 
         jButton2.setText("voltar");
+        jButton2.setMaximumSize(new java.awt.Dimension(88, 24));
         jButton2.setMinimumSize(new java.awt.Dimension(88, 24));
         jButton2.setPreferredSize(new java.awt.Dimension(88, 24));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
