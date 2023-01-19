@@ -692,6 +692,8 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
+        
+        
         carrinho.listadejogos.add(lj.get(0));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
