@@ -18,6 +18,8 @@ import teste.Jogo;
 public class Tela_Loja2 extends javax.swing.JFrame {
     public static Carrinho carrinho = new Carrinho();
     public static Tela_ListaDesejo listadesejo = new Tela_ListaDesejo();
+    public static Tela_Perfil2 perfillista = new Tela_Perfil2();
+
     
 
     /**
@@ -650,6 +652,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void btnDeslogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeslogarActionPerformed
+        perfillista.perfil.clear();
         Tela_Usuario b = new Tela_Usuario();
         this.dispose();
         b.setVisible(true);
@@ -924,7 +927,7 @@ private void mostrarjogo() {
         }
     }
 
-
+   
 
 
 }
