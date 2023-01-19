@@ -17,6 +17,7 @@ import teste.Jogo;
  */
 public class Tela_PagamentoB extends javax.swing.JFrame {
      public static Tela_Biblioteca biblioteca= new Tela_Biblioteca();
+     public static Carrinho carrinho = new Carrinho();
 
     /**
      * Creates new form Tela_PagamentoB
@@ -200,9 +201,13 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
         
         System.out.println("jogos comprados: "+biblioteca.listabiblioteca.size());
         
+        carrinho.listadejogos.clear();
+        
         Tela_Biblioteca x = new Tela_Biblioteca();
         this.dispose();
         x.setVisible(true);
+        
+        
         
         /*
         for(Jogo j: biblioteca.listabiblioteca){

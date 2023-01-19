@@ -500,6 +500,10 @@ public class Carrinho extends javax.swing.JFrame {
             listadejogos.remove(7);
         }
         
+        Carrinho x = new Carrinho();
+        this.dispose();
+        x.setVisible(true);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
