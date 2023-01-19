@@ -28,8 +28,9 @@ import teste.Usuario;
  * @author leandro
  */
     public class Tela_Usuario extends javax.swing.JFrame {
-       
-        
+        public static Tela_Perfil2 listaperfil = new Tela_Perfil2();
+    
+      
      
     public Tela_Usuario() {
         initComponents();
@@ -237,6 +238,16 @@ import teste.Usuario;
             rs = ps.executeQuery();
             
             if(rs.next()){
+                String nome = rs.getString("nome");
+                int idade = rs.getInt("idade");
+                String apelido = rs.getString("apelido");
+                String emailp = rs.getString("email");
+                
+                Usuario usu1 = new Usuario(nome,idade,apelido,"","",emailp,"");
+                
+                listaperfil.perfil.add(usu1);
+                
+                
                     Tela_Loja2 x = new Tela_Loja2();
                     x.setVisible(true);
                     x.pack();

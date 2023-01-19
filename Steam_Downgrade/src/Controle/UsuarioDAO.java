@@ -42,25 +42,4 @@ public class UsuarioDAO {
             JOptionPane.showMessageDialog(null, "UsuarioDAO" + erro);
         }
     }
-    
-    
-     public ResultSet autenticacaoUsuario(Usuario objusuariodto) {
-        
-        conn = new ConexaoDAO().conectaBD();
-        
-        try {
-            String sql = "select * from usuarios where email= ? and senha = ?";
-            PreparedStatement pstm = conn.prepareStatement(sql);
-            pstm.setString(1, objusuariodto.getEmail());
-            pstm.setString(2, objusuariodto.getSenha());
-            
-            ResultSet rs = pstm.executeQuery();
-            return rs;
-        
-        } catch (SQLException erro) {
-            JOptionPane.showMessageDialog(null, "UsuarioDAO: " + erro);
-            return null;
-        }
-    }
-    
 }
