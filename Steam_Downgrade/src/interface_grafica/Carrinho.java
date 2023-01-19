@@ -383,6 +383,11 @@ public class Carrinho extends javax.swing.JFrame {
         );
 
         selExc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jogo 1", "Jogo 2", "Jogo 3", "Jogo 4", "Jogo 5", "Jogo 6", "Jogo 7", "Jogo 8" }));
+        selExc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selExcActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Remover");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -506,6 +511,10 @@ public class Carrinho extends javax.swing.JFrame {
         x.setVisible(true);
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void selExcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selExcActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_selExcActionPerformed
 
     /**
      * @param args the command line arguments

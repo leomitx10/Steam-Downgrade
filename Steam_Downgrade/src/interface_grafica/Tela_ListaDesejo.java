@@ -107,6 +107,8 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jButton20 = new javax.swing.JButton();
+        selExc = new javax.swing.JComboBox<>();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 600));
@@ -469,6 +471,20 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
                         .addGap(18, 18, 18))))
         );
 
+        selExc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jogo 1", "Jogo 2", "Jogo 3", "Jogo 4", "Jogo 5", "Jogo 6", "Jogo 7", "Jogo 8" }));
+        selExc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selExcActionPerformed(evt);
+            }
+        });
+
+        jButton3.setText("Remover da lista");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -490,6 +506,10 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
                             .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(selExc, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(67, 67, 67))
@@ -524,7 +544,9 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selExc, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(66, Short.MAX_VALUE))
         );
 
@@ -540,41 +562,64 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(listadejogos.get(0));
-        for(Jogo j: carrinho.listadejogos){
-            System.out.println(j.getNome());
-        }
+       
+        if(verifica(0)){
+            carrinho.listadejogos.add(listadejogos.get(0));
+            for(Jogo j: carrinho.listadejogos){
+                System.out.println(j.getNome());
+            }
         JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+        }else{
+            JOptionPane.showMessageDialog(null, "Não há jogo para adicionar", "Erro", 2);
+        }
+        
+        
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(listadejogos.get(1));
+        
+        if(verifica(1)){
+         carrinho.listadejogos.add(listadejogos.get(1));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
         }
         JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+        }else{
+            JOptionPane.showMessageDialog(null, "Não há jogo para adicionar", "Erro", 2);
+        }
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(listadejogos.get(2));
-        for(Jogo j: carrinho.listadejogos){
+        
+        if(verifica(2)){
+            carrinho.listadejogos.add(listadejogos.get(2));
+            for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
+            }
+            JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+        }else{
+            JOptionPane.showMessageDialog(null, "Não há jogo para adicionar", "Erro", 2);
         }
-        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+        
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(listadejogos.get(3));
-        for(Jogo j: carrinho.listadejogos){
-            System.out.println(j.getNome());
+        
+        if(verifica(3)){
+            carrinho.listadejogos.add(listadejogos.get(3));
+            for(Jogo j: carrinho.listadejogos){
+                System.out.println(j.getNome());
+            }
+            JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+        }else{
+            JOptionPane.showMessageDialog(null, "Não há jogo para adicionar", "Erro", 2);
         }
-        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -586,42 +631,105 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(listadejogos.get(4));
-        for(Jogo j: carrinho.listadejogos){
+        
+        if(verifica(4)){
+            carrinho.listadejogos.add(listadejogos.get(4));
+            for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
         }
-        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+            JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+        }else{
+            JOptionPane.showMessageDialog(null, "Não há jogo para adicionar", "Erro", 2);
+        }
+        
+        
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
+        
+        if(verifica(5)){
         carrinho.listadejogos.add(listadejogos.get(5));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
         }
-        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+            JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+        }else{
+            JOptionPane.showMessageDialog(null, "Não há jogo para adicionar", "Erro", 2);
+        }
+   
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(listadejogos.get(6));
-        for(Jogo j: carrinho.listadejogos){
-            System.out.println(j.getNome());
+        
+        if(verifica(6)){
+            carrinho.listadejogos.add(listadejogos.get(6));
+            for(Jogo j: carrinho.listadejogos){
+                System.out.println(j.getNome());
+            }
+            JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+        
+        }else{
+            JOptionPane.showMessageDialog(null, "Não há jogo para adicionar", "Erro", 2);
         }
-        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
-        carrinho.listadejogos.add(listadejogos.get(7));
-        for(Jogo j: carrinho.listadejogos){
-            System.out.println(j.getNome());
+        
+        if(verifica(7)){
+            carrinho.listadejogos.add(listadejogos.get(7));
+            for(Jogo j: carrinho.listadejogos){
+                System.out.println(j.getNome());
+            }
+            JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+        }else{
+            JOptionPane.showMessageDialog(null, "Não há jogo para adicionar", "Erro", 2);
         }
-        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+        
+        
     }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void selExcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selExcActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_selExcActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        String escolha= selExc.getSelectedItem().toString();
+        System.out.println(escolha);
+
+        if(escolha.equals("Jogo 1")&& listadejogos.size()>=1){
+            listadejogos.remove(0);
+        }else if (escolha.equals("Jogo 2")&& listadejogos.size()>=2){
+            listadejogos.remove(1);
+        }else if(escolha.equals("Jogo 3")&& listadejogos.size()>=3){
+            listadejogos.remove(2);
+        }else if(escolha.equals("Jogo 4")&& listadejogos.size()>=4){
+            listadejogos.remove(3);
+        }
+
+        else if(escolha.equals("Jogo 5")&& listadejogos.size()>=5){
+            listadejogos.remove(4);
+        }
+        else if(escolha.equals("Jogo 6")&& listadejogos.size()>=6){
+            listadejogos.remove(5);
+        }
+        else if(escolha.equals("Jogo 7")&& listadejogos.size()>=7){
+            listadejogos.remove(6);
+        }
+        else if(escolha.equals("Jogo 8")&& listadejogos.size()>=8){
+            listadejogos.remove(7);
+        }
+
+        Tela_ListaDesejo x = new Tela_ListaDesejo();
+        this.dispose();
+        x.setVisible(true);
+
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -657,13 +765,6 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
             }
         });
     }
-    private boolean verifica(int x){
-    if(listadejogos.size()>x){
-        return true;
-    }else{
-        return false;
-    }
-}
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton14;
@@ -675,6 +776,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -700,5 +802,16 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JComboBox<String> selExc;
     // End of variables declaration//GEN-END:variables
+
+private boolean verifica(int x){
+    if(listadejogos.size()>x){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+
 }
