@@ -66,7 +66,6 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel32 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
@@ -88,8 +87,9 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         jLabel36 = new javax.swing.JLabel();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
         txtJogo8 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -140,9 +140,6 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/avatardefault_92824.png"))); // NOI18N
         getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
-
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 340, -1, -1));
 
         jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
         getContentPane().add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, -1, -1));
@@ -231,11 +228,21 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
         getContentPane().add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
 
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
-
+        txtJogo8.setForeground(new java.awt.Color(255, 255, 255));
+        txtJogo8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtJogo8.setText("jLabel2");
-        getContentPane().add(txtJogo8, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 140, -1, -1));
+        txtJogo8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtJogo8MouseClicked(evt);
+            }
+        });
+        getContentPane().add(txtJogo8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, 80, 80));
+
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 340, -1, -1));
+
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -267,6 +274,10 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     private void txtJogo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtJogo1MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_txtJogo1MouseClicked
+
+    private void txtJogo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtJogo8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtJogo8MouseClicked
 
     /**
      * @param args the command line arguments
@@ -315,7 +326,7 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
