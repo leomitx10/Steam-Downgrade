@@ -61,6 +61,16 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
             jLabel15.setText(Float.toString(listadejogos.get(5).getValor()));
             
         }
+        if(verifica(6)){
+            jLabel16.setText(listadejogos.get(6).getNome());
+            jLabel17.setText(Float.toString(listadejogos.get(6).getValor()));
+            
+        }
+        if(verifica(7)){
+            jLabel10.setText(listadejogos.get(7).getNome());
+            jLabel11.setText(Float.toString(listadejogos.get(7).getValor()));
+            
+        }
     }
 
     /**
