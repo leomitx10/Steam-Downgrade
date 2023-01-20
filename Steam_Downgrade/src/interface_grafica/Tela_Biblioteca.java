@@ -42,6 +42,10 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         if(verifica(4)){txtJogo5.setText(listabiblioteca.get(4).getNome());}
         
         if(verifica(5)){txtJogo6.setText(listabiblioteca.get(5).getNome());}
+        
+        if(verifica(6)){txtJogo7.setText(listabiblioteca.get(6).getNome());}
+        
+        if(verifica(7)){txtJogo8.setText(listabiblioteca.get(7).getNome());}
     }
 
     /**
@@ -62,7 +66,6 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel32 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
@@ -80,10 +83,13 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         jLabel48 = new javax.swing.JLabel();
         txtJogo5 = new javax.swing.JLabel();
         txtJogo6 = new javax.swing.JLabel();
+        txtJogo7 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        txtJogo8 = new javax.swing.JLabel();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -134,9 +140,6 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/avatardefault_92824.png"))); // NOI18N
         getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
-
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
-        getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, -1, -1));
 
         jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
         getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 340, -1, -1));
@@ -211,17 +214,28 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         txtJogo6.setText("jLabel2");
         getContentPane().add(txtJogo6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 348, 80, 80));
 
+        txtJogo7.setForeground(new java.awt.Color(255, 255, 255));
+        txtJogo7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtJogo7.setText("jLabel2");
+        getContentPane().add(txtJogo7, new org.netbeans.lib.awtextra.AbsoluteConstraints(236, 348, 80, 80));
+
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
         getContentPane().add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, -1, -1));
 
         jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-        getContentPane().add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
+        getContentPane().add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, -1, -1));
 
         jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
         getContentPane().add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, -1, -1));
 
         jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
         getContentPane().add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
+
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
+        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
+
+        txtJogo8.setText("jLabel2");
+        getContentPane().add(txtJogo8, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 140, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -300,7 +314,7 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
@@ -321,6 +335,8 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     private javax.swing.JLabel txtJogo4;
     private javax.swing.JLabel txtJogo5;
     private javax.swing.JLabel txtJogo6;
+    private javax.swing.JLabel txtJogo7;
+    private javax.swing.JLabel txtJogo8;
     // End of variables declaration//GEN-END:variables
     
   

@@ -69,6 +69,20 @@ public class Carrinho extends javax.swing.JFrame {
             subt = subt + listadejogos.get(5).getValor();
             txtSubtotal.setText(Float.toString(subt));
         }
+        
+        if(verifica(6)){
+            txtNome8.setText(listadejogos.get(6).getNome());
+            txtValor8.setText(Float.toString(listadejogos.get(6).getValor()));
+            subt = subt + listadejogos.get(6).getValor();
+            txtSubtotal.setText(Float.toString(subt));
+        }
+        
+        if(verifica(7)){
+            txtNome9.setText(listadejogos.get(7).getNome());
+            txtValor9.setText(Float.toString(listadejogos.get(7).getValor()));
+            subt = subt + listadejogos.get(7).getValor();
+            txtSubtotal.setText(Float.toString(subt));
+        }
     }
 
     /**
