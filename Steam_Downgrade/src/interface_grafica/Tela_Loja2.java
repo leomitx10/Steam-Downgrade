@@ -63,6 +63,8 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         ImagemDAO dao5 = new ImagemDAO();
         Imagem exe5 = dao5.buscar(id5);
         ManipularImagem.exibiImagemLabel(exe5.getImagem(), labelimagem6); 
+        
+        
     }
 
     /**
@@ -110,13 +112,12 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         lblValor5 = new javax.swing.JLabel();
         lblValor8 = new javax.swing.JLabel();
         jButton22 = new javax.swing.JButton();
-        lblTitulo8 = new javax.swing.JLabel();
         jButton23 = new javax.swing.JButton();
+        lblTitulo8 = new javax.swing.JLabel();
         lblValor7 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
+        lblimagem8 = new javax.swing.JLabel();
         jButton24 = new javax.swing.JButton();
         jButton25 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
         lblTitulo7 = new javax.swing.JLabel();
         labelimagem1 = new javax.swing.JLabel();
         labelimagem2 = new javax.swing.JLabel();
@@ -124,6 +125,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         labelimagem4 = new javax.swing.JLabel();
         labelimagem5 = new javax.swing.JLabel();
         labelimagem6 = new javax.swing.JLabel();
+        labelimagem7 = new javax.swing.JLabel();
         btnDeslogar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -346,9 +348,6 @@ public class Tela_Loja2 extends javax.swing.JFrame {
             }
         });
 
-        lblTitulo8.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
-        lblTitulo8.setText("-------");
-
         jButton23.setBackground(new java.awt.Color(0, 153, 0));
         jButton23.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
         jButton23.setForeground(new java.awt.Color(255, 255, 255));
@@ -359,9 +358,10 @@ public class Tela_Loja2 extends javax.swing.JFrame {
             }
         });
 
-        lblValor7.setText("-------");
+        lblTitulo8.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
+        lblTitulo8.setText("-------");
 
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/God_of_War_2018_capa_150.png"))); // NOI18N
+        lblValor7.setText("-------");
 
         jButton24.setBackground(new java.awt.Color(0, 153, 0));
         jButton24.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
@@ -381,10 +381,6 @@ public class Tela_Loja2 extends javax.swing.JFrame {
                 jButton25ActionPerformed(evt);
             }
         });
-
-        jLabel8.setFont(new java.awt.Font("Liberation Sans", 0, 20)); // NOI18N
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/eldenRingSmall_150.png"))); // NOI18N
-        jLabel8.setMinimumSize(new java.awt.Dimension(500, 300));
 
         lblTitulo7.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
         lblTitulo7.setText("-------");
@@ -414,10 +410,14 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         labelimagem5.setMinimumSize(new java.awt.Dimension(150, 150));
         labelimagem5.setPreferredSize(new java.awt.Dimension(150, 150));
 
-        labelimagem6.setText("jLabel1");
         labelimagem6.setMaximumSize(new java.awt.Dimension(150, 150));
         labelimagem6.setMinimumSize(new java.awt.Dimension(150, 150));
         labelimagem6.setPreferredSize(new java.awt.Dimension(150, 150));
+
+        labelimagem7.setText("jLabel1");
+        labelimagem7.setMaximumSize(new java.awt.Dimension(150, 150));
+        labelimagem7.setMinimumSize(new java.awt.Dimension(150, 150));
+        labelimagem7.setPreferredSize(new java.awt.Dimension(150, 150));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -448,7 +448,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
                                             .addComponent(lblValor5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(lblTitulo5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(labelimagem7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGap(12, 12, 12)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -458,7 +458,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
                                             .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblimagem8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(labelimagem6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(labelimagem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -576,8 +576,8 @@ public class Tela_Loja2 extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton22)
                             .addComponent(jButton25)))
-                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblimagem8, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelimagem7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(30, Short.MAX_VALUE))
         );
 
@@ -830,11 +830,24 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        // TODO add your handling code here:
+        JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj = jogodao.listJogos();
+        carrinho.listadejogos.add(lj.get(7));
+        for(Jogo j: carrinho.listadejogos){
+            System.out.println(j.getNome());
+        }
+        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
-        // TODO add your handling code here:
+        JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj = jogodao.listJogos();
+        carrinho.listadejogos.add(lj.get(6));
+        for(Jogo j: carrinho.listadejogos){
+            System.out.println(j.getNome());
+        }
+        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
+     
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
@@ -900,8 +913,6 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JDesktopPane jDesktopPane1;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
@@ -911,6 +922,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     private javax.swing.JLabel labelimagem4;
     private javax.swing.JLabel labelimagem5;
     private javax.swing.JLabel labelimagem6;
+    private javax.swing.JLabel labelimagem7;
     public javax.swing.JLabel lblTitulo1;
     private javax.swing.JLabel lblTitulo2;
     private javax.swing.JLabel lblTitulo3;
@@ -927,9 +939,10 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     private javax.swing.JLabel lblValor6;
     private javax.swing.JLabel lblValor7;
     private javax.swing.JLabel lblValor8;
+    private javax.swing.JLabel lblimagem8;
     // End of variables declaration//GEN-END:variables
 private void mostrarjogo() {
-        try {
+        
             JogoDAO objjogo = new JogoDAO();
             
             ArrayList<Jogo> lista = objjogo.listJogos();
@@ -953,11 +966,44 @@ private void mostrarjogo() {
             lblTitulo6.setText(lista.get(5).getNome());
             lblValor6.setText("R$ "+Float.toString(lista.get(5).getValor()));
             
-            if(lista.size()==7){}
+            if(lista.size()>=7){
+                lblTitulo7.setText(lista.get(6).getNome());
+                lblValor7.setText("R$ "+Float.toString(lista.get(6).getValor()));
+                
+                int id6 = 7;
+                ImagemDAO dao6 = new ImagemDAO();
+                Imagem exe6 = dao6.buscar(id6);
+                ManipularImagem.exibiImagemLabel(exe6.getImagem(), labelimagem7); 
+            }else{
+                 lblTitulo7.setText("");
+                 lblValor7.setText("");
+                 jButton24.setVisible(false);
+                 jButton25.setVisible(false);
+                 labelimagem7.setText("");
+            }
+            
+            if(lista.size()>=8){
+                lblTitulo8.setText(lista.get(7).getNome());
+                lblValor8.setText("R$ "+Float.toString(lista.get(7).getValor()));
+                
+                int id7 = 8;
+                ImagemDAO dao7 = new ImagemDAO();
+                Imagem exe7 = dao7.buscar(id7);
+                ManipularImagem.exibiImagemLabel(exe7.getImagem(), lblimagem8); 
+            }else{
+                lblTitulo8.setText("");
+                lblValor8.setText("");
+                jButton23.setVisible(false);
+                jButton22.setVisible(false);
+                lblimagem8.setText("");
+                
+            }
+            
+            
+            
+            
         
-        } catch(Exception error) {
-            System.out.println("Error: " + error);
-        }
+      
     }
 
    

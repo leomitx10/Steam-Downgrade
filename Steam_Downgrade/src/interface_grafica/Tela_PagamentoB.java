@@ -199,6 +199,13 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
              biblioteca.listabiblioteca.add(listadejogos.get(5));
         }
         
+        if(verifica(6)){
+             biblioteca.listabiblioteca.add(listadejogos.get(6));
+        }
+        
+        if(verifica(7)){
+             biblioteca.listabiblioteca.add(listadejogos.get(7));
+        }
         System.out.println("jogos comprados: "+biblioteca.listabiblioteca.size());
         
         carrinho.listadejogos.clear();
