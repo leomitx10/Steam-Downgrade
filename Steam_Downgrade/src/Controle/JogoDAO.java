@@ -66,8 +66,10 @@ public class JogoDAO {
                 String requisitos = rs.getString("requisitos");
                 String genero = rs.getString("genero");
                 String descricao = rs.getString("descricao");
+                int id = rs.getInt("id");
                    
                 Jogo objjogo = new Jogo(nome,valor,classificacaoindicativa,desenvolvedor,distribuidora,requisitos,genero,descricao);
+                objjogo.setId(id);
                 lista.add(objjogo);
             }
         } catch(SQLException error) {

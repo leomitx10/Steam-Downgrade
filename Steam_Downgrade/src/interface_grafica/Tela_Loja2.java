@@ -592,7 +592,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -968,6 +968,7 @@ private void mostrarjogo() {
             
             lblTitulo3.setText(lista.get(2).getNome());
             lblValor3.setText("R$ "+Float.toString(lista.get(2).getValor()));
+            
             
             lblTitulo4.setText(lista.get(3).getNome());
             lblValor4.setText("R$ "+Float.toString(lista.get(3).getValor()));
