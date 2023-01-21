@@ -966,7 +966,13 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        // TODO add your handling code here:
+        JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj = jogodao.listJogos();
+        listadesejo.listadejogos.add(lj.get(8));
+        for(Jogo j: listadesejo.listadejogos){
+            System.out.println(j.getNome());
+        }
+        JOptionPane.showMessageDialog(null, "Adicionado a lista de desejo", "Adicionado", 1);
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
@@ -974,7 +980,13 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        // TODO add your handling code here:
+        JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj = jogodao.listJogos();
+        listadesejo.listadejogos.add(lj.get(9));
+        for(Jogo j: listadesejo.listadejogos){
+            System.out.println(j.getNome());
+        }
+        JOptionPane.showMessageDialog(null, "Adicionado a lista de desejo", "Adicionado", 1);
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
