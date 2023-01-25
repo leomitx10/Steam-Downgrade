@@ -976,7 +976,13 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        // TODO add your handling code here:
+         JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj = jogodao.listJogos();
+        carrinho.listadejogos.add(lj.get(8));
+        for(Jogo j: carrinho.listadejogos){
+            System.out.println(j.getNome());
+        }
+        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
@@ -990,7 +996,13 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        // TODO add your handling code here:
+        JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj = jogodao.listJogos();
+        carrinho.listadejogos.add(lj.get(9));
+        for(Jogo j: carrinho.listadejogos){
+            System.out.println(j.getNome());
+        }
+        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
     }//GEN-LAST:event_jButton29ActionPerformed
 
     /**

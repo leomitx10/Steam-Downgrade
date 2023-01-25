@@ -72,6 +72,22 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         if(verifica(7)){
         verificaimg8(listabiblioteca.get(7).getId());
         }
+        
+        if(verifica(8)){
+        verificaimg9(listabiblioteca.get(8).getId());
+        }
+        
+        if(verifica(9)){
+        verificaimg10(listabiblioteca.get(9).getId());
+        }
+        
+        
+       
+        
+        
+        //System.out.println(listabiblioteca.size());
+        
+        
     }
 
     /**
@@ -97,6 +113,10 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         imgj6 = new javax.swing.JLabel();
         imgj7 = new javax.swing.JLabel();
         imgj8 = new javax.swing.JLabel();
+        imgj13 = new javax.swing.JLabel();
+        A = new javax.swing.JLabel();
+        B = new javax.swing.JLabel();
+        imgj12 = new javax.swing.JLabel();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -177,6 +197,34 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         imgj8.setName(""); // NOI18N
         imgj8.setPreferredSize(new java.awt.Dimension(150, 150));
 
+        imgj13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgj13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        imgj13.setMaximumSize(new java.awt.Dimension(150, 150));
+        imgj13.setMinimumSize(new java.awt.Dimension(150, 150));
+        imgj13.setName(""); // NOI18N
+        imgj13.setPreferredSize(new java.awt.Dimension(150, 150));
+
+        A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        A.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        A.setMaximumSize(new java.awt.Dimension(150, 150));
+        A.setMinimumSize(new java.awt.Dimension(150, 150));
+        A.setName(""); // NOI18N
+        A.setPreferredSize(new java.awt.Dimension(150, 150));
+
+        B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        B.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        B.setMaximumSize(new java.awt.Dimension(150, 150));
+        B.setMinimumSize(new java.awt.Dimension(150, 150));
+        B.setName(""); // NOI18N
+        B.setPreferredSize(new java.awt.Dimension(150, 150));
+
+        imgj12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgj12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        imgj12.setMaximumSize(new java.awt.Dimension(150, 150));
+        imgj12.setMinimumSize(new java.awt.Dimension(150, 150));
+        imgj12.setName(""); // NOI18N
+        imgj12.setPreferredSize(new java.awt.Dimension(150, 150));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -185,21 +233,31 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                 .addGap(11, 11, 11)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(imgj5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12)
-                        .addComponent(imgj6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12)
-                        .addComponent(imgj7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12)
-                        .addComponent(imgj8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(imgj1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
                         .addComponent(imgj2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
                         .addComponent(imgj3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(imgj4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(imgj4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(imgj5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(A, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(12, 12, 12)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(imgj6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(imgj7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(imgj8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(B, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(imgj12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(imgj13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(12, 12, 12))
         );
         jPanel1Layout.setVerticalGroup(
@@ -217,7 +275,13 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                     .addComponent(imgj5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(imgj7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(imgj8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(12, 12, 12))
+                .addGap(12, 12, 12)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(B, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(A, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imgj12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imgj13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         jDesktopPane1.setLayer(jLabel32, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -238,8 +302,8 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnVoltar))
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 660, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(70, Short.MAX_VALUE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 660, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(70, 70, 70))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -249,9 +313,9 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                     .addComponent(jLabel32)
                     .addComponent(jLabel1)
                     .addComponent(btnVoltar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(83, Short.MAX_VALUE))
+                .addGap(46, 46, 46))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -310,8 +374,12 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel A;
+    private javax.swing.JLabel B;
     private javax.swing.JButton btnVoltar;
     private javax.swing.JLabel imgj1;
+    private javax.swing.JLabel imgj12;
+    private javax.swing.JLabel imgj13;
     private javax.swing.JLabel imgj2;
     private javax.swing.JLabel imgj3;
     private javax.swing.JLabel imgj4;
@@ -385,6 +453,20 @@ private void verificaimg1(int idx){
         Imagem exe = dao.buscar(id);
         ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
     }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
+    }
+   
+   
     
 }
 
@@ -434,6 +516,18 @@ private void verificaimg2(int idx){
     }
    if(idx == 8){
         int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
+    }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
+    }
+   if(idx == 10){
+        int id = 10;
         ImagemDAO dao = new ImagemDAO();
         Imagem exe = dao.buscar(id);
         ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
@@ -491,6 +585,19 @@ private void verificaimg3(int idx){
         Imagem exe = dao.buscar(id);
         ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
     }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
+    }
+  
     
 }
 
@@ -544,6 +651,19 @@ private void verificaimg4(int idx){
         Imagem exe = dao.buscar(id);
         ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
     }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
+    }
+  
     
 }
 
@@ -593,6 +713,18 @@ private void verificaimg5(int idx){
     }
    if(idx == 8){
         int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
+    }
+  if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
+    }
+  if(idx == 10){
+        int id = 10;
         ImagemDAO dao = new ImagemDAO();
         Imagem exe = dao.buscar(id);
         ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
@@ -650,7 +782,19 @@ private void verificaimg6(int idx){
         Imagem exe = dao.buscar(id);
         ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
     }
-    
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
+    }
+  
 }
 
 private void verificaimg7(int idx){
@@ -703,6 +847,19 @@ private void verificaimg7(int idx){
         Imagem exe = dao.buscar(id);
         ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
     }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
+    }
+  
     
 }
 
@@ -756,7 +913,151 @@ private void verificaimg8(int idx){
         Imagem exe = dao.buscar(id);
         ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
     }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
+    }
     
 }
+
+private void verificaimg9(int idx){
+    if(idx == 1){
+        int id = 1;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+
+    if(idx == 2){
+        int id = 2;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+    
+    if(idx == 3){
+        int id = 3;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+    if(idx == 4){
+        int id = 4;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+   if(idx == 5){
+        int id = 5;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+   if(idx == 6){
+        int id = 6;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+   if(idx == 7){
+        int id = 7;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+   if(idx == 8){
+        int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+}
+
+private void verificaimg10(int idx){
+    if(idx == 1){
+        int id = 1;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+    if(idx == 2){
+        int id = 2;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+    
+    if(idx == 3){
+        int id = 3;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+    if(idx == 4){
+        int id = 4;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+   if(idx == 5){
+        int id = 5;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+   if(idx == 6){
+        int id = 6;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+   if(idx == 7){
+        int id = 7;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+   if(idx == 8){
+        int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+
+    
+}
+
 
 }
