@@ -4,8 +4,11 @@
  */
 package interface_grafica;
 
+import Controle.BibliotecaDAO;
 import Controle.JogoDAO;
 import static interface_grafica.Carrinho.listadejogos;
+import static interface_grafica.Tela_Biblioteca.listabiblioteca;
+import static interface_grafica.Tela_Usuario.txtPassword;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
@@ -215,6 +218,18 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
         System.out.println("jogos comprados: "+biblioteca.listabiblioteca.size());
         
         carrinho.listadejogos.clear();
+        
+        for(int i=0;i<listabiblioteca.size();i++){
+            String senha = txtPassword.getText();
+            String nome = listabiblioteca.get(i).getNome();
+            float valor = listabiblioteca.get(i).getValor();
+            
+            Jogo objjogo = new Jogo(nome,valor,0,"","","","","");
+            objjogo.setSenha(senha);
+            
+            BibliotecaDAO objusuariodao = new BibliotecaDAO();
+            objusuariodao.mandarbiblioteca(objjogo);
+        }
         
         Tela_Biblioteca x = new Tela_Biblioteca();
         this.dispose();

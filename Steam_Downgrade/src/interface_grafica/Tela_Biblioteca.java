@@ -4,6 +4,7 @@
  */
 package interface_grafica;
 
+import Controle.BibliotecaDAO;
 import Controle.ImagemDAO;
 import Controle.JogosComprados;
 import Controle.ManipularImagem;
@@ -88,9 +89,10 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         
         
        
-        
-        
         //System.out.println(listabiblioteca.size());
+        
+        
+        
         
         
     }
@@ -123,6 +125,7 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         B = new javax.swing.JLabel();
         imgj12 = new javax.swing.JLabel();
         abobora = new javax.swing.JLabel();
+        meuovo = new javax.swing.JLabel();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -293,11 +296,14 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         abobora.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
         abobora.setText("jLabel2");
 
+        meuovo.setText("jLabel2");
+
         jDesktopPane1.setLayer(jLabel32, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(btnVoltar, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(abobora, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(meuovo, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -316,6 +322,8 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                 .addGap(70, 70, 70))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(meuovo)
+                .addGap(141, 141, 141)
                 .addComponent(abobora)
                 .addGap(140, 140, 140))
         );
@@ -323,7 +331,9 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(abobora)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(abobora)
+                    .addComponent(meuovo))
                 .addGap(18, 18, 18)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jLabel32)
@@ -409,6 +419,7 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel meuovo;
     // End of variables declaration//GEN-END:variables
     
   
@@ -1089,10 +1100,12 @@ private void listacompras(String Senha){
             
             
             abobora.setText(novalista.get(0).getNome());
+            meuovo.setText(novalista.get(1).getNome());
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Lista compras " + e.getMessage());
         }
 }
+
 
 }
