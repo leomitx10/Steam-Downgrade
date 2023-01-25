@@ -5,6 +5,7 @@
 package interface_grafica;
 
 import Controle.ConexaoDAO;
+import Controle.JogosComprados;
 import Controle.UsuarioDAO;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -15,11 +16,13 @@ import java.io.FileNotFoundException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import teste.Jogo;
 import teste.Usuario;
 
 
@@ -369,7 +372,12 @@ import teste.Usuario;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JPasswordField txtPassword;
+    public static javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
-}
+
+ 
+    
+    
+    
+    }

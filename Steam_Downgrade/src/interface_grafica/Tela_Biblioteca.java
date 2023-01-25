@@ -5,11 +5,14 @@
 package interface_grafica;
 
 import Controle.ImagemDAO;
+import Controle.JogosComprados;
 import Controle.ManipularImagem;
 import static interface_grafica.Tela_Perfil2.perfil;
+import static interface_grafica.Tela_Usuario.txtPassword;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 import teste.Imagem;
 import teste.Jogo;
 
@@ -30,6 +33,8 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
+        
+        listacompras(txtPassword.getText());
         
         if(perfil.isEmpty()){
         
@@ -117,6 +122,7 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         A = new javax.swing.JLabel();
         B = new javax.swing.JLabel();
         imgj12 = new javax.swing.JLabel();
+        abobora = new javax.swing.JLabel();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -284,10 +290,14 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
+        abobora.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
+        abobora.setText("jLabel2");
+
         jDesktopPane1.setLayer(jLabel32, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(btnVoltar, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(abobora, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -304,11 +314,17 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
                         .addComponent(btnVoltar))
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 660, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(70, 70, 70))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(abobora)
+                .addGap(140, 140, 140))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
+                .addGap(14, 14, 14)
+                .addComponent(abobora)
+                .addGap(18, 18, 18)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jLabel32)
                     .addComponent(jLabel1)
@@ -322,11 +338,11 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -376,6 +392,7 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel A;
     private javax.swing.JLabel B;
+    private javax.swing.JLabel abobora;
     private javax.swing.JButton btnVoltar;
     private javax.swing.JLabel imgj1;
     private javax.swing.JLabel imgj12;
@@ -1059,5 +1076,23 @@ private void verificaimg10(int idx){
     
 }
 
+private void listacompras(String Senha){
+        
+        //Lista as compras na tabela 
+        try {
+          
+            JogosComprados novo = new JogosComprados();
+            
+            //Joga o objeto num array para poder mostra-lo numa tabela
+           
+            ArrayList<Jogo> novalista = novo.ListaComprasJogos(Senha);
+            
+            
+            abobora.setText(novalista.get(0).getNome());
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Lista compras " + e.getMessage());
+        }
+}
 
 }
