@@ -7,6 +7,7 @@ package interface_grafica;
 import Controle.ImagemDAO;
 import Controle.JogoDAO;
 import Controle.ManipularImagem;
+import static interface_grafica.Tela_PagamentoB.biblioteca;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
@@ -243,7 +244,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         });
 
         lblTitulo1.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
-        lblTitulo1.setText("Elden Ring");
+        lblTitulo1.setText("oooooooo");
         lblTitulo1.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
                 lblTitulo1AncestorAdded(evt);
@@ -784,6 +785,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void btnDeslogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeslogarActionPerformed
+        biblioteca.listabiblioteca.clear();
         perfillista.perfil.clear();
         Tela_Usuario b = new Tela_Usuario();
         this.dispose();
@@ -976,7 +978,13 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        // TODO add your handling code here:
+         JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj = jogodao.listJogos();
+        carrinho.listadejogos.add(lj.get(8));
+        for(Jogo j: carrinho.listadejogos){
+            System.out.println(j.getNome());
+        }
+        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
@@ -990,7 +998,13 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        // TODO add your handling code here:
+        JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj = jogodao.listJogos();
+        carrinho.listadejogos.add(lj.get(9));
+        for(Jogo j: carrinho.listadejogos){
+            System.out.println(j.getNome());
+        }
+        JOptionPane.showMessageDialog(null, "Adicionado ao carrinho", "Adicionado", 1);
     }//GEN-LAST:event_jButton29ActionPerformed
 
     /**

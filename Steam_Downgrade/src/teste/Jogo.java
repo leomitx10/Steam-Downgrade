@@ -10,6 +10,7 @@ public class Jogo {
     private String requisitos;
     private String genero;
     private String descricao;
+    private String senha;
 
     public Jogo(String nome, float valor, int classificacao_Indicativa, String desenvolvedor, String distribuidora, String requisitos, String genero, String descricao) {
         this.nome = nome;
@@ -93,6 +94,14 @@ public class Jogo {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
     
     

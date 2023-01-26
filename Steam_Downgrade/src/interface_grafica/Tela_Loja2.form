@@ -505,7 +505,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Liberation Sans" size="18" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Elden Ring"/>
+                    <Property name="text" type="java.lang.String" value="oooooooo"/>
                   </Properties>
                   <Events>
                     <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="lblTitulo1AncestorAdded"/>

@@ -12,7 +12,7 @@
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/100738244?v=4" width="100px;" alt="Foto do Artur no GitHub"/><br>
         <sub>
-          <b><a href="https://github.com/artur-jack" target="_blank">Artur Jackson</a></b>
+          <b>Artur Jackson</b>
         </sub>
       </a>
     </td>
