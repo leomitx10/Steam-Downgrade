@@ -20,7 +20,7 @@
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/61592832?v=4" width="100px;" alt="Foto do Gustavo no GitHub"/><br>
         <sub>
-          <b>Gustavo França</b>
+          <b><a href="https://github.com/gustavofbs">Gustavo França</a></b>
         </sub>
       </a>
     </td>
@@ -28,7 +28,7 @@
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/90487905?v=4" width="100px;" alt="Foto do Leandro no GitHub "/><br>
         <sub>
-          <b>Leandro de Almeida</b>
+          <b><a href="https://github.com/leomitx10">Leandro de Almeida</a></b>
         </sub>
       </a>
     </td>
@@ -36,7 +36,7 @@
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/98489703?v=4" width="100px;" alt="Foto do Oscar no GitHub"/><br>
         <sub>
-          <b>Oscar de Brito</b>
+          <b><a href="https://github.com/OscarDeBrito">Oscar de Brito</a></b>
         </sub>
       </a>
     </td>
