@@ -22,7 +22,7 @@ public class BibliotecaDAO {
     ResultSet rs;
     
     public void mandarbiblioteca(Jogo objjogo){
-        String sql = "INSERT INTO jogos_comprados(senha,nome,valor) VALUES (?,?,?)";
+        String sql = "INSERT INTO jogos_comprados(senha,nome,valor,id) VALUES (?,?,?,?)";
         
         conn = new ConexaoDAO().conectaBD();
         
@@ -31,6 +31,7 @@ public class BibliotecaDAO {
             pstm.setString(1, txtPassword.getText()); 
             pstm.setString(2, objjogo.getNome());
             pstm.setFloat(3, objjogo.getValor());
+            pstm.setInt(4,objjogo.getId());
             pstm.execute();
             pstm.close();
         } catch (Exception erro) { 

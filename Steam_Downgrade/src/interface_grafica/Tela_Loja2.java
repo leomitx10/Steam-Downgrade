@@ -7,6 +7,7 @@ package interface_grafica;
 import Controle.ImagemDAO;
 import Controle.JogoDAO;
 import Controle.ManipularImagem;
+import static interface_grafica.Tela_PagamentoB.biblioteca;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
@@ -784,6 +785,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void btnDeslogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeslogarActionPerformed
+        biblioteca.listabiblioteca.clear();
         perfillista.perfil.clear();
         Tela_Usuario b = new Tela_Usuario();
         this.dispose();

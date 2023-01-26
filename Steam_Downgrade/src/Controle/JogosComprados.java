@@ -42,6 +42,7 @@ public class JogosComprados {
                 Jogo novo = new Jogo("",0f,0,"","","","","");
                 novo.setNome(rs.getString("nome"));
                 novo.setValor(rs.getFloat("valor"));
+                novo.setId(rs.getInt("id"));
                 
                 listacomprados.add(novo);  
             }

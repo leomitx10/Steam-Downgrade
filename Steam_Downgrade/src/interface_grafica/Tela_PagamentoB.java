@@ -223,9 +223,11 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
             String senha = txtPassword.getText();
             String nome = listabiblioteca.get(i).getNome();
             float valor = listabiblioteca.get(i).getValor();
+            int id = listabiblioteca.get(i).getId();
             
             Jogo objjogo = new Jogo(nome,valor,0,"","","","","");
             objjogo.setSenha(senha);
+            objjogo.setId(id);
             
             BibliotecaDAO objusuariodao = new BibliotecaDAO();
             objusuariodao.mandarbiblioteca(objjogo);
