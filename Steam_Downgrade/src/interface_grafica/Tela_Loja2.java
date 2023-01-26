@@ -244,7 +244,7 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         });
 
         lblTitulo1.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
-        lblTitulo1.setText("Elden Ring");
+        lblTitulo1.setText("oooooooo");
         lblTitulo1.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
                 lblTitulo1AncestorAdded(evt);

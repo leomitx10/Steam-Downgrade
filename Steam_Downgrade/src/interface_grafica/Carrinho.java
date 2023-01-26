@@ -657,7 +657,7 @@ public class Carrinho extends javax.swing.JFrame {
     private javax.swing.JLabel txtNome7;
     private javax.swing.JLabel txtNome8;
     private javax.swing.JLabel txtNome9;
-    private javax.swing.JLabel txtSubtotal;
+    public static javax.swing.JLabel txtSubtotal;
     private javax.swing.JLabel txtValor1;
     private javax.swing.JLabel txtValor10;
     private javax.swing.JLabel txtValor11;
