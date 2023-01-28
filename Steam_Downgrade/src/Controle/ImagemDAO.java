@@ -9,11 +9,11 @@ import com.mysql.cj.protocol.Resultset;
 import com.mysql.jdbc.PreparedStatement;
 import java.sql.Connection;
 import javax.swing.JOptionPane;
-import teste.Imagem;
+import model.Imagem;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import teste.Jogo;
+import model.Jogo;
 
 /**
  *

@@ -11,7 +11,8 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
-import teste.Jogo;
+import model.Jogo;
+import model.ListadeDesejo;
 
 /**
  *
@@ -19,6 +20,7 @@ import teste.Jogo;
  */
 public class Tela_ListaDesejo extends javax.swing.JFrame {
     public static ArrayList<Jogo> listadejogos = new ArrayList<Jogo>();
+    
     /**
      * Creates new form Tela_ListaDesejo
      */
@@ -27,60 +29,8 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
         
-        if(listadejogos.isEmpty()){
-
-        }else{jLabel2.setText(listadejogos.get(0).getNome());
-            jLabel6.setText(Float.toString(listadejogos.get(0).getValor()));
-            
-        }
-
-        if(verifica(1)){
-            jLabel3.setText(listadejogos.get(1).getNome());
-            jLabel7.setText(Float.toString(listadejogos.get(1).getValor()));
-            
-        }
-
-        if(verifica(2)){
-            jLabel4.setText(listadejogos.get(2).getNome());
-            jLabel8.setText(Float.toString(listadejogos.get(2).getValor()));
-            
-        }
-
-        if(verifica(3)){
-            jLabel5.setText(listadejogos.get(3).getNome());
-            jLabel9.setText(Float.toString(listadejogos.get(3).getValor()));
-            
-        }
-        if(verifica(4)){
-            jLabel12.setText(listadejogos.get(4).getNome());
-            jLabel13.setText(Float.toString(listadejogos.get(4).getValor()));
-            
-        }
-        if(verifica(5)){
-            jLabel14.setText(listadejogos.get(5).getNome());
-            jLabel15.setText(Float.toString(listadejogos.get(5).getValor()));
-            
-        }
-        if(verifica(6)){
-            jLabel16.setText(listadejogos.get(6).getNome());
-            jLabel17.setText(Float.toString(listadejogos.get(6).getValor()));
-            
-        }
-        if(verifica(7)){
-            jLabel10.setText(listadejogos.get(7).getNome());
-            jLabel11.setText(Float.toString(listadejogos.get(7).getValor()));
-            
-        }
-        if(verifica(8)){
-            jLabel18.setText(listadejogos.get(8).getNome());
-            jLabel19.setText(Float.toString(listadejogos.get(8).getValor()));
-            
-        }
-        if(verifica(9)){
-            jLabel20.setText(listadejogos.get(9).getNome());
-            jLabel21.setText(Float.toString(listadejogos.get(9).getValor()));
-            
-        }
+        
+        ListadeDesejo.mostrarlista();
     }
 
     /**
@@ -689,7 +639,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
        
-        if(verifica(0)){
+        if(ListadeDesejo.verifica(0)){
             carrinho.listadejogos.add(listadejogos.get(0));
             for(Jogo j: carrinho.listadejogos){
                 System.out.println(j.getNome());
@@ -699,14 +649,13 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Não há jogo para adicionar", "Erro", 2);
         }
         
-        
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
         
-        if(verifica(1)){
+        if(ListadeDesejo.verifica(1)){
          carrinho.listadejogos.add(listadejogos.get(1));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
@@ -721,7 +670,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
         
-        if(verifica(2)){
+        if(ListadeDesejo.verifica(2)){
             carrinho.listadejogos.add(listadejogos.get(2));
             for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
@@ -737,7 +686,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
         
-        if(verifica(3)){
+        if(ListadeDesejo.verifica(3)){
             carrinho.listadejogos.add(listadejogos.get(3));
             for(Jogo j: carrinho.listadejogos){
                 System.out.println(j.getNome());
@@ -758,7 +707,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
         
-        if(verifica(4)){
+        if(ListadeDesejo.verifica(4)){
             carrinho.listadejogos.add(listadejogos.get(4));
             for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
@@ -775,7 +724,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
         
-        if(verifica(5)){
+        if(ListadeDesejo.verifica(5)){
         carrinho.listadejogos.add(listadejogos.get(5));
         for(Jogo j: carrinho.listadejogos){
             System.out.println(j.getNome());
@@ -791,7 +740,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
         
-        if(verifica(6)){
+        if(ListadeDesejo.verifica(6)){
             carrinho.listadejogos.add(listadejogos.get(6));
             for(Jogo j: carrinho.listadejogos){
                 System.out.println(j.getNome());
@@ -807,7 +756,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
         
-        if(verifica(7)){
+        if(ListadeDesejo.verifica(7)){
             carrinho.listadejogos.add(listadejogos.get(7));
             for(Jogo j: carrinho.listadejogos){
                 System.out.println(j.getNome());
@@ -825,31 +774,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     }//GEN-LAST:event_selExcActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        String escolha= selExc.getSelectedItem().toString();
-        System.out.println(escolha);
-
-        if(escolha.equals("Jogo 1")&& listadejogos.size()>=1){
-            listadejogos.remove(0);
-        }else if (escolha.equals("Jogo 2")&& listadejogos.size()>=2){
-            listadejogos.remove(1);
-        }else if(escolha.equals("Jogo 3")&& listadejogos.size()>=3){
-            listadejogos.remove(2);
-        }else if(escolha.equals("Jogo 4")&& listadejogos.size()>=4){
-            listadejogos.remove(3);
-        }
-
-        else if(escolha.equals("Jogo 5")&& listadejogos.size()>=5){
-            listadejogos.remove(4);
-        }
-        else if(escolha.equals("Jogo 6")&& listadejogos.size()>=6){
-            listadejogos.remove(5);
-        }
-        else if(escolha.equals("Jogo 7")&& listadejogos.size()>=7){
-            listadejogos.remove(6);
-        }
-        else if(escolha.equals("Jogo 8")&& listadejogos.size()>=8){
-            listadejogos.remove(7);
-        }
+        ListadeDesejo.removerdalista();
 
         Tela_ListaDesejo x = new Tela_ListaDesejo();
         this.dispose();
@@ -861,7 +786,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
         
-        if(verifica(8)){
+        if(ListadeDesejo.verifica(8)){
             carrinho.listadejogos.add(listadejogos.get(8));
             for(Jogo j: carrinho.listadejogos){
                 System.out.println(j.getNome());
@@ -876,7 +801,7 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj = jogodao.listJogos();
         
-        if(verifica(9)){
+        if(ListadeDesejo.verifica(9)){
             carrinho.listadejogos.add(listadejogos.get(9));
             for(Jogo j: carrinho.listadejogos){
                 System.out.println(j.getNome());
@@ -936,26 +861,26 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    public static javax.swing.JLabel jLabel10;
+    public static javax.swing.JLabel jLabel11;
+    public static javax.swing.JLabel jLabel12;
+    public static javax.swing.JLabel jLabel13;
+    public static javax.swing.JLabel jLabel14;
+    public static javax.swing.JLabel jLabel15;
+    public static javax.swing.JLabel jLabel16;
+    public static javax.swing.JLabel jLabel17;
+    public static javax.swing.JLabel jLabel18;
+    public static javax.swing.JLabel jLabel19;
+    public static javax.swing.JLabel jLabel2;
+    public static javax.swing.JLabel jLabel20;
+    public static javax.swing.JLabel jLabel21;
+    public static javax.swing.JLabel jLabel3;
+    public static javax.swing.JLabel jLabel4;
+    public static javax.swing.JLabel jLabel5;
+    public static javax.swing.JLabel jLabel6;
+    public static javax.swing.JLabel jLabel7;
+    public static javax.swing.JLabel jLabel8;
+    public static javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
@@ -966,16 +891,9 @@ public class Tela_ListaDesejo extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JComboBox<String> selExc;
+    public static javax.swing.JComboBox<String> selExc;
     // End of variables declaration//GEN-END:variables
 
-private boolean verifica(int x){
-    if(listadejogos.size()>x){
-        return true;
-    }else{
-        return false;
-    }
-}
 
 
 }

@@ -8,7 +8,7 @@ import Controle.UsuarioDAO;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JOptionPane;
-import teste.Usuario;
+import model.Usuario;
 
 /**
  *

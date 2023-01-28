@@ -5,7 +5,8 @@
 package interface_grafica;
 
 import java.util.ArrayList;
-import teste.Usuario;
+import model.Perfil;
+import model.Usuario;
 
 /**
  *
@@ -20,14 +21,7 @@ public class Tela_Perfil2 extends javax.swing.JFrame {
      */
     public Tela_Perfil2() {
         initComponents();
-        if(perfil.isEmpty()){
-        
-        }else{
-            txtApelido.setText(perfil.get(0).getApelido());
-            txtNomeUsu.setText(perfil.get(0).getNome());
-            txtEmail.setText(perfil.get(0).getEmail());
-            txtIdade.setText(Integer.toString(perfil.get(0).getIdade()));
-        }
+        Perfil.InfoPerfil();
     }
 
     /**
@@ -147,9 +141,6 @@ public class Tela_Perfil2 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.dispose();
-        
-        
-
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -194,9 +185,9 @@ public class Tela_Perfil2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JLabel txtApelido;
-    private javax.swing.JLabel txtEmail;
-    private javax.swing.JLabel txtIdade;
-    private javax.swing.JLabel txtNomeUsu;
+    public static javax.swing.JLabel txtApelido;
+    public static javax.swing.JLabel txtEmail;
+    public static javax.swing.JLabel txtIdade;
+    public static javax.swing.JLabel txtNomeUsu;
     // End of variables declaration//GEN-END:variables
 }

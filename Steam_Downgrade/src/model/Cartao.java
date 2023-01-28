@@ -1,15 +1,13 @@
-package teste;
+package model;
 
-public class Cartao extends Formadepagamento{
+public class Cartao{
     
     private String nome;
-    private String bandeira;
     private String numero;
     private String validade;
+    private String CVV;
 
-    public Cartao(Pagamento pagamento) {
-        super(pagamento);
-    }
+    
     
     public String getNome() {
         return nome;
@@ -17,14 +15,6 @@ public class Cartao extends Formadepagamento{
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getBandeira() {
-        return bandeira;
-    }
-
-    public void setBandeira(String bandeira) {
-        this.bandeira = bandeira;
     }
 
     public String getNumero() {
@@ -42,5 +32,14 @@ public class Cartao extends Formadepagamento{
     public void setValidade(String validade) {
         this.validade = validade;
     }
+
+    public String getCVV() {
+        return CVV;
+    }
+
+    public void setCVV(String CVV) {
+        this.CVV = CVV;
+    }
+    
     
 }

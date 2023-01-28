@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
-import teste.Jogo;
+import model.Jogo;
 /**
  *
  * @author leandro

@@ -6,7 +6,7 @@ package interface_grafica;
 
 import Controle.JogoDAO;
 import java.util.ArrayList;
-import teste.Jogo;
+import model.Jogo;
 
 /**
  *

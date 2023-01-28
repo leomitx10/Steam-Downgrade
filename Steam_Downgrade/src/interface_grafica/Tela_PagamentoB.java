@@ -13,7 +13,8 @@ import static interface_grafica.Tela_Usuario.txtPassword;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
-import teste.Jogo;
+import model.Jogo;
+import model.Pagamento;
 
 /**
  *
@@ -187,62 +188,7 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj1 = jogodao.listJogos();
         
-        if(listadejogos.isEmpty()){
-            
-        }else{
-            biblioteca.listabiblioteca.add(listadejogos.get(0));
-        }
-        
-        if(verifica(1)){
-            biblioteca.listabiblioteca.add(listadejogos.get(1));
-        }
-        
-        if(verifica(2)){
-           biblioteca.listabiblioteca.add(listadejogos.get(2));
-        }
-        
-        if(verifica(3)){
-             biblioteca.listabiblioteca.add(listadejogos.get(3));
-        }
-        
-        if(verifica(4)){
-             biblioteca.listabiblioteca.add(listadejogos.get(4));
-        }
-        
-        if(verifica(5)){
-             biblioteca.listabiblioteca.add(listadejogos.get(5));
-        }
-        
-        if(verifica(6)){
-             biblioteca.listabiblioteca.add(listadejogos.get(6));
-        }
-        
-        if(verifica(7)){
-             biblioteca.listabiblioteca.add(listadejogos.get(7));
-        }
-        if(verifica(8)){
-             biblioteca.listabiblioteca.add(listadejogos.get(8));
-        }
-        if(verifica(9)){
-             biblioteca.listabiblioteca.add(listadejogos.get(9));
-        }
-        System.out.println("jogos comprados: "+biblioteca.listabiblioteca.size());
-        
-        carrinho.listadejogos.clear();
-        
-        for(int i=0;i<listabiblioteca.size();i++){
-            String senha = txtPassword.getText();
-            String nome = listabiblioteca.get(i).getNome();
-            float valor = listabiblioteca.get(i).getValor();
-            int id = listabiblioteca.get(i).getId();
-            
-            Jogo objjogo = new Jogo(nome,valor,0,"","","","","");
-            objjogo.setSenha(senha);
-            objjogo.setId(id);
-            
-            BibliotecaDAO objusuariodao = new BibliotecaDAO();
-            objusuariodao.mandarbiblioteca(objjogo);
-        }
+        Pagamento.MandaJogoBiblioteca();
         
         Tela_Biblioteca x = new Tela_Biblioteca();
         this.dispose();
@@ -314,12 +260,6 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
     private javax.swing.JLabel txtmeuovo;
     // End of variables declaration//GEN-END:variables
 
-private boolean verifica(int x){
-    if(listadejogos.size()>x){
-        return true;
-    }else{
-        return false;
-    }
-}
+
 
 }

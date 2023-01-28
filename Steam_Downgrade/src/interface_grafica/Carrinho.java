@@ -7,8 +7,8 @@ package interface_grafica;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
-import teste.Jogo;
-import teste.ListaUsuarios;
+import model.Jogo;
+import model.CarrinhoA;
 
 /**
  *
@@ -24,79 +24,7 @@ public class Carrinho extends javax.swing.JFrame {
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
         
-        float subt = 0;
-        txtSubtotal.setText( Float.toString(subt));
-
-        if(listadejogos.isEmpty()){
-
-        }else{txtNome1.setText(listadejogos.get(0).getNome());
-            txtValor1.setText(Float.toString(listadejogos.get(0).getValor()));
-            subt = listadejogos.get(0).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-
-        if(verifica(1)){
-            txtNome2.setText(listadejogos.get(1).getNome());
-            txtValor2.setText(Float.toString(listadejogos.get(1).getValor()));
-            subt = subt + listadejogos.get(1).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-
-        if(verifica(2)){
-            txtNome3.setText(listadejogos.get(2).getNome());
-            txtValor3.setText(Float.toString(listadejogos.get(2).getValor()));
-            subt = subt + listadejogos.get(2).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-
-        if(verifica(3)){
-            txtNome4.setText(listadejogos.get(3).getNome());
-            txtValor4.setText(Float.toString(listadejogos.get(3).getValor()));
-            subt = subt + listadejogos.get(3).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-        
-        if(verifica(4)){
-            txtNome5.setText(listadejogos.get(4).getNome());
-            txtValor5.setText(Float.toString(listadejogos.get(4).getValor()));
-            subt = subt + listadejogos.get(4).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-        
-        if(verifica(5)){
-            txtNome7.setText(listadejogos.get(5).getNome());
-            txtValor7.setText(Float.toString(listadejogos.get(5).getValor()));
-            subt = subt + listadejogos.get(5).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-        
-        if(verifica(6)){
-            txtNome8.setText(listadejogos.get(6).getNome());
-            txtValor8.setText(Float.toString(listadejogos.get(6).getValor()));
-            subt = subt + listadejogos.get(6).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-        
-        if(verifica(7)){
-            txtNome9.setText(listadejogos.get(7).getNome());
-            txtValor9.setText(Float.toString(listadejogos.get(7).getValor()));
-            subt = subt + listadejogos.get(7).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-        
-        if(verifica(8)){
-            txtNome10.setText(listadejogos.get(8).getNome());
-            txtValor10.setText(Float.toString(listadejogos.get(8).getValor()));
-            subt = subt + listadejogos.get(8).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
-        
-        if(verifica(9)){
-            txtNome11.setText(listadejogos.get(9).getNome());
-            txtValor11.setText(Float.toString(listadejogos.get(9).getValor()));
-            subt = subt + listadejogos.get(8).getValor();
-            txtSubtotal.setText(Float.toString(subt));
-        }
+        CarrinhoA.MostrarnoCarrinho();
     }
 
     /**
@@ -582,37 +510,7 @@ public class Carrinho extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String escolha= selExc.getSelectedItem().toString();
-        System.out.println(escolha);
-        
-        if(escolha.equals("Jogo 1")&& listadejogos.size()>=1){
-            listadejogos.remove(0);
-        }else if (escolha.equals("Jogo 2")&& listadejogos.size()>=2){
-            listadejogos.remove(1);
-        }else if(escolha.equals("Jogo 3")&& listadejogos.size()>=3){
-            listadejogos.remove(2);
-        }else if(escolha.equals("Jogo 4")&& listadejogos.size()>=4){
-            listadejogos.remove(3);
-        }
-        
-        else if(escolha.equals("Jogo 5")&& listadejogos.size()>=5){
-            listadejogos.remove(4);
-        }
-        else if(escolha.equals("Jogo 6")&& listadejogos.size()>=6){
-            listadejogos.remove(5);
-        }
-        else if(escolha.equals("Jogo 7")&& listadejogos.size()>=7){
-            listadejogos.remove(6);
-        }
-        else if(escolha.equals("Jogo 8")&& listadejogos.size()>=8){
-            listadejogos.remove(7);
-        }
-         else if(escolha.equals("Jogo 9")&& listadejogos.size()>=8){
-            listadejogos.remove(8);
-        }
-         else if(escolha.equals("Jogo 10")&& listadejogos.size()>=8){
-            listadejogos.remove(9);
-        }
+        CarrinhoA.RemoverdoCarrinho();
         
         Carrinho x = new Carrinho();
         this.dispose();
@@ -646,36 +544,30 @@ public class Carrinho extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JComboBox<String> selExc;
-    private javax.swing.JLabel txtNome1;
-    private javax.swing.JLabel txtNome10;
-    private javax.swing.JLabel txtNome11;
-    private javax.swing.JLabel txtNome2;
-    private javax.swing.JLabel txtNome3;
-    private javax.swing.JLabel txtNome4;
-    private javax.swing.JLabel txtNome5;
-    private javax.swing.JLabel txtNome7;
-    private javax.swing.JLabel txtNome8;
-    private javax.swing.JLabel txtNome9;
+    public static javax.swing.JComboBox<String> selExc;
+    public static javax.swing.JLabel txtNome1;
+    public static javax.swing.JLabel txtNome10;
+    public static javax.swing.JLabel txtNome11;
+    public static javax.swing.JLabel txtNome2;
+    public static javax.swing.JLabel txtNome3;
+    public static javax.swing.JLabel txtNome4;
+    public static javax.swing.JLabel txtNome5;
+    public static javax.swing.JLabel txtNome7;
+    public static javax.swing.JLabel txtNome8;
+    public static javax.swing.JLabel txtNome9;
     public static javax.swing.JLabel txtSubtotal;
-    private javax.swing.JLabel txtValor1;
-    private javax.swing.JLabel txtValor10;
-    private javax.swing.JLabel txtValor11;
-    private javax.swing.JLabel txtValor2;
-    private javax.swing.JLabel txtValor3;
-    private javax.swing.JLabel txtValor4;
-    private javax.swing.JLabel txtValor5;
-    private javax.swing.JLabel txtValor7;
-    private javax.swing.JLabel txtValor8;
-    private javax.swing.JLabel txtValor9;
+    public static javax.swing.JLabel txtValor1;
+    public static javax.swing.JLabel txtValor10;
+    public static javax.swing.JLabel txtValor11;
+    public static javax.swing.JLabel txtValor2;
+    public static javax.swing.JLabel txtValor3;
+    public static javax.swing.JLabel txtValor4;
+    public static javax.swing.JLabel txtValor5;
+    public static javax.swing.JLabel txtValor7;
+    public static javax.swing.JLabel txtValor8;
+    public static javax.swing.JLabel txtValor9;
     // End of variables declaration//GEN-END:variables
 
-private boolean verifica(int x){
-    if(listadejogos.size()>x){
-        return true;
-    }else{
-        return false;
-    }
-}
+
 
 }

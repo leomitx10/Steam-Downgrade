@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/leandro/Área%20de%20Trabalho/Steam-Downgrade/Steam_Downgrade/src/Controle/JogoDAO.java</file>
-            <file>file:/home/leandro/Área%20de%20Trabalho/Steam-Downgrade/Steam_Downgrade/src/interface_grafica/Carrinho.java</file>
+            <file>file:/home/leandro/Área%20de%20Trabalho/Steam-Downgrade/Steam_Downgrade/src/model/Formadepagamento.java</file>
+            <file>file:/home/leandro/Área%20de%20Trabalho/Steam-Downgrade/Steam_Downgrade/src/model/Cartao.java</file>
+            <file>file:/home/leandro/Área%20de%20Trabalho/Steam-Downgrade/Steam_Downgrade/src/model/Biblioteca.java</file>
             <file>file:/home/leandro/Área%20de%20Trabalho/Steam-Downgrade/Steam_Downgrade/src/interface_grafica/Tela_PagamentoB.java</file>
+            <file>file:/home/leandro/Área%20de%20Trabalho/Steam-Downgrade/Steam_Downgrade/src/model/Pagamento.java</file>
         </group>
     </open-files>
 </project-private>
