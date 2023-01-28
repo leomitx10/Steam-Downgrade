@@ -22,8 +22,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import teste.Jogo;
-import teste.Usuario;
+import model.Jogo;
+import model.Usuario;
 
 
 /**

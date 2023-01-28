@@ -1,11 +1,9 @@
-package teste;
+package model;
 
-public class Credito extends Cartao{
+public class Credito{
     private int parcelamento;
 
-    public Credito(Pagamento pagamento) {
-        super(pagamento);
-    }
+    
 
    
     

@@ -1,17 +1,14 @@
-package teste;
+package model;
 import java.util.ArrayList;
 
-public class Biblioteca extends ContaJogos{
+public class Biblioteca{
     // Atributos
     private ArrayList<Jogo> jogo;
     private Jogo game;
-    private Cliente[] cliente;
 
-    public Biblioteca(ArrayList<Jogo> jogo, Jogo game, Cliente[] cliente, int quantidadeJogos) {
-        super(quantidadeJogos);
+    public Biblioteca(ArrayList<Jogo> jogo, Jogo game, int quantidadeJogos){
         this.jogo = jogo;
         this.game = game;
-        this.cliente = cliente;
     }
 
     public ArrayList<Jogo> getJogo() {
@@ -30,13 +27,7 @@ public class Biblioteca extends ContaJogos{
         this.game = game;
     }
 
-    public Cliente[] getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente[] cliente) {
-        this.cliente = cliente;
-    }
+ 
     
      
 

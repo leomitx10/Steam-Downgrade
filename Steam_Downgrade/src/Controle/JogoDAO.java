@@ -4,14 +4,14 @@
  */
 package Controle;
 
-import teste.Jogo;
+import model.Jogo;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
-import teste.Usuario;
+import model.Usuario;
 import com.mysql.cj.jdbc.result.ResultSetFactory;
 import java.util.Date;
 

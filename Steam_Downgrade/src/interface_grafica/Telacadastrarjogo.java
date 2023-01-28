@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import Controle.ConexaoDAO;
 import Controle.ImagemDAO;
-import teste.Jogo;
+import model.Jogo;
 import Controle.JogoDAO;
 import Controle.ManipularImagem;
 import java.awt.Dimension;
@@ -17,7 +17,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
-import teste.Imagem;
+import model.Imagem;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license

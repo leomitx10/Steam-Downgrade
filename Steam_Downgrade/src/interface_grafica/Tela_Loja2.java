@@ -12,8 +12,9 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
-import teste.Imagem;
-import teste.Jogo;
+import model.Imagem;
+import model.Jogo;
+import model.Loja;
 
 /**
  *
@@ -34,36 +35,98 @@ public class Tela_Loja2 extends javax.swing.JFrame {
         Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
-        mostrarjogo();
-         int id = 1;
-        ImagemDAO dao = new ImagemDAO();
-        Imagem exe = dao.buscar(id);
-        ManipularImagem.exibiImagemLabel(exe.getImagem(), labelimagem1); 
         
-        int id1 = 2;
-        ImagemDAO dao1 = new ImagemDAO();
-        Imagem exe1 = dao1.buscar(id1);
-        ManipularImagem.exibiImagemLabel(exe1.getImagem(), labelimagem2);
-        
-        int id2 = 3;
-        ImagemDAO dao2 = new ImagemDAO();
-        Imagem exe2 = dao2.buscar(id2);
-        ManipularImagem.exibiImagemLabel(exe2.getImagem(), labelimagem3); 
-        
-        int id3 = 4;
-        ImagemDAO dao3 = new ImagemDAO();
-        Imagem exe3 = dao3.buscar(id3);
-        ManipularImagem.exibiImagemLabel(exe3.getImagem(), labelimagem4); 
-        
-        int id4 = 5;
-        ImagemDAO dao4 = new ImagemDAO();
-        Imagem exe4 = dao4.buscar(id4);
-        ManipularImagem.exibiImagemLabel(exe4.getImagem(), labelimagem5); 
-        
-        int id5 = 6;
-        ImagemDAO dao5 = new ImagemDAO();
-        Imagem exe5 = dao5.buscar(id5);
-        ManipularImagem.exibiImagemLabel(exe5.getImagem(), labelimagem6); 
+        JogoDAO objjogo = new JogoDAO();
+            
+            ArrayList<Jogo> lista = objjogo.listJogos();
+            
+            /*for (int i =0;i<lista.size();i++)*/
+            lblTitulo1.setText(lista.get(0).getNome());
+            lblValor1.setText("R$ "+Float.toString(lista.get(0).getValor()));
+            
+            lblTitulo2.setText(lista.get(1).getNome());
+            lblValor2.setText("R$ "+Float.toString(lista.get(1).getValor()));
+            
+            lblTitulo3.setText(lista.get(2).getNome());
+            lblValor3.setText("R$ "+Float.toString(lista.get(2).getValor()));
+            
+            
+            lblTitulo4.setText(lista.get(3).getNome());
+            lblValor4.setText("R$ "+Float.toString(lista.get(3).getValor()));
+            
+            lblTitulo5.setText(lista.get(4).getNome());
+            lblValor5.setText("R$ "+Float.toString(lista.get(4).getValor()));
+            
+            lblTitulo6.setText(lista.get(5).getNome());
+            lblValor6.setText("R$ "+Float.toString(lista.get(5).getValor()));
+            
+            if(lista.size()>=7){
+                lblTitulo7.setText(lista.get(6).getNome());
+                lblValor7.setText("R$ "+Float.toString(lista.get(6).getValor()));
+                
+                int id6 = 7;
+                ImagemDAO dao6 = new ImagemDAO();
+                Imagem exe6 = dao6.buscar(id6);
+                ManipularImagem.exibiImagemLabel(exe6.getImagem(), labelimagem7); 
+            }else{
+                 lblTitulo7.setText("");
+                 lblValor7.setText("");
+                 jButton24.setVisible(false);
+                 jButton25.setVisible(false);
+                 labelimagem7.setText("");
+            }
+            
+            if(lista.size()>=8){
+                lblTitulo8.setText(lista.get(7).getNome());
+                lblValor8.setText("R$ "+Float.toString(lista.get(7).getValor()));
+                
+                int id7 = 8;
+                ImagemDAO dao7 = new ImagemDAO();
+                Imagem exe7 = dao7.buscar(id7);
+                ManipularImagem.exibiImagemLabel(exe7.getImagem(), lblimagem8); 
+            }else{
+                lblTitulo8.setText("");
+                lblValor8.setText("");
+                jButton23.setVisible(false);
+                jButton22.setVisible(false);
+                lblimagem8.setText("");
+                
+            }if(lista.size()>=9){
+                lblTitulo9.setText(lista.get(8).getNome());
+                lblValor9.setText("R$ "+Float.toString(lista.get(8).getValor()));
+                
+                int id8 = 9;
+                ImagemDAO dao8 = new ImagemDAO();
+                Imagem exe8 = dao8.buscar(id8);
+                ManipularImagem.exibiImagemLabel(exe8.getImagem(), lblimagem9); 
+                
+            }else{
+                lblTitulo9.setText("");
+                lblValor9.setText("");
+                jButton27.setVisible(false);
+                jButton26.setVisible(false);
+                lblimagem9.setText("");
+            }
+            
+            if(lista.size()>=10){
+                lblTitulo10.setText(lista.get(9).getNome());
+                lblValor10.setText("R$ "+Float.toString(lista.get(9).getValor()));
+                
+                int id9 = 10;
+                ImagemDAO dao10 = new ImagemDAO();
+                Imagem exe10 = dao10.buscar(id9);
+                ManipularImagem.exibiImagemLabel(exe10.getImagem(), lblimagem10); 
+                
+            }else{
+                lblTitulo10.setText("");
+                lblValor10.setText("");
+                jButton29.setVisible(false);
+                jButton28.setVisible(false);
+                lblimagem10.setText("");
+            }
+            
+     /////////////////////////
+     Loja.MostrarCapaJogo();
         
         
     }
@@ -1044,165 +1107,66 @@ public class Tela_Loja2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDeslogar;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
+    public static javax.swing.JButton jButton10;
+    public static javax.swing.JButton jButton11;
+    public static javax.swing.JButton jButton14;
+    public static javax.swing.JButton jButton15;
+    public static javax.swing.JButton jButton16;
+    public static javax.swing.JButton jButton17;
+    public static javax.swing.JButton jButton18;
+    public static javax.swing.JButton jButton19;
+    public static javax.swing.JButton jButton2;
+    public static javax.swing.JButton jButton20;
+    public static javax.swing.JButton jButton21;
+    public static javax.swing.JButton jButton22;
+    public static javax.swing.JButton jButton23;
+    public static javax.swing.JButton jButton24;
+    public static javax.swing.JButton jButton25;
+    public static javax.swing.JButton jButton26;
+    public static javax.swing.JButton jButton27;
+    public static javax.swing.JButton jButton28;
+    public static javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    public static javax.swing.JButton jButton6;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel labelimagem1;
-    private javax.swing.JLabel labelimagem2;
-    private javax.swing.JLabel labelimagem3;
-    private javax.swing.JLabel labelimagem4;
-    private javax.swing.JLabel labelimagem5;
-    private javax.swing.JLabel labelimagem6;
-    private javax.swing.JLabel labelimagem7;
-    public javax.swing.JLabel lblTitulo1;
-    private javax.swing.JLabel lblTitulo10;
-    private javax.swing.JLabel lblTitulo2;
-    private javax.swing.JLabel lblTitulo3;
-    private javax.swing.JLabel lblTitulo4;
-    private javax.swing.JLabel lblTitulo5;
-    private javax.swing.JLabel lblTitulo6;
-    private javax.swing.JLabel lblTitulo7;
-    private javax.swing.JLabel lblTitulo8;
-    private javax.swing.JLabel lblTitulo9;
-    private javax.swing.JLabel lblValor1;
-    private javax.swing.JLabel lblValor10;
-    private javax.swing.JLabel lblValor2;
-    private javax.swing.JLabel lblValor3;
-    private javax.swing.JLabel lblValor4;
-    private javax.swing.JLabel lblValor5;
-    private javax.swing.JLabel lblValor6;
-    private javax.swing.JLabel lblValor7;
-    private javax.swing.JLabel lblValor8;
-    private javax.swing.JLabel lblValor9;
-    private javax.swing.JLabel lblimagem10;
-    private javax.swing.JLabel lblimagem8;
-    private javax.swing.JLabel lblimagem9;
+    public static javax.swing.JLabel labelimagem1;
+    public static javax.swing.JLabel labelimagem2;
+    public static javax.swing.JLabel labelimagem3;
+    public static javax.swing.JLabel labelimagem4;
+    public static javax.swing.JLabel labelimagem5;
+    public static javax.swing.JLabel labelimagem6;
+    public static javax.swing.JLabel labelimagem7;
+    public static javax.swing.JLabel lblTitulo1;
+    public static javax.swing.JLabel lblTitulo10;
+    public static javax.swing.JLabel lblTitulo2;
+    public static javax.swing.JLabel lblTitulo3;
+    public static javax.swing.JLabel lblTitulo4;
+    public static javax.swing.JLabel lblTitulo5;
+    public static javax.swing.JLabel lblTitulo6;
+    public static javax.swing.JLabel lblTitulo7;
+    public static javax.swing.JLabel lblTitulo8;
+    public static javax.swing.JLabel lblTitulo9;
+    public static javax.swing.JLabel lblValor1;
+    public static javax.swing.JLabel lblValor10;
+    public static javax.swing.JLabel lblValor2;
+    public static javax.swing.JLabel lblValor3;
+    public static javax.swing.JLabel lblValor4;
+    public static javax.swing.JLabel lblValor5;
+    public static javax.swing.JLabel lblValor6;
+    public static javax.swing.JLabel lblValor7;
+    public static javax.swing.JLabel lblValor8;
+    public static javax.swing.JLabel lblValor9;
+    public static javax.swing.JLabel lblimagem10;
+    public static javax.swing.JLabel lblimagem8;
+    public static javax.swing.JLabel lblimagem9;
     // End of variables declaration//GEN-END:variables
-private void mostrarjogo() {
-        
-            JogoDAO objjogo = new JogoDAO();
-            
-            ArrayList<Jogo> lista = objjogo.listJogos();
-            
-            /*for (int i =0;i<lista.size();i++)*/
-            lblTitulo1.setText(lista.get(0).getNome());
-            lblValor1.setText("R$ "+Float.toString(lista.get(0).getValor()));
-            
-            lblTitulo2.setText(lista.get(1).getNome());
-            lblValor2.setText("R$ "+Float.toString(lista.get(1).getValor()));
-            
-            lblTitulo3.setText(lista.get(2).getNome());
-            lblValor3.setText("R$ "+Float.toString(lista.get(2).getValor()));
-            
-            
-            lblTitulo4.setText(lista.get(3).getNome());
-            lblValor4.setText("R$ "+Float.toString(lista.get(3).getValor()));
-            
-            lblTitulo5.setText(lista.get(4).getNome());
-            lblValor5.setText("R$ "+Float.toString(lista.get(4).getValor()));
-            
-            lblTitulo6.setText(lista.get(5).getNome());
-            lblValor6.setText("R$ "+Float.toString(lista.get(5).getValor()));
-            
-            if(lista.size()>=7){
-                lblTitulo7.setText(lista.get(6).getNome());
-                lblValor7.setText("R$ "+Float.toString(lista.get(6).getValor()));
-                
-                int id6 = 7;
-                ImagemDAO dao6 = new ImagemDAO();
-                Imagem exe6 = dao6.buscar(id6);
-                ManipularImagem.exibiImagemLabel(exe6.getImagem(), labelimagem7); 
-            }else{
-                 lblTitulo7.setText("");
-                 lblValor7.setText("");
-                 jButton24.setVisible(false);
-                 jButton25.setVisible(false);
-                 labelimagem7.setText("");
-            }
-            
-            if(lista.size()>=8){
-                lblTitulo8.setText(lista.get(7).getNome());
-                lblValor8.setText("R$ "+Float.toString(lista.get(7).getValor()));
-                
-                int id7 = 8;
-                ImagemDAO dao7 = new ImagemDAO();
-                Imagem exe7 = dao7.buscar(id7);
-                ManipularImagem.exibiImagemLabel(exe7.getImagem(), lblimagem8); 
-            }else{
-                lblTitulo8.setText("");
-                lblValor8.setText("");
-                jButton23.setVisible(false);
-                jButton22.setVisible(false);
-                lblimagem8.setText("");
-                
-            }if(lista.size()>=9){
-                lblTitulo9.setText(lista.get(8).getNome());
-                lblValor9.setText("R$ "+Float.toString(lista.get(8).getValor()));
-                
-                int id8 = 9;
-                ImagemDAO dao8 = new ImagemDAO();
-                Imagem exe8 = dao8.buscar(id8);
-                ManipularImagem.exibiImagemLabel(exe8.getImagem(), lblimagem9); 
-                
-            }else{
-                lblTitulo9.setText("");
-                lblValor9.setText("");
-                jButton27.setVisible(false);
-                jButton26.setVisible(false);
-                lblimagem9.setText("");
-            }
-            
-            if(lista.size()>=10){
-                lblTitulo10.setText(lista.get(9).getNome());
-                lblValor10.setText("R$ "+Float.toString(lista.get(9).getValor()));
-                
-                int id9 = 10;
-                ImagemDAO dao10 = new ImagemDAO();
-                Imagem exe10 = dao10.buscar(id9);
-                ManipularImagem.exibiImagemLabel(exe10.getImagem(), lblimagem10); 
-                
-            }else{
-                lblTitulo10.setText("");
-                lblValor10.setText("");
-                jButton29.setVisible(false);
-                jButton28.setVisible(false);
-                lblimagem10.setText("");
-            }
-            
-            
-            
-            
-        
-      
-    }
-
-   
 
 
 }

@@ -1,4 +1,4 @@
-package teste;
+package model;
 import java.util.Date;
 public class Boleto extends Formadepagamento{
     private String codigo;

@@ -12,9 +12,9 @@ import static interface_grafica.Tela_Biblioteca.listabiblioteca;
 import static interface_grafica.Tela_Usuario.txtPassword;
 import java.awt.Dimension;
 import java.awt.Toolkit;
-import static java.lang.Float.parseFloat;
 import java.util.ArrayList;
-import teste.Jogo;
+import model.Jogo;
+import model.Pagamento;
 
 /**
  *
@@ -33,8 +33,6 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
         txtmeuovo.setText(txtSubtotal.getText());
-        jLabel8.setText(Float.toString(0));
-        
     }
 
     /**
@@ -59,11 +57,7 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jButton2 = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
         txtmeuovo = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -80,11 +74,6 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
         jLabel1.setText("Forma de pagamento");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Boleto", "Cartão (crédito)", "Cartão (débito)", "PIX" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
 
         jButton1.setText("Comprar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -115,50 +104,13 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        txtmeuovo.setText("-----");
-
-        jLabel6.setText("Total:");
-
-        jLabel7.setText("Desconto:");
-
-        jLabel8.setText("-----");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtmeuovo, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGap(37, 37, 37))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtmeuovo)
-                    .addComponent(jLabel6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
+        txtmeuovo.setText("jLabel6");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
@@ -178,17 +130,17 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
                                 .addComponent(jLabel11)
                                 .addGap(6, 6, 6)
                                 .addComponent(jLabel12))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton1))
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(30, 30, 30))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(82, 82, 82)
+                .addComponent(txtmeuovo)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -218,15 +170,14 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(15, 15, 15)
                                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 147, Short.MAX_VALUE)
+                .addGap(53, 53, 53)
+                .addComponent(txtmeuovo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 140, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton2)
-                            .addComponent(jButton1))))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton1)
+                        .addComponent(jButton2)))
                 .addGap(115, 115, 115))
         );
 
@@ -237,62 +188,7 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj1 = jogodao.listJogos();
         
-        if(listadejogos.isEmpty()){
-            
-        }else{
-            biblioteca.listabiblioteca.add(listadejogos.get(0));
-        }
-        
-        if(verifica(1)){
-            biblioteca.listabiblioteca.add(listadejogos.get(1));
-        }
-        
-        if(verifica(2)){
-           biblioteca.listabiblioteca.add(listadejogos.get(2));
-        }
-        
-        if(verifica(3)){
-             biblioteca.listabiblioteca.add(listadejogos.get(3));
-        }
-        
-        if(verifica(4)){
-             biblioteca.listabiblioteca.add(listadejogos.get(4));
-        }
-        
-        if(verifica(5)){
-             biblioteca.listabiblioteca.add(listadejogos.get(5));
-        }
-        
-        if(verifica(6)){
-             biblioteca.listabiblioteca.add(listadejogos.get(6));
-        }
-        
-        if(verifica(7)){
-             biblioteca.listabiblioteca.add(listadejogos.get(7));
-        }
-        if(verifica(8)){
-             biblioteca.listabiblioteca.add(listadejogos.get(8));
-        }
-        if(verifica(9)){
-             biblioteca.listabiblioteca.add(listadejogos.get(9));
-        }
-        System.out.println("jogos comprados: "+biblioteca.listabiblioteca.size());
-        
-        carrinho.listadejogos.clear();
-        
-        for(int i=0;i<listabiblioteca.size();i++){
-            String senha = txtPassword.getText();
-            String nome = listabiblioteca.get(i).getNome();
-            float valor = listabiblioteca.get(i).getValor();
-            int id = listabiblioteca.get(i).getId();
-            
-            Jogo objjogo = new Jogo(nome,valor,0,"","","","","");
-            objjogo.setSenha(senha);
-            objjogo.setId(id);
-            
-            BibliotecaDAO objusuariodao = new BibliotecaDAO();
-            objusuariodao.mandarbiblioteca(objjogo);
-        }
+        Pagamento.MandaJogoBiblioteca();
         
         Tela_Biblioteca x = new Tela_Biblioteca();
         this.dispose();
@@ -311,26 +207,6 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
         this.dispose();
         z.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-
-        if (jComboBox1.getSelectedItem().equals("PIX")) {
-        float desconto = (float) (parseFloat(txtSubtotal.getText()) * 0.08);
-        float subtotal = parseFloat(txtSubtotal.getText())- desconto;
-        txtmeuovo.setText(Float.toString(subtotal) );
-        jLabel8.setText(Float.toString(desconto));
-        }
-        if (jComboBox1.getSelectedItem().equals("Cartão (débito)")) {
-        float desconto = (float) (parseFloat(txtSubtotal.getText()) * 0.02);
-        float subtotal = parseFloat(txtSubtotal.getText())- desconto;
-        txtmeuovo.setText(Float.toString(subtotal) );
-        jLabel8.setText(Float.toString(desconto));
-        }
-        if(jComboBox1.getSelectedItem().equals("Boleto") || jComboBox1.getSelectedItem().equals("Cartão (crédito)")){
-        txtmeuovo.setText(txtSubtotal.getText());
-        jLabel8.setText(Float.toString(0));
-        }
-    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -378,22 +254,12 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel txtmeuovo;
     // End of variables declaration//GEN-END:variables
 
-private boolean verifica(int x){
-    if(listadejogos.size()>x){
-        return true;
-    }else{
-        return false;
-    }
-}
+
 
 }

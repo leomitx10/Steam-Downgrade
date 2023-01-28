@@ -1,4 +1,4 @@
-package teste;
+package model;
 
 public class Pix extends Formadepagamento{
     
