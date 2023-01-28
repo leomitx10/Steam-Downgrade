@@ -5,6 +5,9 @@
  */
 package model;
 
+import static interface_grafica.Carrinho.txtSubtotal;
+import static java.lang.Float.parseFloat;
+
 /**
  *
  * @author Leandro
@@ -16,9 +19,8 @@ public class Formadepagamento {
         this.pagamento = pagamento;
     }
     
-   
-    
     public void efetuarCompra(){
         
     }
+
 }

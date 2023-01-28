@@ -3,7 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package interface_grafica;
-
+import Controle.JogoDAO;
+import static interface_grafica.Carrinho.txtSubtotal;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import static java.lang.Float.parseFloat;
+import java.util.ArrayList;
+import model.Jogo;
+import model.Pagamento;
+import model.Pix;
 /**
  *
  * @author gustavofbs
@@ -14,7 +22,12 @@ public class Tela_PPix extends javax.swing.JFrame {
      * Creates new form Tela_PPix
      */
     public Tela_PPix() {
-        initComponents();
+        initComponents();Toolkit toolkit = getToolkit();
+        Dimension size = toolkit.getScreenSize();
+        setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
+        float subtotal;
+        subtotal = calcularDescontoPix();
+        txtValor.setText(Float.toString(subtotal));
     }
 
     /**
@@ -31,6 +44,9 @@ public class Tela_PPix extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
+        jLabel3 = new javax.swing.JLabel();
+        txtValor = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -47,10 +63,27 @@ public class Tela_PPix extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/qrcodeSD.jpeg"))); // NOI18N
 
+        jLabel3.setText("Total:");
+
+        txtValor.setText("jLabel4");
+
+        jButton2.setText("Finalizar compra");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
+                .addComponent(txtValor)
+                .addGap(147, 147, 147))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -65,9 +98,11 @@ public class Tela_PPix extends javax.swing.JFrame {
                             .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
                             .addComponent(jSeparator2)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(164, 164, 164)
-                        .addComponent(jButton1)))
-                .addContainerGap(120, Short.MAX_VALUE))
+                        .addGap(88, 88, 88)
+                        .addComponent(jButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton2)))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -80,17 +115,37 @@ public class Tela_PPix extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtValor))
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addContainerGap(63, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+           this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        JogoDAO jogodao = new JogoDAO();
+        ArrayList<Jogo> lj1 = jogodao.listJogos();
+        
+        Pagamento.MandaJogoBiblioteca();
+        
+        Tela_Biblioteca x = new Tela_Biblioteca();
+        this.dispose();
+        x.setVisible(true);
+        
+        Tela_PagamentoB y = new Tela_PagamentoB();
+        y.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -126,12 +181,19 @@ public class Tela_PPix extends javax.swing.JFrame {
             }
         });
     }
-
+    public float calcularDescontoPix(){
+        float desconto = (float) (parseFloat(txtSubtotal.getText()) * 0.08);
+        float subtotal = parseFloat(txtSubtotal.getText())- desconto;
+        return subtotal;
+        }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JLabel txtValor;
     // End of variables declaration//GEN-END:variables
 }

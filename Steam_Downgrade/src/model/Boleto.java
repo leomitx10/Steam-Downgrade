@@ -1,4 +1,6 @@
 package model;
+import static interface_grafica.Carrinho.txtSubtotal;
+import static java.lang.Float.parseFloat;
 import java.util.Date;
 public class Boleto extends Formadepagamento{
     private String codigo;

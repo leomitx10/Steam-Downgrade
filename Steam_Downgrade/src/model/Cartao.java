@@ -1,5 +1,8 @@
 package model;
 
+import static interface_grafica.Carrinho.txtSubtotal;
+import static java.lang.Float.parseFloat;
+
 public class Cartao{
     
     private String nome;
@@ -40,6 +43,5 @@ public class Cartao{
     public void setCVV(String CVV) {
         this.CVV = CVV;
     }
-    
     
 }
