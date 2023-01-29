@@ -26,6 +26,10 @@ public class Boleto extends Formadepagamento{
         this.dataVencimento = dataVencimento;
     }
     
-    
+    public float calcularDescontoBoleto(){
+        float desconto = (float) (parseFloat(txtSubtotal.getText()) * 0.02);
+        float subtotal = parseFloat(txtSubtotal.getText())- desconto;
+        return subtotal;
+        }
     
 }

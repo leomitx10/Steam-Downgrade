@@ -26,7 +26,9 @@ public class Tela_PPix extends javax.swing.JFrame {
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
         float subtotal;
-        subtotal = calcularDescontoPix();
+        Pagamento pagamento = new Pagamento();
+        Pix b = new Pix(pagamento);
+        subtotal = b.calcularDescontoPix();
         txtValor.setText(Float.toString(subtotal));
     }
 
@@ -181,11 +183,7 @@ public class Tela_PPix extends javax.swing.JFrame {
             }
         });
     }
-    public float calcularDescontoPix(){
-        float desconto = (float) (parseFloat(txtSubtotal.getText()) * 0.08);
-        float subtotal = parseFloat(txtSubtotal.getText())- desconto;
-        return subtotal;
-        }
+   
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

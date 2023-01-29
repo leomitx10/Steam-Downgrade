@@ -22,5 +22,9 @@ public class Pix extends Formadepagamento{
     public void setChavePix(String chavePix) {
         this.chavePix = chavePix;
     }
-    
+    public float calcularDescontoPix(){
+        float desconto = (float) (parseFloat(txtSubtotal.getText()) * 0.08);
+        float subtotal = parseFloat(txtSubtotal.getText())- desconto;
+        return subtotal;
+        }
 }

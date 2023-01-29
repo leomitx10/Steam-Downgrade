@@ -12,6 +12,7 @@ import static java.lang.Float.parseFloat;
 import java.util.ArrayList;
 import model.Jogo;
 import model.Pagamento;
+import model.Boleto;
 
 /**
  *
@@ -27,8 +28,11 @@ public class Tela_PBoleto extends javax.swing.JFrame {
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
         float subtotal;
-        subtotal = calcularDescontoBoleto();
+        Pagamento pagamento = new Pagamento();
+        Boleto b = new Boleto(pagamento);
+        subtotal = b.calcularDescontoBoleto();
         txtValor.setText(Float.toString(subtotal));
+
     }
 
     /**
@@ -180,11 +184,7 @@ public class Tela_PBoleto extends javax.swing.JFrame {
             }
         });
     }
-    public float calcularDescontoBoleto(){
-        float desconto = (float) (parseFloat(txtSubtotal.getText()) * 0.02);
-        float subtotal = parseFloat(txtSubtotal.getText())- desconto;
-        return subtotal;
-        }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

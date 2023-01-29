@@ -13,7 +13,7 @@ import static java.lang.Float.parseFloat;
  * @author Leandro
  */
 public class Formadepagamento {
-    private Pagamento pagamento;
+    Pagamento pagamento;
     
     public Formadepagamento(Pagamento pagamento) {
         this.pagamento = pagamento;
