@@ -146,7 +146,7 @@ public class Tela_PPix extends javax.swing.JFrame {
         x.setVisible(true);
         
         Tela_PagamentoB y = new Tela_PagamentoB();
-        y.setVisible(false);
+        y.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
