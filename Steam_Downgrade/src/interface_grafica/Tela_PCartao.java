@@ -159,7 +159,9 @@ public class Tela_PCartao extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Tela_PagamentoB a = new Tela_PagamentoB();
         this.dispose();
+        a.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
