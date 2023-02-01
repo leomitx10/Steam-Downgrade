@@ -8,6 +8,7 @@ import Controle.JogoDAO;
 import static interface_grafica.Carrinho.txtSubtotal;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import static java.lang.Float.parseFloat;
 import java.util.ArrayList;
 import model.Jogo;
 import model.Pagamento;
@@ -25,7 +26,9 @@ public class Tela_PCartao extends javax.swing.JFrame {
         initComponents();Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
-        txtValor.setText(txtSubtotal.getText());
+        float total;
+        total = parseFloat(txtSubtotal.getText());
+        txtValor.setText( String.format("%.2f", total));
     }
 
     /**
@@ -49,7 +52,7 @@ public class Tela_PCartao extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         txtValor = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 16)); // NOI18N
@@ -159,9 +162,7 @@ public class Tela_PCartao extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Tela_PagamentoB a = new Tela_PagamentoB();
         this.dispose();
-        a.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

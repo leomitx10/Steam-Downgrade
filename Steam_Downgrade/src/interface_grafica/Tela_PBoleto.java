@@ -28,10 +28,12 @@ public class Tela_PBoleto extends javax.swing.JFrame {
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
         float subtotal;
+        String total;
         Pagamento pagamento = new Pagamento();
         Boleto b = new Boleto(pagamento);
         subtotal = b.calcularDescontoBoleto();
-        txtValor.setText(Float.toString(subtotal));
+        total = String.format("%.2f", subtotal);
+        txtValor.setText(total);
 
     }
 
@@ -53,7 +55,7 @@ public class Tela_PBoleto extends javax.swing.JFrame {
         txtValor = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
@@ -133,9 +135,7 @@ public class Tela_PBoleto extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-           Tela_PagamentoB a = new Tela_PagamentoB();
-        this.dispose();
-        a.setVisible(true);
+           this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

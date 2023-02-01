@@ -70,7 +70,8 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
    }
  
    public static void MostrarnoCarrinho(){
-        float subt = 0;
+        float subt = 0f;
+        subt = (float) (Math.round(subt * 100f) / 100f); /*usando o método Math.round para arredondar o valor da variável para 2 casas decimais*/
         txtSubtotal.setText( Float.toString(subt));/*variavel q calcula o preço total*/
 
         if(listadejogos.isEmpty()){ /*pega o valor e o nome de acordo com a quantidade de elementos*/

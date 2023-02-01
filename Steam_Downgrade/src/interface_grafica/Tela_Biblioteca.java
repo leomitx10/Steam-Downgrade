@@ -13,6 +13,7 @@ import static interface_grafica.Tela_Usuario.txtPassword;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 import model.Imagem;
 import model.Jogo;
 
@@ -41,8 +42,60 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         }else{
             jLabel1.setText(perfil.get(0).getNome());
         }
-    }
         
+        if(listabiblioteca.isEmpty()){
+        
+        }else{
+            
+            //verificaimg1(listabiblioteca.get(0).getId());
+        }
+        /*
+        if(verifica(1)){
+        //verificaimg2(listabiblioteca.get(1).getId());
+            
+        }
+        
+        if(verifica(2)){
+        //verificaimg3(listabiblioteca.get(2).getId());
+        }
+        
+        if(verifica(3)){
+        //verificaimg4(listabiblioteca.get(3).getId());
+        }
+        
+        if(verifica(4)){
+         //verificaimg5(listabiblioteca.get(4).getId());
+        }
+        
+        if(verifica(5)){
+         //verificaimg6(listabiblioteca.get(5).getId());
+        }
+        
+        if(verifica(6)){
+        //verificaimg7(listabiblioteca.get(6).getId());
+        }
+        
+        if(verifica(7)){
+        //verificaimg8(listabiblioteca.get(7).getId());
+        }
+        
+        if(verifica(8)){
+        //verificaimg9(listabiblioteca.get(8).getId());
+        }
+        
+        if(verifica(9)){
+       // verificaimg10(listabiblioteca.get(9).getId());
+        }
+        
+        */
+       
+        //System.out.println(listabiblioteca.size());
+        
+        
+        
+        
+        
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
