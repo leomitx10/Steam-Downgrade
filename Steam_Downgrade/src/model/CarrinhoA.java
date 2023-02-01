@@ -71,7 +71,6 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
  
    public static void MostrarnoCarrinho(){
         float subt = 0f;
-        subt = (float) (Math.round(subt * 100f) / 100f); /*usando o método Math.round para arredondar o valor da variável para 2 casas decimais*/
         txtSubtotal.setText( Float.toString(subt));/*variavel q calcula o preço total*/
 
         if(listadejogos.isEmpty()){ /*pega o valor e o nome de acordo com a quantidade de elementos*/
@@ -79,6 +78,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
         }else{txtNome1.setText(listadejogos.get(0).getNome());
             txtValor1.setText(Float.toString(listadejogos.get(0).getValor()));
             subt = listadejogos.get(0).getValor();
+            subt = (float) (Math.round(subt * 100f) / 100f);
             txtSubtotal.setText(Float.toString(subt));
         }
 
@@ -86,6 +86,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtNome2.setText(listadejogos.get(1).getNome());
             txtValor2.setText(Float.toString(listadejogos.get(1).getValor()));
             subt = subt + listadejogos.get(1).getValor();
+            subt = (float) (Math.round(subt * 100f) / 100f); /*usando o método Math.round para arredondar o valor da variável para 2 casas decimais*/
             txtSubtotal.setText(Float.toString(subt));
         }
 
@@ -93,6 +94,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtNome3.setText(listadejogos.get(2).getNome());
             txtValor3.setText(Float.toString(listadejogos.get(2).getValor()));
             subt = subt + listadejogos.get(2).getValor();
+            subt = (float) (Math.round(subt * 100f) / 100f);
             txtSubtotal.setText(Float.toString(subt));
         }
 
@@ -100,6 +102,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtNome4.setText(listadejogos.get(3).getNome());
             txtValor4.setText(Float.toString(listadejogos.get(3).getValor()));
             subt = subt + listadejogos.get(3).getValor();
+            subt = (float) (Math.round(subt * 100f) / 100f);
             txtSubtotal.setText(Float.toString(subt));
         }
         
@@ -107,6 +110,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtNome5.setText(listadejogos.get(4).getNome());
             txtValor5.setText(Float.toString(listadejogos.get(4).getValor()));
             subt = subt + listadejogos.get(4).getValor();
+            subt = (float) (Math.round(subt * 100f) / 100f);
             txtSubtotal.setText(Float.toString(subt));
         }
         
@@ -114,6 +118,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtNome7.setText(listadejogos.get(5).getNome());
             txtValor7.setText(Float.toString(listadejogos.get(5).getValor()));
             subt = subt + listadejogos.get(5).getValor();
+            subt = (float) (Math.round(subt * 100f) / 100f);
             txtSubtotal.setText(Float.toString(subt));
         }
         
@@ -121,6 +126,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtNome8.setText(listadejogos.get(6).getNome());
             txtValor8.setText(Float.toString(listadejogos.get(6).getValor()));
             subt = subt + listadejogos.get(6).getValor();
+            subt = (float) (Math.round(subt * 100f) / 100f);
             txtSubtotal.setText(Float.toString(subt));
         }
         
@@ -128,6 +134,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtNome9.setText(listadejogos.get(7).getNome());
             txtValor9.setText(Float.toString(listadejogos.get(7).getValor()));
             subt = subt + listadejogos.get(7).getValor();
+            subt = (float) (Math.round(subt * 100f) / 100f);
             txtSubtotal.setText(Float.toString(subt));
         }
         
@@ -135,6 +142,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtNome10.setText(listadejogos.get(8).getNome());
             txtValor10.setText(Float.toString(listadejogos.get(8).getValor()));
             subt = subt + listadejogos.get(8).getValor();
+            subt = (float) (Math.round(subt * 100f) / 100f);
             txtSubtotal.setText(Float.toString(subt));
         }
         
@@ -142,6 +150,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtNome11.setText(listadejogos.get(9).getNome());
             txtValor11.setText(Float.toString(listadejogos.get(9).getValor()));
             subt = subt + listadejogos.get(8).getValor();
+            subt = (float) (Math.round(subt * 100f) / 100f);
             txtSubtotal.setText(Float.toString(subt));
         }
    }    
