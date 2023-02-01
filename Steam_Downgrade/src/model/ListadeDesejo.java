@@ -24,8 +24,6 @@ import static interface_grafica.Tela_ListaDesejo.jLabel8;
 import static interface_grafica.Tela_ListaDesejo.jLabel9;
 
 
-
-
 public class ListadeDesejo{
     
 public static boolean verifica(int x){
@@ -37,7 +35,9 @@ public static boolean verifica(int x){
 }
 
 public static void removerdalista(){
-    String escolha= selExc.getSelectedItem().toString();
+    /*olha a opção escolhida e a quantidade de elementos e remove*/
+    String escolha= selExc.getSelectedItem().toString(); 
+    
         System.out.println(escolha);
     if(escolha.equals("Jogo 1")&& listadejogos.size()>=1){
             listadejogos.remove(0);
@@ -64,6 +64,7 @@ public static void removerdalista(){
 }
     
 public static void mostrarlista(){
+    /*verifica a quantidade de elementos e mostra na lista de desejo*/
     if(listadejogos.isEmpty()){
 
         }else{jLabel2.setText(listadejogos.get(0).getNome());

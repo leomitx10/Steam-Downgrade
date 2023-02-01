@@ -26,7 +26,7 @@ import java.util.ArrayList;
 
 public class CarrinhoA{
     
-public static boolean verifica(int x){
+public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*/
     if(listadejogos.size()>x){
         return true;
     }else{
@@ -35,7 +35,8 @@ public static boolean verifica(int x){
 }
 
    public static void RemoverdoCarrinho(){
-       String escolha= selExc.getSelectedItem().toString();
+        String escolha= selExc.getSelectedItem().toString(); 
+        /*verifica a escolha e o numero de elementos*/
         System.out.println(escolha);
         
         if(escolha.equals("Jogo 1")&& listadejogos.size()>=1){
@@ -69,10 +70,10 @@ public static boolean verifica(int x){
    }
  
    public static void MostrarnoCarrinho(){
-       float subt = 0;
-        txtSubtotal.setText( Float.toString(subt));
+        float subt = 0;
+        txtSubtotal.setText( Float.toString(subt));/*variavel q calcula o preço total*/
 
-        if(listadejogos.isEmpty()){
+        if(listadejogos.isEmpty()){ /*pega o valor e o nome de acordo com a quantidade de elementos*/
 
         }else{txtNome1.setText(listadejogos.get(0).getNome());
             txtValor1.setText(Float.toString(listadejogos.get(0).getValor()));

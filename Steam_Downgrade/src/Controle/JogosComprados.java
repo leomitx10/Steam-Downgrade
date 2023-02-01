@@ -26,7 +26,7 @@ public class JogosComprados {
     
     //Pega as compras cadastradas com a senha do usuario e exibe em forma de tabela 
     public ArrayList<Jogo>ListaComprasJogos(String JogoAserListado){
-        
+        /*mostra os jogos que estão na tabela jogos_comprados*/
         String sql = "select * from jogos_comprados where senha = ? ";
         conn = new ConexaoDAO().conectaBD();
         

@@ -22,7 +22,7 @@ public class UsuarioDAO {
     
     public void cadastrarUsuario(Usuario objusuariodto){
         String sql = "insert into usuarios (nome, idade, apelido, endereco, cpf, email, senha) values (?,?,?,?,?,?,?)";
-        
+        /*coloca as infos do usuario na tebala usuarios*/
         conn = new ConexaoDAO().conectaBD();
         
         try {
@@ -38,7 +38,6 @@ public class UsuarioDAO {
             pstm.execute();
             pstm.close();
         } catch (Exception erro) {
-            
             JOptionPane.showMessageDialog(null, "UsuarioDAO" + erro);
         }
     }

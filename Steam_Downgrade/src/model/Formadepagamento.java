@@ -5,8 +5,6 @@
  */
 package model;
 
-import static interface_grafica.Carrinho.txtSubtotal;
-import static java.lang.Float.parseFloat;
 
 /**
  *

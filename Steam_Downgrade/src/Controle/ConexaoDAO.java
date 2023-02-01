@@ -15,11 +15,11 @@ import javax.swing.JOptionPane;
  */
 public class ConexaoDAO {
     
-    public static Connection conectaBD(){
+    public static Connection conectaBD(){/*Faz a conexão com o banco de dados mysql local*/
        Connection conn = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/usuarios", "root", "246810");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/usuarios", "root", "1836224481@");
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }

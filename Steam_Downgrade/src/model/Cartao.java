@@ -1,8 +1,5 @@
 package model;
 
-import static interface_grafica.Carrinho.txtSubtotal;
-import static java.lang.Float.parseFloat;
-
 public class Cartao{
     
     private String nome;

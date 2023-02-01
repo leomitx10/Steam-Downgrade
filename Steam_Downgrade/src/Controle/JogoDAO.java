@@ -28,7 +28,7 @@ public class JogoDAO {
     
     public void cadastrarJogo(Jogo objjogo){
         String sql = "INSERT INTO jogos(nome,desenvolvedor,distribuidora,requisitos,genero,descricao,valor,classificacaoindicativa) VALUES (?,?,?,?,?,?,?,?)";
-        
+        /*cadastra o jogo na tabela jogos no banco de dados*/
         conn = new ConexaoDAO().conectaBD();
         
         try {
@@ -50,7 +50,7 @@ public class JogoDAO {
     
    public ArrayList<Jogo>  listJogos() {
         conn = new ConexaoDAO().conectaBD();
-        
+        /*pega os jogos q estão no banco de dados e coloca no array list chamado lista*/
         try {
             String sql = "SELECT * FROM jogos";
             pstm = conn.prepareStatement(sql);

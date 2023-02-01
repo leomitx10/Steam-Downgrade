@@ -21,10 +21,12 @@ public class BibliotecaDAO {
     PreparedStatement pstm;
     ResultSet rs;
     
+    /*A função mandabilioteca insere os jogos na tabela criada no mysql chamada jogos_comprados*/
     public void mandarbiblioteca(Jogo objjogo){
-        String sql = "INSERT INTO jogos_comprados(senha,nome,valor,id) VALUES (?,?,?,?)";
+        String sql = "INSERT INTO jogos_comprados(senha,nome,valor,id) VALUES (?,?,?,?)";/*comando q vai ser executado no mysql */
         
-        conn = new ConexaoDAO().conectaBD();
+        
+        conn = new ConexaoDAO().conectaBD();/*faz a conexao com o mysql*/
         
         try {
             pstm = conn.prepareStatement(sql);

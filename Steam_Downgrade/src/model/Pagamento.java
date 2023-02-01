@@ -19,6 +19,7 @@ public class Pagamento {
     }
     
     public static void MandaJogoBiblioteca(){
+        /*manda o jogo do carrinho para a biblioteca*/
         if(listadejogos.isEmpty()){
             
         }else{
@@ -63,6 +64,7 @@ public class Pagamento {
         carrinho.listadejogos.clear();
         
         for(int i=0;i<listabiblioteca.size();i++){
+            /*coloca o jogo na biblioteca*/
             String senha = txtPassword.getText();
             String nome = listabiblioteca.get(i).getNome();
             float valor = listabiblioteca.get(i).getValor();
@@ -74,6 +76,7 @@ public class Pagamento {
             
             BibliotecaDAO objusuariodao = new BibliotecaDAO();
             objusuariodao.mandarbiblioteca(objjogo);
+            
         }
     }
 	

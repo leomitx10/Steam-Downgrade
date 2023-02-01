@@ -8,10 +8,10 @@ import static interface_grafica.Tela_Loja2.labelimagem3;
 import static interface_grafica.Tela_Loja2.labelimagem4;
 import static interface_grafica.Tela_Loja2.labelimagem5;
 import static interface_grafica.Tela_Loja2.labelimagem6;
-import java.util.ArrayList;
+
 
 public class Loja {
-   
+   /*Coloca a imagem do jogo*/
     public static void MostrarCapaJogo(){
         int id = 1;
         ImagemDAO dao = new ImagemDAO();

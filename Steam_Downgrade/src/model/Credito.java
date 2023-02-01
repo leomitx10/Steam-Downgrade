@@ -3,10 +3,6 @@ package model;
 public class Credito{
     private int parcelamento;
 
-    
-
-   
-    
     public void calcularParcela(){
         
     }
