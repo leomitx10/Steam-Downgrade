@@ -80,6 +80,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtValor1.setText(Float.toString(listadejogos.get(0).getValor()));
             subt = listadejogos.get(0).getValor();
             txtSubtotal.setText(Float.toString(subt));
+            txtValor1.setVisible(true);
         }
 
         if(CarrinhoA.verifica(1)){
@@ -87,6 +88,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtValor2.setText(Float.toString(listadejogos.get(1).getValor()));
             subt = subt + listadejogos.get(1).getValor();
             txtSubtotal.setText(Float.toString(subt));
+            txtValor2.setVisible(true);
         }
 
         if(CarrinhoA.verifica(2)){
@@ -94,6 +96,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtValor3.setText(Float.toString(listadejogos.get(2).getValor()));
             subt = subt + listadejogos.get(2).getValor();
             txtSubtotal.setText(Float.toString(subt));
+            txtValor3.setVisible(true);
         }
 
         if(CarrinhoA.verifica(3)){
@@ -101,6 +104,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtValor4.setText(Float.toString(listadejogos.get(3).getValor()));
             subt = subt + listadejogos.get(3).getValor();
             txtSubtotal.setText(Float.toString(subt));
+            txtValor4.setVisible(true);
         }
         
         if(CarrinhoA.verifica(4)){
@@ -108,6 +112,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtValor5.setText(Float.toString(listadejogos.get(4).getValor()));
             subt = subt + listadejogos.get(4).getValor();
             txtSubtotal.setText(Float.toString(subt));
+            txtValor5.setVisible(true);
         }
         
         if(CarrinhoA.verifica(5)){
@@ -115,6 +120,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtValor7.setText(Float.toString(listadejogos.get(5).getValor()));
             subt = subt + listadejogos.get(5).getValor();
             txtSubtotal.setText(Float.toString(subt));
+            txtValor7.setVisible(true);
         }
         
         if(CarrinhoA.verifica(6)){
@@ -122,6 +128,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtValor8.setText(Float.toString(listadejogos.get(6).getValor()));
             subt = subt + listadejogos.get(6).getValor();
             txtSubtotal.setText(Float.toString(subt));
+            txtValor8.setVisible(true);
         }
         
         if(CarrinhoA.verifica(7)){
@@ -129,6 +136,8 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtValor9.setText(Float.toString(listadejogos.get(7).getValor()));
             subt = subt + listadejogos.get(7).getValor();
             txtSubtotal.setText(Float.toString(subt));
+            txtValor9.setVisible(true);
+            
         }
         
         if(CarrinhoA.verifica(8)){
@@ -136,6 +145,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtValor10.setText(Float.toString(listadejogos.get(8).getValor()));
             subt = subt + listadejogos.get(8).getValor();
             txtSubtotal.setText(Float.toString(subt));
+            txtValor10.setVisible(true);
         }
         
         if(CarrinhoA.verifica(9)){
@@ -143,6 +153,7 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
             txtValor11.setText(Float.toString(listadejogos.get(9).getValor()));
             subt = subt + listadejogos.get(8).getValor();
             txtSubtotal.setText(Float.toString(subt));
+            txtValor11.setVisible(true);
         }
    }    
 }
