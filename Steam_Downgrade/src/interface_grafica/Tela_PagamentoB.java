@@ -202,22 +202,7 @@ public class Tela_PagamentoB extends javax.swing.JFrame {
            
            x.setVisible(true); 
         }
-        /*
-        JogoDAO jogodao = new JogoDAO();
-        ArrayList<Jogo> lj1 = jogodao.listJogos();
-        
-        Pagamento.MandaJogoBiblioteca();
-        
-        Tela_Biblioteca x = new Tela_Biblioteca();
-        this.dispose();
-        x.setVisible(true);
-        */
-        
-        
-        /*
-        for(Jogo j: biblioteca.listabiblioteca){
-            System.out.println(j.getNome());
-        }*/
+       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
