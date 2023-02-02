@@ -19,7 +19,7 @@ public class ConexaoDAO {
        Connection conn = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/usuarios", "root", "246810");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/usuarios", "root", "1836224481@");
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }

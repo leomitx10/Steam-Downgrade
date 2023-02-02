@@ -24,7 +24,10 @@ public class Carrinho extends javax.swing.JFrame {
         Dimension size = toolkit.getScreenSize();
         setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
         
+       
+        
         CarrinhoA.MostrarnoCarrinho();
+        
     }
 
     /**
@@ -570,4 +573,5 @@ public class Carrinho extends javax.swing.JFrame {
 
 
 
+    
 }
