@@ -1,5 +1,6 @@
 package model;
 import static interface_grafica.Carrinho.listadejogos;
+import static interface_grafica.Carrinho.selExc;
 import static interface_grafica.Carrinho.txtNome1;
 import static interface_grafica.Carrinho.txtNome10;
 import static interface_grafica.Carrinho.txtNome11;
@@ -21,7 +22,7 @@ import static interface_grafica.Carrinho.txtValor5;
 import static interface_grafica.Carrinho.txtValor7;
 import static interface_grafica.Carrinho.txtValor8;
 import static interface_grafica.Carrinho.txtValor9;
-import static interface_grafica.Tela_ListaDesejo.selExc;
+
 import java.util.ArrayList;
 
 public class CarrinhoA{
@@ -37,9 +38,8 @@ public static boolean verifica(int x){ /*vê quantos elementos tem na arraylist*
    public static void RemoverdoCarrinho(){
         String escolha= selExc.getSelectedItem().toString(); 
         /*verifica a escolha e o numero de elementos*/
-        System.out.println(escolha);
         
-        if(escolha.equals("Jogo 1")&& listadejogos.size()>=1){
+       if(escolha.equals("Jogo 1")&& listadejogos.size()>=1){
             listadejogos.remove(0);
         }else if (escolha.equals("Jogo 2")&& listadejogos.size()>=2){
             listadejogos.remove(1);

@@ -989,7 +989,6 @@ private void listacompras(String Senha){
             //Joga o objeto num array para poder mostra-lo numa tabela
            
             ArrayList<Jogo> novalista = novo.ListaComprasJogos(Senha);
-
             
              verificaimg1(novalista.get(0).getId());
              verificaimg2(novalista.get(1).getId());
