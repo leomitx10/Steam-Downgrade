@@ -39,7 +39,7 @@ public static void removerdalista(){
     String escolha= selExc.getSelectedItem().toString(); 
     
         System.out.println(escolha);
-    if(escolha.equals("Jogo 1")&& listadejogos.size()>=1){
+        if(escolha.equals("Jogo 1")&& listadejogos.size()>=1){
             listadejogos.remove(0);
         }else if (escolha.equals("Jogo 2")&& listadejogos.size()>=2){
             listadejogos.remove(1);
@@ -60,6 +60,12 @@ public static void removerdalista(){
         }
         else if(escolha.equals("Jogo 8")&& listadejogos.size()>=8){
             listadejogos.remove(7);
+        }
+        else if(escolha.equals("Jogo 9")&& listadejogos.size()>=9){
+            listadejogos.remove(8);
+        }
+        else if(escolha.equals("Jogo 10")&& listadejogos.size()>=10){
+            listadejogos.remove(9);
         }
 }
     
