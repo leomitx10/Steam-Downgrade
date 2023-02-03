@@ -5,8 +5,6 @@ public class Cartao{
     private String nome;
     private String numero;
     private String validade;
-    private String CVV;
-
     
     
     public String getNome() {
@@ -33,12 +31,6 @@ public class Cartao{
         this.validade = validade;
     }
 
-    public String getCVV() {
-        return CVV;
-    }
-
-    public void setCVV(String CVV) {
-        this.CVV = CVV;
-    }
+ 
     
 }

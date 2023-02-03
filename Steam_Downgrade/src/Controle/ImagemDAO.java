@@ -15,11 +15,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import model.Jogo;
 
-/**
- *
- * @author oscar
- */
-public class ImagemDAO {
+
+public class ImagemDAO {/*coloca a imagem no banco de dados*/
      
     Connection conn;
     java.sql.PreparedStatement pstm;
@@ -45,7 +42,7 @@ public class ImagemDAO {
         
     }
     
-    public Imagem buscar(Integer endereco ){
+    public Imagem buscar(Integer endereco ){/*busca a imagem pelo id*/
         Imagem retorno = null;
         
         String sql = "SELECT id,imagem from imagens where id=?";
@@ -79,31 +76,6 @@ public class ImagemDAO {
 }
     
 
-//    }
-//    
-//    public ArrayList<Imagem>  listImagens() {
-//        conn = new ConexaoDAO().conectaBD();
-//        
-//        try {
-//            String sql = "SELECT * FROM imagens";
-//            pstm = conn.prepareStatement(sql);
-//            rs = pstm.executeQuery();
-//            
-//            while (rs.next()) {
-//                
-//                String id = rs.getInt("i");
-//                   
-//                Imagem img = new Imagem();
-//                lista.add(img);
-//            }
-//        } catch(SQLException error) {
-//            System.out.println("Error: " + error);
-//        }
-//        
-//        return lista;
-//    }
-//    
-//    
     
     
     

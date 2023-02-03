@@ -31,7 +31,7 @@ import model.Usuario;
  * @author leandro
  */
     public class Tela_Usuario extends javax.swing.JFrame {
-        public static Tela_Perfil2 listaperfil = new Tela_Perfil2();
+        public static Tela_Perfil2 telaperfil = new Tela_Perfil2();
     
       
      
@@ -248,7 +248,7 @@ import model.Usuario;
                 
                 Usuario usu1 = new Usuario(nome,idade,apelido,"","",emailp,"");
                 
-                listaperfil.perfil.add(usu1);
+                telaperfil.perfil.add(usu1);
                 
                 
                     Tela_Loja2 x = new Tela_Loja2();

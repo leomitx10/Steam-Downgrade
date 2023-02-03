@@ -71,12 +71,12 @@
                   <Component id="jPanel8" max="32767" attributes="0"/>
                   <Component id="jPanel1" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jPanel2" pref="68" max="32767" attributes="0"/>
                   <Component id="jPanel9" max="32767" attributes="0"/>
-                  <Component id="jPanel2" pref="78" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jPanel10" max="32767" attributes="0"/>
                   <Component id="jPanel3" max="32767" attributes="0"/>
