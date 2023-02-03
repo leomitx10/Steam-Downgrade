@@ -18,22 +18,11 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
-/**
- *
- * @author marcelosiedler
- */
 public class ManipularImagem {
 
     /*
      * Faz redimensionamento da imagem conforme os parâmetros imgLargura e imgAltura mantendo a proporcionalidade. 
      * Caso a imagem seja menor do que os parâmetros de redimensionamento, a imagem não será redimensionada. 
-     *  
-     * @param caminhoImg caminho e nome da imagem a ser redimensionada. 
-     * @param imgLargura nova largura da imagem após ter sido redimensionada. 
-     * @param imgAltura  nova altura da imagem após ter sido redimensionada. 
-     *  
-     * @return Não há retorno 
-     * @throws Exception Erro ao redimensionar imagem 
      ************************************************************************************************************/
     public static BufferedImage setImagemDimensao(String caminhoImg, Integer imgLargura, Integer imgAltura) {
         Double novaImgLargura = null;
