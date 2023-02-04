@@ -149,7 +149,7 @@ public class Tela_PCartao extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(jTextField1.getText().equals("")||jTextField2.getText().equals("")||jTextField3.getText().equals("")){
+        if(jTextField1.getText().equals("") || jTextField2.getText().equals("") || jTextField3.getText().equals("")){
             JOptionPane.showMessageDialog(null, "Preencha todos os campos");
         }else{
 

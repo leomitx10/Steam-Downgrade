@@ -77,7 +77,7 @@ public class Pagamento {
             BibliotecaDAO objusuariodao = new BibliotecaDAO();
             objusuariodao.mandarbiblioteca(objjogo);
             
-        }
+        } listabiblioteca.clear();
     }
 	
 }
