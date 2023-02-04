@@ -301,7 +301,7 @@ public class Telacadastrarjogo extends javax.swing.JFrame {
             
 
         } catch (Exception ex) {}
-
+        JOptionPane.showMessageDialog(null, "Jogo cadastrado", "Sucesso", 1);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtGenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGenActionPerformed

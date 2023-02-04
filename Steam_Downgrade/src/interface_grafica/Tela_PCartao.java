@@ -10,6 +10,7 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import static java.lang.Float.parseFloat;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 import model.Jogo;
 import model.Pagamento;
 
@@ -148,6 +149,10 @@ public class Tela_PCartao extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        if(jTextField1.getText().equals("")||jTextField2.getText().equals("")||jTextField3.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Preencha todos os campos");
+        }else{
+
         JogoDAO jogodao = new JogoDAO();
         ArrayList<Jogo> lj1 = jogodao.listJogos();
         
@@ -158,7 +163,7 @@ public class Tela_PCartao extends javax.swing.JFrame {
         x.setVisible(true);
         
         Tela_PagamentoB y = new Tela_PagamentoB();
-        y.setVisible(false);
+        y.setVisible(false);}
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
