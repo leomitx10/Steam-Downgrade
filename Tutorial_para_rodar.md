@@ -7,10 +7,20 @@ Passos:
 3. Entrar no pacote controle, acessar a classe ConexaoDAO e mudar a senha do mysql para a sua senha.
 
 Exemplo de como devem ser as tabelas:
+
 <table>
   <tr>
     <td align="center">
-      <img src="https:![image](https://user-images.githubusercontent.com/90487905/220184280-8c376fc5-5952-475d-bf68-5e4fcad92c37.png)" width="600px;" alt="Foto do Oscar no GitHub"/><br>
+      <img src="https://raw.githubusercontent.com/leomitx10/Steam-Downgrade/main/Steam_Downgrade/Screenshots/tabela1.png" width="200px;" alt="exemplo_tabelas"/><br>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/leomitx10/Steam-Downgrade/main/Steam_Downgrade/Screenshots/tabela2.png" width="200px;" alt="exemplo_tabelas"/><br>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/leomitx10/Steam-Downgrade/main/Steam_Downgrade/Screenshots/tabela3.png" width="200px;" alt="exemplo_tabelas"/><br>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/leomitx10/Steam-Downgrade/main/Steam_Downgrade/Screenshots/tabela4.png" width="200px;" alt="exemplo_tabelas"/><br>
     </td>
   </tr>
 </table>
