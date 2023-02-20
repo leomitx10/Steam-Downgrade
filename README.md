@@ -1,7 +1,7 @@
 ## 🖥️ Visão Geral
 
 <p align="justify"> &emsp;&emsp;
-  Somos um grupo de estudantes da disciplina Orientação a Objetos na Universidade de Brasília. Criamos esse repositório com o propósito de ser o projeto final, no qual criaremos uma versão básica focada no conteúdo da discplina regente, onde a base será a plataforma de jogos conhecida como "Steam"
+  Somos um grupo de estudantes da disciplina Orientação a Objetos na Universidade de Brasília. Criamos esse repositório com o propósito de ser o projeto final, no qual criaremos uma versão básica focada no conteúdo da discplina regente, onde a base será a plataforma de jogos conhecida como "Steam".
 </p>
 
 ## 🧑‍💻 Desenvolvedores
