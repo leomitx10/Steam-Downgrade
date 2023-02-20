@@ -153,8 +153,7 @@ public class Tela_PCartao extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Preencha todos os campos");
         }else{
 
-        JogoDAO jogodao = new JogoDAO();
-        ArrayList<Jogo> lj1 = jogodao.listJogos();
+        
         
         Pagamento.MandaJogoBiblioteca();
         

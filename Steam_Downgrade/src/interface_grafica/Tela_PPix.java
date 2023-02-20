@@ -140,8 +140,7 @@ public class Tela_PPix extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        JogoDAO jogodao = new JogoDAO();
-        ArrayList<Jogo> lj1 = jogodao.listJogos();
+        
         
         Pagamento.MandaJogoBiblioteca();
         

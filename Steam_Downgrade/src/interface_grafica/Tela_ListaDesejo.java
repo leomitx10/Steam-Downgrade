@@ -14,10 +14,7 @@ import javax.swing.JOptionPane;
 import model.Jogo;
 import model.ListadeDesejo;
 
-/**
- *
- * @author artur
- */
+
 public class Tela_ListaDesejo extends javax.swing.JFrame {
     public static ArrayList<Jogo> listadejogos = new ArrayList<Jogo>();
     
