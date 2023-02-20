@@ -1,12 +1,12 @@
-Programas necessários: 
+## 🖥️ Programas necessários: 
 Java e Mysql.
 
-Passos:
+## 🧑‍💻 Passos:
 1. Criar um banco de dados chamado usuarios.
 2. Criar dentro de usuarios as tabelas imagens, jogos, jogos_comprados, usuarios.
 3. Entrar no pacote controle, acessar a classe ConexaoDAO e mudar a senha do mysql para a sua senha.
 
-Exemplo de como devem ser as tabelas:
+## Exemplos de como devem ser as tabelas:
 
 <table>
   <tr>
