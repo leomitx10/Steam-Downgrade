@@ -52,5 +52,11 @@
     <td align="center">
       <img src="https://raw.githubusercontent.com/leomitx10/Steam-Downgrade/main/Steam_Downgrade/Screenshots/Captura%20de%20tela%20de%202023-02-20%2015-24-14.png" width="200px;" alt="Foto do Oscar no GitHub"/><br>
     </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/leomitx10/Steam-Downgrade/main/Steam_Downgrade/Screenshots/Captura%20de%20tela%20de%202023-02-20%2015-58-23.png" width="200px;" alt="Foto do Oscar no GitHub"/><br>
+    </td>
+     <td align="center">
+      <img src="https://raw.githubusercontent.com/leomitx10/Steam-Downgrade/main/Steam_Downgrade/Screenshots/Captura%20de%20tela%20de%202023-02-20%2015-59-24.png" width="200px;" alt="Foto do Oscar no GitHub"/><br>
+    </td>
   </tr>
 </table>
