@@ -47,7 +47,7 @@
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/leomitx10/Steam-Downgrade/blob/main/Steam_Downgrade/Screenshots/Captura%20de%20tela%20de%202023-02-20%2015-23-48.png?raw=true" width="100px;" alt="Foto do Oscar no GitHub"/><br>
+      <img src="https://raw.githubusercontent.com/leomitx10/Steam-Downgrade/main/Steam_Downgrade/Screenshots/Captura%20de%20tela%20de%202023-02-20%2015-23-48.png" width="100px;" alt="Foto do Oscar no GitHub"/><br>
     </td>
   </tr>
 </table>
