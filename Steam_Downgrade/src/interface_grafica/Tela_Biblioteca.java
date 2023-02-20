@@ -4,18 +4,46 @@
  */
 package interface_grafica;
 
+import Controle.BibliotecaDAO;
+import Controle.ImagemDAO;
+import Controle.JogosComprados;
+import Controle.ManipularImagem;
+import static interface_grafica.Tela_Perfil2.perfil;
+import static interface_grafica.Tela_Usuario.txtPassword;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import model.Imagem;
+import model.Jogo;
+
 
 /**
  *
  * @author gustavofbs
  */
 public class Tela_Biblioteca extends javax.swing.JFrame {
+    public static ArrayList<Jogo> listabiblioteca = new ArrayList<Jogo>();
 
     /**
      * Creates new form Tela_Biblioteca
      */
     public Tela_Biblioteca() {
         initComponents();
+        
+        Toolkit toolkit = getToolkit();
+        Dimension size = toolkit.getScreenSize();
+        setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
+        
+        listacompras(txtPassword.getText());
+        
+        if(perfil.isEmpty()){
+        
+        }else{
+            jLabel1.setText(perfil.get(0).getNome());
+        }
+        
+  
     }
 
     /**
@@ -28,56 +56,23 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
     private void initComponents() {
 
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
+        jDesktopPane1 = new javax.swing.JDesktopPane();
         jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
-        jLabel45 = new javax.swing.JLabel();
-        jLabel46 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        btnVoltar = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        imgj1 = new javax.swing.JLabel();
+        imgj2 = new javax.swing.JLabel();
+        imgj3 = new javax.swing.JLabel();
+        imgj4 = new javax.swing.JLabel();
+        imgj5 = new javax.swing.JLabel();
+        imgj6 = new javax.swing.JLabel();
+        imgj7 = new javax.swing.JLabel();
+        imgj8 = new javax.swing.JLabel();
+        imgj13 = new javax.swing.JLabel();
+        A = new javax.swing.JLabel();
+        B = new javax.swing.JLabel();
+        imgj12 = new javax.swing.JLabel();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -86,406 +81,931 @@ public class Tela_Biblioteca extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(800, 600));
         setResizable(false);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/avatardefault_92824.png"))); // NOI18N
-
-        jLabel1.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
-        jLabel1.setText("Nome do usuário");
-
-        jLabel3.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
-        jLabel3.setText("Biblioteca");
-
-        jLabel4.setText("Procurando um item específico?");
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("OK");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/turbo (1).png"))); // NOI18N
-
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/WhatsApp Image 2023-01-02 at 15.46.12.jpeg"))); // NOI18N
-
-        jButton2.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
-        jButton2.setText("Ver na loja");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
-        jButton3.setText("Remover da biblioteca");
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 14.00.47.jpeg"))); // NOI18N
-
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/WhatsApp Image 2023-01-02 at 15.46.12.jpeg"))); // NOI18N
-
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/avatardefault_92824.png"))); // NOI18N
 
-        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        jLabel1.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Nome do usuário");
 
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        btnVoltar.setText("Voltar");
+        btnVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVoltarActionPerformed(evt);
+            }
+        });
 
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.setForeground(new java.awt.Color(102, 102, 102));
 
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        imgj1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgj1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        imgj1.setMaximumSize(new java.awt.Dimension(150, 150));
+        imgj1.setMinimumSize(new java.awt.Dimension(150, 150));
+        imgj1.setName(""); // NOI18N
+        imgj1.setPreferredSize(new java.awt.Dimension(150, 150));
 
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        imgj2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgj2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        imgj2.setMaximumSize(new java.awt.Dimension(150, 150));
+        imgj2.setMinimumSize(new java.awt.Dimension(150, 150));
+        imgj2.setName(""); // NOI18N
+        imgj2.setPreferredSize(new java.awt.Dimension(150, 150));
 
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        imgj3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgj3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        imgj3.setMaximumSize(new java.awt.Dimension(150, 150));
+        imgj3.setMinimumSize(new java.awt.Dimension(150, 150));
+        imgj3.setName(""); // NOI18N
+        imgj3.setPreferredSize(new java.awt.Dimension(150, 150));
 
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        imgj4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgj4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        imgj4.setMaximumSize(new java.awt.Dimension(150, 150));
+        imgj4.setMinimumSize(new java.awt.Dimension(150, 150));
+        imgj4.setName(""); // NOI18N
+        imgj4.setPreferredSize(new java.awt.Dimension(150, 150));
 
-        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        imgj5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgj5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        imgj5.setMaximumSize(new java.awt.Dimension(150, 150));
+        imgj5.setMinimumSize(new java.awt.Dimension(150, 150));
+        imgj5.setName(""); // NOI18N
+        imgj5.setPreferredSize(new java.awt.Dimension(150, 150));
 
-        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        imgj6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgj6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        imgj6.setMaximumSize(new java.awt.Dimension(150, 150));
+        imgj6.setMinimumSize(new java.awt.Dimension(150, 150));
+        imgj6.setName(""); // NOI18N
+        imgj6.setPreferredSize(new java.awt.Dimension(150, 150));
 
-        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        imgj7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgj7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        imgj7.setMaximumSize(new java.awt.Dimension(150, 150));
+        imgj7.setMinimumSize(new java.awt.Dimension(150, 150));
+        imgj7.setName(""); // NOI18N
+        imgj7.setPreferredSize(new java.awt.Dimension(150, 150));
 
-        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        imgj8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgj8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        imgj8.setMaximumSize(new java.awt.Dimension(150, 150));
+        imgj8.setMinimumSize(new java.awt.Dimension(150, 150));
+        imgj8.setName(""); // NOI18N
+        imgj8.setPreferredSize(new java.awt.Dimension(150, 150));
 
-        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_quad.jpeg"))); // NOI18N
+        imgj13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgj13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        imgj13.setMaximumSize(new java.awt.Dimension(150, 150));
+        imgj13.setMinimumSize(new java.awt.Dimension(150, 150));
+        imgj13.setName(""); // NOI18N
+        imgj13.setPreferredSize(new java.awt.Dimension(150, 150));
 
-        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/black_retang.jpeg"))); // NOI18N
+        A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        A.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        A.setMaximumSize(new java.awt.Dimension(150, 150));
+        A.setMinimumSize(new java.awt.Dimension(150, 150));
+        A.setName(""); // NOI18N
+        A.setPreferredSize(new java.awt.Dimension(150, 150));
 
-        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/avatar.png"))); // NOI18N
+        B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        B.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        B.setMaximumSize(new java.awt.Dimension(150, 150));
+        B.setMinimumSize(new java.awt.Dimension(150, 150));
+        B.setName(""); // NOI18N
+        B.setPreferredSize(new java.awt.Dimension(150, 150));
+
+        imgj12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgj12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        imgj12.setMaximumSize(new java.awt.Dimension(150, 150));
+        imgj12.setMinimumSize(new java.awt.Dimension(150, 150));
+        imgj12.setName(""); // NOI18N
+        imgj12.setPreferredSize(new java.awt.Dimension(150, 150));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(11, 11, 11)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(imgj1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(imgj2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(imgj3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(imgj4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(imgj5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(A, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(12, 12, 12)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(imgj6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(imgj7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(imgj8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(B, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(imgj12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(imgj13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(12, 12, 12))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(imgj2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imgj1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imgj3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imgj4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(imgj6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imgj5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imgj7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imgj8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(B, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(A, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imgj12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imgj13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+
+        jDesktopPane1.setLayer(jLabel32, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(btnVoltar, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addComponent(jLabel32)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnVoltar))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 660, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(70, 70, 70))
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jLabel32)
+                    .addComponent(jLabel1)
+                    .addComponent(btnVoltar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel46)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(1, 1, 1)
-                                .addComponent(jLabel32)))
-                        .addGap(7, 7, 7)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabel3))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabel4)
-                        .addGap(5, 5, 5)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(5, 5, 5)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel20)
-                            .addComponent(jLabel44)
-                            .addComponent(jLabel36)
-                            .addComponent(jLabel26))
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel33)
-                            .addComponent(jLabel21)
-                            .addComponent(jLabel25)
-                            .addComponent(jLabel37))
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel22)
-                            .addComponent(jLabel34)
-                            .addComponent(jLabel38)
-                            .addComponent(jLabel24))
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel35)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel23)
-                            .addComponent(jLabel39))
-                        .addGap(44, 44, 44)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel31)
-                            .addComponent(jLabel45)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel27)
-                            .addComponent(jLabel40))
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel28)
-                            .addComponent(jLabel41))
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel42)
-                            .addComponent(jLabel29))
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel43)
-                            .addComponent(jLabel30))
-                        .addGap(44, 44, 44)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton3)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel5)
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel7)
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel8)
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel17))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel9)
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel11)
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel12)))
-                .addContainerGap(39, Short.MAX_VALUE))
+            .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jLabel2)
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel46)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addComponent(jLabel32))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel1)))
-                .addGap(33, 33, 33)
-                .addComponent(jLabel3)
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel20)
-                            .addComponent(jLabel44))
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel36)
-                            .addComponent(jLabel26)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel33)
-                            .addComponent(jLabel21))
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel25)
-                            .addComponent(jLabel37)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel22)
-                            .addComponent(jLabel34))
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel38)
-                            .addComponent(jLabel24)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel35)
-                            .addComponent(jLabel6))
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel23)
-                            .addComponent(jLabel39)))
-                    .addComponent(jLabel31)
-                    .addComponent(jLabel45))
-                .addGap(4, 4, 4)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel27)
-                    .addComponent(jLabel40)
-                    .addComponent(jLabel28)
-                    .addComponent(jLabel41)
-                    .addComponent(jLabel42)
-                    .addComponent(jLabel29)
-                    .addComponent(jLabel43)
-                    .addComponent(jLabel30)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jButton2)
-                        .addGap(17, 17, 17)
-                        .addComponent(jButton3)))
-                .addGap(78, 78, 78)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel17))
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel12)))
+            .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
+        Tela_Loja2 x = new Tela_Loja2();
+        this.dispose();
+        x.setVisible(true);
+    }//GEN-LAST:event_btnVoltarActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tela_Biblioteca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tela_Biblioteca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tela_Biblioteca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tela_Biblioteca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Tela_Biblioteca().setVisible(true);
-            }
-        });
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel A;
+    private javax.swing.JLabel B;
+    private javax.swing.JButton btnVoltar;
+    private javax.swing.JLabel imgj1;
+    private javax.swing.JLabel imgj12;
+    private javax.swing.JLabel imgj13;
+    private javax.swing.JLabel imgj2;
+    private javax.swing.JLabel imgj3;
+    private javax.swing.JLabel imgj4;
+    private javax.swing.JLabel imgj5;
+    private javax.swing.JLabel imgj6;
+    private javax.swing.JLabel imgj7;
+    private javax.swing.JLabel imgj8;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
+    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+    
+  
+
+
+private void verificaimg1(int idx){
+    if(idx == 1){
+        int id = 1;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
+    }
+    if(idx == 2){
+        int id = 2;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
+    }
+    
+    if(idx == 3){
+        int id = 3;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
+    }
+    if(idx == 4){
+        int id = 4;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
+    }
+   if(idx == 5){
+        int id = 5;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
+    }
+   if(idx == 6){
+        int id = 6;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
+    }
+   if(idx == 7){
+        int id = 7;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
+    }
+   if(idx == 8){
+        int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
+    }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj1); 
+    }
+   
+   
+    
+}
+
+private void verificaimg2(int idx){
+    if(idx == 1){
+        int id = 1;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
+    }
+    if(idx == 2){
+        int id = 2;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
+    }
+    
+    if(idx == 3){
+        int id = 3;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
+    }
+    if(idx == 4){
+        int id = 4;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
+    }
+   if(idx == 5){
+        int id = 5;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
+    }
+   if(idx == 6){
+        int id = 6;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
+    }
+   if(idx == 7){
+        int id = 7;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
+    }
+   if(idx == 8){
+        int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
+    }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj2); 
+    }
+    
+}
+
+private void verificaimg3(int idx){
+    if(idx == 1){
+        int id = 1;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
+    }
+    if(idx == 2){
+        int id = 2;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
+    }
+    
+    if(idx == 3){
+        int id = 3;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
+    }
+    if(idx == 4){
+        int id = 4;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
+    }
+   if(idx == 5){
+        int id = 5;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
+    }
+   if(idx == 6){
+        int id = 6;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
+    }
+   if(idx == 7){
+        int id = 7;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
+    }
+   if(idx == 8){
+        int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
+    }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj3); 
+    }
+  
+    
+}
+
+private void verificaimg4(int idx){
+    if(idx == 1){
+        int id = 1;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
+    }
+    if(idx == 2){
+        int id = 2;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
+    }
+    
+    if(idx == 3){
+        int id = 3;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
+    }
+    if(idx == 4){
+        int id = 4;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
+    }
+   if(idx == 5){
+        int id = 5;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
+    }
+   if(idx == 6){
+        int id = 6;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
+    }
+   if(idx == 7){
+        int id = 7;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
+    }
+   if(idx == 8){
+        int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
+    }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj4); 
+    }
+  
+    
+}
+
+private void verificaimg5(int idx){
+    if(idx == 1){
+        int id = 1;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
+    }
+    if(idx == 2){
+        int id = 2;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
+    }
+    
+    if(idx == 3){
+        int id = 3;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
+    }
+    if(idx == 4){
+        int id = 4;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
+    }
+   if(idx == 5){
+        int id = 5;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
+    }
+   if(idx == 6){
+        int id = 6;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
+    }
+   if(idx == 7){
+        int id = 7;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
+    }
+   if(idx == 8){
+        int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
+    }
+  if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
+    }
+  if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj5); 
+    }
+    
+}
+
+private void verificaimg6(int idx){
+    if(idx == 1){
+        int id = 1;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
+    }
+    if(idx == 2){
+        int id = 2;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
+    }
+    
+    if(idx == 3){
+        int id = 3;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
+    }
+    if(idx == 4){
+        int id = 4;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
+    }
+   if(idx == 5){
+        int id = 5;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
+    }
+   if(idx == 6){
+        int id = 6;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
+    }
+   if(idx == 7){
+        int id = 7;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
+    }
+   if(idx == 8){
+        int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
+    }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj6); 
+    }
+  
+}
+
+private void verificaimg7(int idx){
+    if(idx == 1){
+        int id = 1;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
+    }
+    if(idx == 2){
+        int id = 2;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
+    }
+    
+    if(idx == 3){
+        int id = 3;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
+    }
+    if(idx == 4){
+        int id = 4;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
+    }
+   if(idx == 5){
+        int id = 5;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
+    }
+   if(idx == 6){
+        int id = 6;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
+    }
+   if(idx == 7){
+        int id = 7;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
+    }
+   if(idx == 8){
+        int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
+    }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj7); 
+    }
+  
+    
+}
+
+private void verificaimg8(int idx){
+    if(idx == 1){
+        int id = 1;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
+    }
+    if(idx == 2){
+        int id = 2;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
+    }
+    
+    if(idx == 3){
+        int id = 3;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
+    }
+    if(idx == 4){
+        int id = 4;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
+    }
+   if(idx == 5){
+        int id = 5;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
+    }
+   if(idx == 6){
+        int id = 6;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
+    }
+   if(idx == 7){
+        int id = 7;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
+    }
+   if(idx == 8){
+        int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
+    }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), imgj8); 
+    }
+    
+}
+
+private void verificaimg9(int idx){
+    if(idx == 1){
+        int id = 1;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+
+    if(idx == 2){
+        int id = 2;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+    
+    if(idx == 3){
+        int id = 3;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+    if(idx == 4){
+        int id = 4;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+   if(idx == 5){
+        int id = 5;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+   if(idx == 6){
+        int id = 6;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+   if(idx == 7){
+        int id = 7;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+   if(idx == 8){
+        int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), A); 
+    }
+}
+
+private void verificaimg10(int idx){
+    if(idx == 1){
+        int id = 1;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+    if(idx == 2){
+        int id = 2;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+    
+    if(idx == 3){
+        int id = 3;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+    if(idx == 4){
+        int id = 4;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+   if(idx == 5){
+        int id = 5;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+   if(idx == 6){
+        int id = 6;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+   if(idx == 7){
+        int id = 7;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+   if(idx == 8){
+        int id = 8;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+   if(idx == 9){
+        int id = 9;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+   if(idx == 10){
+        int id = 10;
+        ImagemDAO dao = new ImagemDAO();
+        Imagem exe = dao.buscar(id);
+        ManipularImagem.exibiImagemLabel(exe.getImagem(), B); 
+    }
+
+    
+}
+
+private void listacompras(String Senha){
+        
+        //Lista as compras na tabela 
+        try {
+          
+            JogosComprados novo = new JogosComprados();
+            
+            //Joga o objeto num array para poder mostra-lo numa tabela
+           
+            ArrayList<Jogo> novalista = novo.ListaComprasJogos(Senha);
+            
+             verificaimg1(novalista.get(0).getId());
+             verificaimg2(novalista.get(1).getId());
+             verificaimg3(novalista.get(2).getId());
+             verificaimg4(novalista.get(3).getId());
+             verificaimg5(novalista.get(4).getId());
+             verificaimg6(novalista.get(5).getId());
+             verificaimg7(novalista.get(6).getId());
+             verificaimg8(novalista.get(7).getId());
+             verificaimg9(novalista.get(8).getId());
+             verificaimg10(novalista.get(9).getId());
+             listabiblioteca.clear();
+
+        } catch (Exception e) {
+            
+        }
+}
+
+
 }
