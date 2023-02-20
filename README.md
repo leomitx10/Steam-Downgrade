@@ -43,7 +43,7 @@
   </tr>
 </table>
 
-## 🖥️ screenshots
+## 🖥️ Screenshots
 <table>
   <tr>
     <td align="center">
